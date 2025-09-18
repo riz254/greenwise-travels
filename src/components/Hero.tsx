@@ -1,17 +1,56 @@
+"use client";
+
+import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaMapMarkerAlt, FaCalendarAlt, FaSearch } from "react-icons/fa";
+
+// Simple text carousel messages
+const MESSAGES = [
+  "Africa is Calling",
+  "Personalized, Sustainable Travel",
+  "Discover Impactful Experiences",
+  "Connect with Locals",
+  "Give Back to Communities",
+];
 
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+  const intervalRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    // auto-advance every 3s
+    intervalRef.current = window.setInterval(() => {
+      setIndex((i) => (i + 1) % MESSAGES.length);
+    }, 3000);
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
+
   return (
     <>
       <section className="relative h-screen w-full overflow-hidden">
+        {/* Video background (fallback image included) */}
         <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/videos/Magical Kenya.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/40" /> */}
+
+        {/* <video
           autoPlay
           muted
           loop
           className="absolute inset-0 h-full w-full object-cover"
         >
           <source src="/videos/Magical Kenya.mp4" type="video/mp4" />
-        </video>
+        </video> */}
         <div className="absolute inset-0 bg-black/40"></div>
         {/* <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
           <h2 className="animate-pulse text-4xl font-bold">
@@ -30,7 +69,24 @@ export default function Hero() {
 		</div> */}
 
         {/* Word Carousel */}
-        <div className="relative p-20 top-52 ">
+        <div className="relative  top-52 ">
+          {/* Animated word carousel */}
+          <div className=" flex items-center justify-center">
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.5 }}
+                className="text-white text-4xl md:text-6xl font-extrabold font-serif leading-tight drop-shadow-lg"
+                aria-live="polite"
+              >
+                {MESSAGES[index]}
+              </motion.p>
+            </AnimatePresence>
+          </div>
+
           <div
             id="carouselExample"
             className="carousel slide position-relative text-center text-white"
