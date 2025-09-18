@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "tailwindcss";
-
 
 
 body {
@@ -91,7 +93,7 @@ a.text-primary:hover {
   color: #000b14 !important;
 }
 
-h1,
+/* h1,
 .h1,
 h2,
 .h2,
@@ -99,14 +101,8 @@ h3,
 .h3,
 h4,
 .h4 {
-  /* font-family: 'Times New Roman', Times, serif; */
-  font-family: var(--font-heading), sans-serif;
-}
-
-.an {
-  font-family: var(--font-heading), sans-serif;
-
-}
+  font-family: 'Times New Roman', Times, serif;
+} */
 
 p {
   font-size: 11pt !important;
@@ -1587,24 +1583,30 @@ p {
   padding-top: 50px;
 }
 
+/* 
 .feature-process h2 {
   font-size: 1.2rem;
   position: relative;
   font-size: 13pt;
-  letter-spacing: 3pt;
-  font-weight: 900;
+  letter-spacing: 1pt;
+  font-weight: 200;
+  font-family: "Lato", sans-serif;
   font-family: "Love Ya Like A Sister", cursive;
+
 }
 
 .feature-process h4 {
   position: relative;
-  padding-bottom: 20px;
+  padding: 10px;
   display: inline-block;
-  font-size: 25pt;
-  letter-spacing: 3pt;
+  font-size: 30pt;
+  letter-spacing: 1pt;
   font-weight: 900;
   font-family: "Love Ya Like A Sister", cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
+ */
 
 @media (max-width: 1200px) {
   .feature-process {
