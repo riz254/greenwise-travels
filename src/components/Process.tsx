@@ -102,7 +102,7 @@ export default function Process() {
     {cards.map((card, idx) => (
       <SwiperSlide key={idx}>
         <div className="feature-process bg-[#bcac96] shadow-md rounded-xl p-6 h-60 flex flex-col justify-center text-center">
-          <p className=" font-serif font-bold  text-xs text-[#264653]">{card.title}</p>
+          <p className=" font-paragraph font-bold  text-xl text-[#264653]">{card.title}</p>
           <h4 className="text-xl font-bold text-[#3a5a40] mt-2">{card.text}</h4>
           <p className="mt-3 text-gray-700">{card.subText}</p>
         </div>

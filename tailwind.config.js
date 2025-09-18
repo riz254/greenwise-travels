@@ -8,8 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        paragraph: ["var(--font-albert-sans)", "sans-serif"], 
-      },
+        paragraph: ["var(--font-albert-sans)", "sans-serif"]      },
     },
   },
   plugins: [],
