@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "tailwindcss";
 
 
 body {
@@ -94,7 +95,20 @@ a.text-primary:hover {
   color: #000b14 !important;
 }
 
-/* h1,
+
+/* carousel words  */
+.an {
+  font-size: 30pt !important;
+  text-decoration: double !important;
+  /* font-family: "quicksand", serif; */
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(242, 255, 242);
+  font-weight: 600;
+  /* letter-spacing: 2pt; */
+}
+
+/* 
+h1,
 .h1,
 h2,
 .h2,
@@ -103,8 +117,10 @@ h3,
 h4,
 .h4 {
   font-family: 'Times New Roman', Times, serif;
-} */
-
+  color: white !important;
+  font-weight: 700 !important;
+}
+ */
 p {
   font-size: 11pt !important;
   line-height: 2;
@@ -151,7 +167,7 @@ p {
 
 }
 
-/* text under title of page */
+/* text under title of page
 .text-white {
   font-size: 12pt !important;
   text-align: center;
@@ -165,7 +181,7 @@ p {
     letter-spacing: normal !important;
     margin: 20px;
   }
-}
+} */
 
 .row form {
   background-color: rgb(67, 142, 57);
@@ -245,6 +261,20 @@ p {
 .spinner-border {
   color: #1A374D;
 }
+
+/* background video  */
+.showcase {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* color: #fff; */
+  padding: 0 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
 
 /*PRELOADING------------ */
 #overlayer {
@@ -985,6 +1015,7 @@ p {
   width: 100vw;
 }
 
+
 .hero.hero-inner {
   padding: 9rem 0 7 0;
   margin-bottom: auto;
@@ -1552,7 +1583,7 @@ p {
 }
 
 .feature {
-  padding: 20px;
+  padding: 30px;
   background: rgba(0, 0, 0, 0.616);
   border-radius: 20px;
   min-height: calc(100% - 15px);
@@ -2372,6 +2403,7 @@ p {
 .site-footer .widget .links li {
   display: flex;
   text-align: left;
+  text-decoration: none !important;
 }
 
 .site-footer .widget .links li a {
@@ -2385,7 +2417,7 @@ p {
 
 .site-footer .widget .links li a:hover {
   color: #ffffff;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .site-footer ul.quick-info li {
@@ -2624,18 +2656,6 @@ h3 {
 
 
 
-/* background video  */
-.showcase {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  /* color: #fff; */
-  padding: 0 20px;
-  overflow: hidden;
-  width: 100%;
-}
 
 .video-container {
   position: absolute;
@@ -2759,19 +2779,12 @@ h3 {
 }
 
 
-/* carousel words  */
-.an {
-  font-size: 25pt;
-  font-family: "quicksand";
-  color: rgb(242, 255, 242);
-  font-weight: bolder;
-  letter-spacing: 2pt;
-}
 
-h5 {
+
+/* h5 {
   font-size: 11pt;
   letter-spacing: 1.2pt;
-}
+} */
 
 /* back to top button features  */
 #progress {

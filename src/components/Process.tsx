@@ -5,7 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 import { FaSearch, FaPlane, FaSmile } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay  } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 export default function Process() {
   // const steps = [
@@ -26,11 +26,36 @@ export default function Process() {
   //   },
   // ];
   const cards = [
-    { title: "STEP 1", text: "DISCOVER", subText:"Whether referred by others or drawn in by our advertisements, explore all that we offer." },
-    { title: "STEP 2", text: "ENGAGE", subText:"Contact us via the form, the 'Design Your Trip' page, or phone." },
-    { title: "STEP 3", text: "CURATE", subText:"Craft initial itineraries for luxury tour packages tailored to your preferences." },
-    { title: "STEP 4", text: "CONFIRM", subText:"Finalize the itinerary and payment details. Receive additional information before your arrival." },
-    { title: "STEP 5", text: "EXPERIENCE", subText:"Arrive and enjoy your adventure with everything arranged for you." },
+    {
+      title: "STEP 1",
+      text: "DISCOVER",
+      subText:
+        "Whether referred by others or drawn in by our advertisements, explore all that we offer.",
+    },
+    {
+      title: "STEP 2",
+      text: "ENGAGE",
+      subText:
+        "Contact us via the form, the 'Design Your Trip' page, or phone.",
+    },
+    {
+      title: "STEP 3",
+      text: "CURATE",
+      subText:
+        "Craft initial itineraries for luxury tour packages tailored to your preferences.",
+    },
+    {
+      title: "STEP 4",
+      text: "CONFIRM",
+      subText:
+        "Finalize the itinerary and payment details. Receive additional information before your arrival.",
+    },
+    {
+      title: "STEP 5",
+      text: "EXPERIENCE",
+      subText:
+        "Arrive and enjoy your adventure with everything arranged for you.",
+    },
   ];
   return (
     // <section className="py-16 bg-gray-50">
@@ -77,40 +102,53 @@ export default function Process() {
     //   </div>
     // </section>
 
-<section className="max-w-6xl mx-auto py-10 mt-12 bg-gray-50">
-  <Swiper
-    modules={[Navigation, Pagination]}
-    spaceBetween={30}
-    slidesPerView={3}       // 3 cards visible
-    slidesPerGroup={1}      // swipe 1 at a time
-    navigation
-    pagination={{ clickable: true }}
-    autoplay={{ delay: 3000, disableOnInteraction: false }}
-    loop={true}             // infinite looping
-     breakpoints={{
-      0: {
-        slidesPerView: 1, // 📱 mobile
-      },
-      768: {
-        slidesPerView: 2, // 📲 tablets
-      },
-      1024: {
-        slidesPerView: 3, // 💻 desktop
-      },
-    }}
-  >
-    {cards.map((card, idx) => (
-      <SwiperSlide key={idx}>
-        <div className="feature-process bg-[#bcac96] shadow-md rounded-xl p-6 h-60 flex flex-col justify-center text-center">
-          <p className=" font-paragraph font-bold  text-xl text-[#264653]">{card.title}</p>
-          <h4 className="text-xl font-bold text-[#3a5a40] mt-2">{card.text}</h4>
-          <p className="mt-3 text-gray-700">{card.subText}</p>
-        </div>
-      </SwiperSlide>
-    ))}
-  </Swiper>
-</section>
-
+    <section className="max-w-6xl mx-auto py-10 mt-12 bg-gray-50">
+      <div class="col-lg-12 text-center">
+        <a href="process.html">
+          <h2
+            class="section-title text-center mt-5 mb-4"
+            style={{ color: "rgb(0, 0, 0)" }}
+          >
+            Plan Your Trip
+          </h2>
+        </a>
+      </div>
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={30}
+        slidesPerView={3} // 3 cards visible
+        slidesPerGroup={1} // swipe 1 at a time
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true} // infinite looping
+        breakpoints={{
+          0: {
+            slidesPerView: 1, // 📱 mobile
+          },
+          768: {
+            slidesPerView: 2, // 📲 tablets
+          },
+          1024: {
+            slidesPerView: 3, // 💻 desktop
+          },
+        }}
+      >
+        {cards.map((card, idx) => (
+          <SwiperSlide key={idx}>
+            <div className="feature-process bg-[#bcac96] shadow-md rounded-xl p-6 h-60 flex flex-col justify-center text-center">
+              <p className=" font-paragraph font-bold  text-xl text-[#264653]">
+                {card.title}
+              </p>
+              <h4 className="text-xl font-bold text-[#3a5a40] mt-2">
+                {card.text}
+              </h4>
+              <p className="mt-3 text-gray-700">{card.subText}</p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 }
 

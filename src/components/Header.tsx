@@ -24,7 +24,7 @@ import Link from "next/link";
 
 export default function Header() {
   const iconStyle = {
-    width: "30px",
+    // width: "30px",
     height: "30px",
     borderRadius: "50%",
     background: "none",
@@ -41,7 +41,7 @@ export default function Header() {
   return (
     <>
       {/* // return ( */}
-      <div className=" bg-green-100 text-green-700 flex items-center justify-between px-4 py-2">
+      <div className=" bg-green-100 text-green-700  flex items-center justify-between px-4 py-2">
         {/* Left side contacts */}
         <div className="flex space-x-6">
           <a className="flex no-underline items-center text-green-600 space-x-2">
@@ -154,7 +154,7 @@ export default function Header() {
           </div>
 
           {/* Right side: social icons */}
-          <div className="flex space-x-4 text-green-600 text-lg">
+          <div className="flex text-lg">
             <a href="https://www.youtube.com/@Greenwise_Africa" target="_blank">
               <FaYoutube />
             </a>

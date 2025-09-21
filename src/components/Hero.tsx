@@ -69,25 +69,43 @@ export default function Hero() {
 		</div> */}
 
         {/* Word Carousel */}
-        <div className="relative  top-52 ">
+        <div className="relative  top-52  max-w-4xl mx-auto text-center">
           {/* Animated word carousel */}
           <div className=" flex items-center justify-center">
             <AnimatePresence mode="wait">
-              <motion.p
+              <motion.h1
                 key={index}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.5 }}
-                className="text-white text-4xl md:text-6xl font-extrabold font-serif leading-tight drop-shadow-lg"
-                aria-live="polite"
+                initial={{
+                  opacity: 0,
+                  y: 15,
+                  scale: 0.95,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                  transition: {
+                    duration: 0.8,
+                    ease: "easeInOut",
+                    type: "safari",
+                    stiffness: 100,
+                  },
+                }}
+                exit={{
+                  opacity: 0,
+                  y: -20,
+                  scale: 0.97,
+                  transition: { duration: 0.6, ease: "easeInOut" },
+                }}
+                className="an"
+                // className="text-white text-9xl md:text-6xl sm:text-4xl font-extrabold font-serif "
               >
                 {MESSAGES[index]}
-              </motion.p>
+              </motion.h1>
             </AnimatePresence>
           </div>
 
-          <div
+          {/* <div
             id="carouselExample"
             className="carousel slide position-relative text-center text-white"
             data-bs-ride="carousel"
@@ -118,9 +136,9 @@ export default function Hero() {
                 <h2 className="font-serif">
                   Authentic Travel Experiences for Every Adventurous Spirit
                 </h2>
-              </div>
-            </div>
-          </div>
+              </div> */}
+          {/* </div> */}
+          {/* </div> */}
 
           {/* Button */}
           <div className="content position-relative text-center mt-4">
