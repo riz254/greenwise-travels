@@ -104,7 +104,7 @@ export default function Process() {
 
     <section className="max-w-6xl mx-auto py-10 mt-12 bg-gray-50">
       <div class="col-lg-12 text-center">
-        <a href="process.html">
+        <a href="process">
           <h2
             class="section-title text-center mt-5 mb-4"
             style={{ color: "rgb(0, 0, 0)" }}

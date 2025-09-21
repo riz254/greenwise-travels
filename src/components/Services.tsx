@@ -45,7 +45,7 @@ export default function Services() {
           style={{ padding: "100px" }}
         >
           <div className="col-lg-12 text-center">
-            <a href="services.html">
+            <a href="services">
               <h2
                 className="section-title text-center mb-2 mt-3"
                 style={{ color: "rgb(218, 255, 216)" }}

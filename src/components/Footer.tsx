@@ -93,25 +93,25 @@ export default function Footer() {
                 <h3 className="heading font-bold mb-3">Pages</h3>
                 <ul className="list-unstyled space-y-1 text-gray-700">
                   <li>
-                    <a href="index.html">Home</a>
+                    <a href="index">Home</a>
                   </li>
                   <li>
-                    <a href="about.html">About Us</a>
+                    <a href="about">About Us</a>
                   </li>
                   <li>
-                    <a href="about.html">Destinations</a>
+                    <a href="about">Destinations</a>
                   </li>
                   <li>
-                    <a href="themes.html">Itineraries</a>
+                    <a href="themes">Itineraries</a>
                   </li>
                   <li>
-                    <a href="elements.html">Design Your Trip</a>
+                    <a href="elements">Design Your Trip</a>
                   </li>
                   <li>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="contact">Contact Us</a>
                   </li>
                   <li>
-                    <a href="itinerary.html">Itineraries</a>
+                    <a href="itinerary">Itineraries</a>
                   </li>
                 </ul>
               </div>
@@ -123,25 +123,25 @@ export default function Footer() {
                 <h3 className="heading font-bold mb-3">Useful Links</h3>
                 <ul className="list-unstyled space-y-1 text-gray-700">
                   <li>
-                    <a href="Kenya.html">Kenya</a>
+                    <a href="Kenya">Kenya</a>
                   </li>
                   <li>
-                    <a href="Tanzania.html">Tanzania</a>
+                    <a href="Tanzania">Tanzania</a>
                   </li>
                   <li>
-                    <a href="Uganda.html">Uganda</a>
+                    <a href="Uganda">Uganda</a>
                   </li>
                   <li>
-                    <a href="Rwanda.html">Rwanda</a>
+                    <a href="Rwanda">Rwanda</a>
                   </li>
                   <li>
-                    <a href="Ethiopia.html">Ethiopia</a>
+                    <a href="Ethiopia">Ethiopia</a>
                   </li>
                   <li>
-                    <a href="Islands.html">Indian Ocean Islands</a>
+                    <a href="Islands">Indian Ocean Islands</a>
                   </li>
                   <li>
-                    <a href="Islands.html">Outbound Destinations</a>
+                    <a href="Islands">Outbound Destinations</a>
                   </li>
                 </ul>
               </div>

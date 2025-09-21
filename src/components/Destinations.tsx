@@ -39,12 +39,12 @@ const destinations = [
   {
     name: "Southern Africa",
     image: "/images/images/VictoriaFallsSouthernAfrica.jpg",
-    link: "/destinations/southern.html",
+    link: "/destinations/southern",
   },
   {
     name: "Outbound Destinations",
     image: "/images/images/outbound.jpg",
-    link: "/destinations/outbound.html",
+    link: "/destinations/outbound",
   },
 ];
 
