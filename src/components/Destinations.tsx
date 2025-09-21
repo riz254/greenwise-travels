@@ -21,10 +21,30 @@ const destinations = [
     link: "/destinations/uganda",
   },
   {
+    name: "ETHIOPIA",
+    image: "/images/images/Ethiopia.png",
+    link: "/destinations/rwanda",
+  },
+  {
     name: "Rwanda",
     image:
       "/images/Visit-Rwanda-Crater-Lake-Volcanoes-e1533416621808-1920x1267.jpg",
     link: "/destinations/rwanda",
+  },
+  {
+    name: "Indian Ocean Islands",
+    image: "/images/images/maldives.jpg",
+    link: "/destinations/tanzania",
+  },
+  {
+    name: "Southern Africa",
+    image: "/images/images/VictoriaFallsSouthernAfrica.jpg",
+    link: "/destinations/southern",
+  },
+  {
+    name: "Outbound Destinations",
+    image: "/images/images/outbound.jpg",
+    link: "/destinations/outbound",
   },
 ];
 
@@ -40,7 +60,7 @@ export default function Destinations() {
             <Link
               href={d.link}
               key={i}
-              className="group block overflow-hidden rounded-xl shadow-lg"
+              className="group block overflow-hidden rounded-ss-xl shadow-lg"
             >
               <motion.div
                 whileHover={{ scale: 1.03 }}

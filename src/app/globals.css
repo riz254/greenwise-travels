@@ -1,15 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; */
   /* font-family: "Lato", sans-serif; */
+  font-family: var(--font-roboto), sans-serif;
+
   line-height: 1.5;
-  background-color: rgba(255, 238, 216, 0.168) !important;
+  /* background-color: rgba(255, 238, 216, 0.168) !important; */
+
+  background-color: var(--color-green-50);
+
   overflow-x: hidden;
   font-size: 12pt;
   align-items: center;
+}
+
+.bg-parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 HTML {
@@ -79,6 +95,19 @@ a.text-primary:hover {
   color: #000b14 !important;
 }
 
+
+/* carousel words  */
+.an {
+  font-size: 30pt !important;
+  text-decoration: double !important;
+  /* font-family: "quicksand", serif; */
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(242, 255, 242);
+  font-weight: 600;
+  /* letter-spacing: 2pt; */
+}
+
+/* 
 h1,
 .h1,
 h2,
@@ -88,8 +117,10 @@ h3,
 h4,
 .h4 {
   font-family: 'Times New Roman', Times, serif;
+  color: white !important;
+  font-weight: 700 !important;
 }
-
+ */
 p {
   font-size: 11pt !important;
   line-height: 2;
@@ -136,7 +167,7 @@ p {
 
 }
 
-/* text under title of page */
+/* text under title of page
 .text-white {
   font-size: 12pt !important;
   text-align: center;
@@ -150,7 +181,7 @@ p {
     letter-spacing: normal !important;
     margin: 20px;
   }
-}
+} */
 
 .row form {
   background-color: rgb(67, 142, 57);
@@ -231,6 +262,20 @@ p {
   color: #1A374D;
 }
 
+/* background video  */
+.showcase {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* color: #fff; */
+  padding: 0 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+
 /*PRELOADING------------ */
 #overlayer {
   width: 100%;
@@ -302,7 +347,7 @@ p {
 }
 
 
-
+/* used */
 .site-nav {
 
   display: flex;
@@ -314,8 +359,11 @@ p {
   z-index: 9;
   width: 100vw;
   font-size: 15pt;
-  padding: 18px;
-  background-color: rgba(0, 41, 0, 0.656);
+  padding: 20px;
+  /* background-color: rgba(0, 41, 0, 0.656); */
+  background-color: color-mix(in oklab, var(--color-green-950)
+      /* oklch(26.6% 0.065 152.934) = #032e15 */
+      95%, transparent);
 
   /* background-color: #02371a; */
   /* background: url('https://lirp.cdn-website.com/396dd29d/dms3rep/multi/opt/Grunge_black_background_top-2304w.png') no-repeat center center; */
@@ -967,6 +1015,7 @@ p {
   width: 100vw;
 }
 
+
 .hero.hero-inner {
   padding: 9rem 0 7 0;
   margin-bottom: auto;
@@ -1534,7 +1583,7 @@ p {
 }
 
 .feature {
-  padding: 20px;
+  padding: 30px;
   background: rgba(0, 0, 0, 0.616);
   border-radius: 20px;
   min-height: calc(100% - 15px);
@@ -1566,24 +1615,30 @@ p {
   padding-top: 50px;
 }
 
+/* 
 .feature-process h2 {
   font-size: 1.2rem;
   position: relative;
   font-size: 13pt;
-  letter-spacing: 3pt;
-  font-weight: 900;
+  letter-spacing: 1pt;
+  font-weight: 200;
+  font-family: "Lato", sans-serif;
   font-family: "Love Ya Like A Sister", cursive;
+
 }
 
 .feature-process h4 {
   position: relative;
-  padding-bottom: 20px;
+  padding: 10px;
   display: inline-block;
-  font-size: 25pt;
-  letter-spacing: 3pt;
+  font-size: 30pt;
+  letter-spacing: 1pt;
   font-weight: 900;
   font-family: "Love Ya Like A Sister", cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
+ */
 
 @media (max-width: 1200px) {
   .feature-process {
@@ -2348,6 +2403,7 @@ p {
 .site-footer .widget .links li {
   display: flex;
   text-align: left;
+  text-decoration: none !important;
 }
 
 .site-footer .widget .links li a {
@@ -2361,7 +2417,7 @@ p {
 
 .site-footer .widget .links li a:hover {
   color: #ffffff;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .site-footer ul.quick-info li {
@@ -2600,18 +2656,6 @@ h3 {
 
 
 
-/* background video  */
-.showcase {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  /* color: #fff; */
-  padding: 0 20px;
-  overflow: hidden;
-  width: 100%;
-}
 
 .video-container {
   position: absolute;
@@ -2735,19 +2779,12 @@ h3 {
 }
 
 
-/* carousel words  */
-.an {
-  font-size: 25pt;
-  font-family: "quicksand";
-  color: rgb(242, 255, 242);
-  font-weight: bolder;
-  letter-spacing: 2pt;
-}
 
-h5 {
+
+/* h5 {
   font-size: 11pt;
   letter-spacing: 1.2pt;
-}
+} */
 
 /* back to top button features  */
 #progress {
