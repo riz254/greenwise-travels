@@ -1,15 +1,15 @@
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
 // import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const images = [
-  "/images/safari.jpg",
-  "/images/safari.jpg",
-  "/images/safari.jpg",
-  "/images/safari.jpg",
-];
+// const images = [
+//   "/images/safari.jpg",
+//   "/images/safari.jpg",
+//   "/images/safari.jpg",
+//   "/images/safari.jpg",
+// ];
 
 export default function CascadingImageStack() {
   // const [index, setIndex] = useState(0);
