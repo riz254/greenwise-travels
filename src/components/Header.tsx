@@ -48,7 +48,7 @@ export default function Header() {
             href="#"
           >
             <FaPhone />
-            <span href="#" className="text-base text-green-600 mr-5">
+            <span className="text-base text-green-600 mr-5">
               <p>+254 759 527900 </p>
             </span>
           </Link>
