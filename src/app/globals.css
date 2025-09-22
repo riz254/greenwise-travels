@@ -1011,8 +1011,8 @@ p {
 
 /*hero section*/
 .hero {
-  padding: 0rem 0 4rem 0;
-  width: 100vw;
+  padding: 100px;
+  /* width: 100vw; */
 }
 
 

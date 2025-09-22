@@ -75,14 +75,14 @@ export default function CascadingImageStack() {
     //   </p>
     // </div>
 
-    <section className="hero relative py-20 bg-white">
+    <section className="hero relative py-20 bg-green-50">
       <div className=" mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
         {/* Left: Stacked Images */}
-        <div className="relative w-full md:w-1/2 h-[500px] mx-auto">
+        <div className="relative w-fit md:w-1/2 h-[300px] mx-auto">
           {/* First Image */}
           <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[70%] h-[70%]">
             <Image
-              src="/images/safari.jpg"
+              src="/images/images/kenya-giraffe-manor.jpeg"
               alt="Safari Experience"
               fill
               className="object-cover rounded-xl shadow-xl"
@@ -92,7 +92,7 @@ export default function CascadingImageStack() {
           {/* Second Image */}
           <div className="absolute top-[30%] left-[40%] w-[60%] h-[60%]">
             <Image
-              src="/images/safari.jpg"
+              src="/images/images/Nairobi.png"
               alt="Cultural Experience"
               fill
               className="object-cover rounded-xl shadow-2xl"
@@ -102,7 +102,7 @@ export default function CascadingImageStack() {
           {/* Third Image */}
           <div className="absolute top-[35%] left-[-0%] w-[50%] h-[50%]">
             <Image
-              src="/images/safari.jpg"
+              src="/images/images/kenya-diani-beach.jpg"
               alt="Adventure Experience"
               fill
               className="object-cover rounded-xl shadow-lg"
@@ -111,9 +111,9 @@ export default function CascadingImageStack() {
         </div>
 
         {/* Right: Text Content */}
-        <div className="container w-50 md:w-1/2 space-y-10">
+        <div className=" w-50 md:w-1/2 space-y-10">
           <div>
-            <h2 className="text-green-700 font-semibold ">
+            <h2 className="text-green-100 font-semibold ">
               Discover Africa, with Africans!
             </h2>
             <p className="mt-2  md:text-3xl font-bold leading-snug text-gray-800">
