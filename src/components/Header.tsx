@@ -48,20 +48,14 @@ export default function Header() {
             href="#"
           >
             <FaPhone />
-            <span
-              href="tel:+254759527900"
-              className="text-base text-green-600 mr-5"
-            >
+            <span href="#" className="text-base text-green-600 mr-5">
               <p>+254 759 527900 </p>
             </span>
           </Link>
 
           <span className="flex items-center space-x-2">
             <FaEnvelope />
-            <Link
-              href="mailto:info@greenwisetravels.com"
-              className="text-base mr-5"
-            >
+            <Link href="#" className="text-base mr-5">
               info@greenwisetravels.com
             </Link>
           </span>
