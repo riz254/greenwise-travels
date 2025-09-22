@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaMapMarkerAlt, FaCalendarAlt, FaSearch } from "react-icons/fa";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Simple text carousel messages
 const MESSAGES = [

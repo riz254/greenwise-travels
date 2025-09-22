@@ -43,25 +43,34 @@ const features = [
 export default function GreenwiseDifference() {
   return (
     <section
-      className="bg-gray-5 bg- py-16 h-screen"
+      className="bg-gray-5 py-16 h-full p-40"
       style={{
         backgroundImage: "url('/images/safari.jpg')",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+        padding: "80px",
       }}
     >
       {" "}
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-green-700">
+      <div className=" mx-auto px-6 text-center  ">
+        <h2
+          className="section-title text-center mb-2 mt-3 text-white"
+          // style={{ color: "rgb(218, 255, 216)" }}
+        >
+          {" "}
           The Greenwise Difference
         </h2>
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+          style={{ padding: "100px" }}
+        >
           {features.map((f, i) => (
             <div
               key={i}
               className="rounded-lg bg-green-100 p-8 shadow-md h-full hover:shadow-lg transition text-center"
+              style={{ padding: "50px" }}
             >
               {f.icon}
               <h3 className="text-2xl font-bold text-gray-800 mb-2">

@@ -102,7 +102,9 @@ export default function Process() {
     //   </div>
     // </section>
 
-    <section className="max-w-6xl mx-auto py-10 mt-12 bg-gray-50">
+    <section className="max-w-full mx-auto  "
+    style={{padding:"80px"}}
+    >
       <div class="col-lg-12 text-center">
         <a href="process">
           <h2
@@ -120,7 +122,7 @@ export default function Process() {
         slidesPerGroup={1} // swipe 1 at a time
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 10, disableOnInteraction: false }}
         loop={true} // infinite looping
         breakpoints={{
           0: {

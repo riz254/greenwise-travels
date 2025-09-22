@@ -50,17 +50,62 @@ const destinations = [
 
 export default function Destinations() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-6">
-        <h2 className="text-5xl font-semibold text-center text-green-800 mb-12">
-          Popular Destinations
-        </h2>
+    // <section className="py-20 bg-white">
+    //   <div className="container mx-auto px-6">
+    //     <h2 className="text-5xl font-semibold text-center text-green-800 mb-12">
+    //       Popular Destinations
+    //     </h2>
+    //     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    //       {destinations.map((d, i) => (
+    //         <Link
+    //           href={d.link}
+    //           key={i}
+    //           className="group block overflow-hidden rounded-ss-xl shadow-lg"
+    //         >
+    //           <motion.div
+    //             whileHover={{ scale: 1.03 }}
+    //             transition={{ duration: 0.5 }}
+    //             className="relative h-80 bg-gray-100"
+    //           >
+    //             <img
+    //               src={d.image}
+    //               alt={d.name}
+    //               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+    //             />
+    //             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+    //             <h3 className="absolute bottom-6 left-6 text-2xl font-bold text-white drop-shadow-lg">
+    //               {d.name}
+    //             </h3>
+    //           </motion.div>
+    //         </Link>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
+<>
+<div
+  className="mt-3"
+>
+  <div className="w-screen h-auto mx-auto">
+    <div
+      className="row d-flex mb-3 justify-content-center"
+      style={{ padding: "100px" }}
+    >
+      <div className="col-lg-12 text-center">
+        <a href="/destinations">
+          <h2 className="section-title text-5xl font-semibold text-center text-green-800 mb-12"
+             style={{ color: "green" }}
+>
+            Popular Destinations
+          </h2>
+        </a>
+
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {destinations.map((d, i) => (
             <Link
               href={d.link}
               key={i}
-              className="group block overflow-hidden rounded-ss-xl shadow-lg"
+              className="group block overflow-hidden rounded-xs drop-shadow-lg"
             >
               <motion.div
                 whileHover={{ scale: 1.03 }}
@@ -81,7 +126,11 @@ export default function Destinations() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</div>
+
+    </>
   );
 }
 

@@ -98,13 +98,13 @@ a.text-primary:hover {
 
 /* carousel words  */
 .an {
-  font-size: 30pt !important;
-  text-decoration: double !important;
+  font-size: 40pt !important;
+  /* text-decoration: double !important; */
   /* font-family: "quicksand", serif; */
-  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
   color: rgb(242, 255, 242);
-  font-weight: 600;
-  /* letter-spacing: 2pt; */
+  font-weight: 500;
+  letter-spacing: 1pt;
 }
 
 /* 
@@ -1365,10 +1365,10 @@ p {
   position: relative;
   padding-bottom: 20px;
   display: inline-block;
-  font-size: 28pt;
-  letter-spacing: 2pt;
+  font-size: 35pt;
+  /* letter-spacing: 2pt; */
   font-weight: 900;
-  font-family: "Love Ya Like A Sister", cursive;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .section-title:before {
@@ -2331,16 +2331,20 @@ p {
   padding-top: 0px;
 }
 
-
+.site-footer h3{
+  color: #00ff00;
+}
 
 .site-footer a {
   color: #ffffff;
+  text-decoration: none !important;
 }
 
 .site-footer a:hover {
   color: #419940 !important;
-  text-decoration: underline;
+  text-decoration: underline !important;
   font-weight: bold;
+  font-size: 20px;
 }
 
 /* .site-footer .widget {
@@ -2357,37 +2361,21 @@ p {
 }
 
 .site-footer .widget p {
-  letter-spacing: 0.5pt;
-  font-size: 10px;
-  margin: 20px;
+  font-size: 13pt !important;
+  /* margin: 20px; */
   font-weight: 600;
-  text-align: left;
+  text-align: right !important;
+  color: wheat;
 }
 
 
 .site-footer .widget .social li {
   display: inline-block;
+  color: black;
+    text-align: right !important;
+
 }
 
-.site-footer .widget .social li a {
-  width: 40px;
-  /* Adjust size for better visibility */
-  height: 40px;
-  border-radius: 50%;
-  background: none;
-  /* Remove default background */
-  display: inline-flex;
-  /* Use flex to center icons */
-  justify-content: center;
-  /* Center horizontally */
-  align-items: center;
-  /* Center vertically */
-  color: #ffffff;
-  font-size: 20px;
-  /* Adjust size to match your icon font size */
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-}
 
 .site-footer .widget .social li a:hover {
   background-color: #c0fcc8;
@@ -2401,22 +2389,16 @@ p {
 
 
 .site-footer .widget .links li {
-  display: flex;
-  text-align: left;
-  text-decoration: none !important;
+text-align: right;
 }
 
 .site-footer .widget .links li a {
-  /* color: #fff2b6; */
-  color: #ffffff;
-  margin-bottom: 13px !important;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 0.5pt;
+color: wheat !important;
+
 }
 
 .site-footer .widget .links li a:hover {
-  color: #ffffff;
+  color: green !important;
   /* text-decoration: underline; */
 }
 
@@ -2451,7 +2433,7 @@ p {
   }
 
   .site-footer .widget .heading {
-    margin-left: -250px;
+    margin-left: 250px;
   }
 
   .site-footer .widget .links li {

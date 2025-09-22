@@ -1,39 +1,39 @@
 export default function Itineraries() {
   const itineraries = [
     {
-      img: "/images/images/safari.jpg",
+      img: "/images/images/MaraMigration.jpg",
       title: "7-Day Kenya Safari",
-      desc: "Explore the Maasai Mara and Amboseli.",
+      // desc: "Explore the Maasai Mara and Amboseli.",
       price: "$1,200",
     },
     {
-      img: "/images/images/beach.jpg",
-      title: "5-Day Zanzibar Holiday",
-      desc: "Relax on white sandy beaches.",
+      img: "/images/images/lake\ nakuru\ flamingoes.jpg",
+      title: "8-Day Samburu-Nakuru-Masai Mara Safari",
+      // desc: "Enjoy Safari.",
       price: "$800",
     },
     {
-      img: "/images/images/mountains.jpg",
-      title: "10-Day Kilimanjaro Trek",
-      desc: "Conquer Africa’s tallest mountain.",
+      img: "/images/images/seychellesSun.jpeg",
+      title: "9-Day Seychelles Luxury Cruise",
+      // desc: "Conquer Africa’s tallest mountain.",
       price: "$2,000",
     },
     {
-      img: "/images/images/mountains.jpg",
-      title: "10-Day Kilimanjaro Trek",
-      desc: "Conquer Africa’s tallest mountain.",
+      img: "/images/images/zanzibar.jpg",
+      title: "Relax in Sandy Beaches",
+      // desc: "Conquer Africa’s tallest mountain.",
       price: "$2,000",
     },
     {
-      img: "/images/images/mountains.jpg",
-      title: "10-Day Kilimanjaro Trek",
-      desc: "Conquer Africa’s tallest mountain.",
+      img: "/images/images/sports-nautiques-tanzanie-planche-a-voile.jpg",
+      title: "14-Day Tanzania - Zanzibar Tour",
+      // desc: "Conquer Africa’s tallest mountain.",
       price: "$2,000",
     },
     {
-      img: "/images/images/mountains.jpg",
-      title: "10-Day Kilimanjaro Trek",
-      desc: "Conquer Africa’s tallest mountain.",
+      img: "/images/images/Visit-Rwanda-Crater-Lake-Volcanoes-e1533416621808-1920x1267.jpg",
+      title: "7-Day Best of Rwanda",
+      // desc: "Conquer Africa’s tallest mountain.",
       price: "$2,000",
     },
   ];
@@ -44,7 +44,7 @@ export default function Itineraries() {
         className=" mt-24 mx-auto px-6 text-center "
         style={{ padding: "100px" }}
       >
-        <h2 className="text-3xl mb-10 font-bold text-green-700">
+        <h2 className="section-title ">
           Featured Itineraries
         </h2>
 
@@ -62,7 +62,7 @@ export default function Itineraries() {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition"></div>
 
               {/* Text Content */}
               <div className="absolute bottom-0 p-6 text-left text-white">

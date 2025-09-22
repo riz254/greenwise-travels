@@ -35,7 +35,7 @@ export default function Services() {
     //   </div>
     // </section>
     <div
-      class=" mt-3 "
+      className=" mt-3 "
       // style="  background-image: url('images/kenya-zebra-rainbow.webp'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat">
       style={serviceStyle}
     >

@@ -1,8 +1,8 @@
 import "./globals.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import BootstrapProvider from "@/components/BootstrapProvider";
+// import BootstrapProvider from "@/components/BootstrapProvider";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -44,8 +44,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${roboto.variable} ${playfair.variable}`}>
       <body>
-        {/* {children} */}
-        <BootstrapProvider>{children}</BootstrapProvider>
+        {children}
+        {/* <BootstrapProvider>{children}</BootstrapProvider> */}
       </body>
     </html>
   );
