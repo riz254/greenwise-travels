@@ -86,7 +86,7 @@ export default function Hero() {
                   transition: {
                     duration: 0.8,
                     ease: "easeInOut",
-                    type: "safari",
+                    type: "spring",
                     stiffness: 100,
                   },
                 }}

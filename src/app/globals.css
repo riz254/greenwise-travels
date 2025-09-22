@@ -98,12 +98,12 @@ a.text-primary:hover {
 
 /* carousel words  */
 .an {
-  font-size: 40pt !important;
+  font-size: 30pt !important;
   /* text-decoration: double !important; */
   /* font-family: "quicksand", serif; */
-  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
   color: rgb(242, 255, 242);
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 1pt;
 }
 
@@ -2330,7 +2330,7 @@ p {
   padding-top: 0px;
 }
 
-.site-footer h3{
+.site-footer h3 {
   color: #00ff00;
 }
 
@@ -2371,7 +2371,7 @@ p {
 .site-footer .widget .social li {
   display: inline-block;
   color: black;
-    text-align: left !important;
+  text-align: left !important;
 
 }
 
@@ -2388,14 +2388,14 @@ p {
 
 
 .site-footer .widget .links li {
-text-align: left;
-margin-bottom: 6px !important;
-margin-left: 50px !important;
-/* text-indent: 10px; */
+  text-align: left;
+  margin-bottom: 6px !important;
+  margin-left: 50px !important;
+  /* text-indent: 10px; */
 }
 
 .site-footer .widget .links li a {
-color: wheat !important;
+  color: wheat !important;
 
 }
 
