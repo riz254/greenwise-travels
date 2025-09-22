@@ -75,44 +75,71 @@ export default function CascadingImageStack() {
     //   </p>
     // </div>
 
-    <section className="relative py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
-          Access to ungoogleable experiences
-        </h2>
+      <section className="hero relative py-20 bg-white">
+      <div className=" mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+        {/* Left: Stacked Images */}
+  <div className="relative w-full md:w-1/2 h-[500px] mx-auto">
+      {/* First Image */}
+      <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[70%] h-[70%]">
+        <Image
+            src="/images/safari.jpg"
+          alt="Safari Experience"
+          fill
+          className="object-cover rounded-xl shadow-xl"
+        />
+      </div>
 
-        {/* Cascading Images */}
-        <div className="relative flex justify-center items-center h-[400px] mb-12">
-          {/* Image 1 */}
-          <img
-            src="/images/exp1.jpg"
-            alt="Experience 1"
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-80 object-cover rounded-2xl shadow-xl transform -translate-y-1/2 rotate-[-6deg]"
-          />
+      {/* Second Image */}
+      <div className="absolute top-[30%] left-[40%] w-[60%] h-[60%]">
+        <Image
+            src="/images/safari.jpg"
+          alt="Cultural Experience"
+          fill
+          className="object-cover rounded-xl shadow-2xl"
+        />
+      </div>
 
-          {/* Image 2 */}
-          <img
-            src="/images/exp2.jpg"
-            alt="Experience 2"
-            className="absolute w-64 h-80 object-cover rounded-2xl shadow-xl transform translate-x-[50%] translate-y-[35%] rotate-[4deg]"
-          />
+      {/* Third Image */}
+      <div className="absolute top-[35%] left-[-0%] w-[50%] h-[50%]">
+        <Image
+            src="/images/safari.jpg"
+          alt="Adventure Experience"
+          fill
+          className="object-cover rounded-xl shadow-lg"
+        />
+      </div>
+    </div>
 
-          {/* Image 3 */}
-          <img
-            src="/images/exp3.jpg"
-            alt="Experience 3"
-            className="absolute w-64 h-80 object-cover rounded-2xl shadow-2xl transform -translate-x-[35%] translate-y-[30%] rotate-[-3deg]"
-          />
+        {/* Right: Text Content */}
+        <div className="container w-50 md:w-1/2 space-y-10">
+          <div>
+            <h2 className="text-green-700 font-semibold ">
+              Discover Africa, with Africans!
+            </h2>
+            <p className="mt-2  md:text-3xl font-bold leading-snug text-gray-800">
+              The best way to discover Africa is with Africans. We are natives
+              of this land and we have spent our entire life here, discovering
+              Africa’s best-kept secrets.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-green-700 font-semibold ">
+              We take the initiative, so you can travel stress-free
+            </h2>
+            <p className="mt-2  md:text-3xl font-bold leading-snug text-gray-800">
+              Our experts are ready to plan your private, personalized, and
+              sustainable African safari experiences!
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-center text-xl md:text-2xl font-medium text-gray-700">
+              We welcome you to walk in our footsteps for the greatest African
+              safari and adventure experience.
+            </h3>
+          </div>
         </div>
-
-        {/* Paragraph */}
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-          We believe in unconventional luxury: true luxury isn’t just a fancy
-          hotel room; it’s access to amazing people and places. We focus on
-          “unGoogleable experiences” that are designed to go beyond top 10 lists
-          and reveal the true essence of Africa.
-        </p>
       </div>
     </section>
   );
