@@ -68,7 +68,7 @@ export default function Itineraries() {
               {/* Text Content */}
               <div className="absolute bottom-0 p-6 text-left text-white">
                 <h3 className="text-xl font-semibold">{i.title}</h3>
-                <p className="mt-1 text-sm">{i.desc}</p>
+                {/* <p className="mt-1 text-sm">{i.desc}</p> */}
                 <p className="mt-3 font-bold text-green-300">{i.price}</p>
               </div>
             </div>
