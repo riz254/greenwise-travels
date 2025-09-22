@@ -1,22 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
-import { Menu, X } from "lucide-react";
+import Image from "next/image";
+// import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const [open, setOpen] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
+  // const [mobileOpen, setMobileOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrolled(window.scrollY > 50);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <>
@@ -25,109 +26,114 @@ export default function Navbar() {
       </div>
       <nav className="site-nav  site-navigation ">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-green-700">
-          <img
-            src="/images/GREENWISE LOGOS 3-01.png"
-            alt="logo"
-            className="h-20"
-          />
-        </Link>
+        <div className="relative h-20 w-40">
+          <Link href="/">
+            <Image
+              src="/images/GREENWISE LOGOS 3-01.png"
+              alt="logo"
+              fill
+              className="object-contain"
+            />
+          </Link>
+        </div>
 
         <div className="container">
           <div className="site-navigation">
             <ul className="js-clone-nav d-none d-lg-inline-block site-menu float-right mt-2">
               <li className="active">
-                <a href="index ">Home</a>
+                <Link href="index ">Home</Link>
               </li>
 
               <li className="has-children">
-                <a href="#">Destinations</a>
+                <Link href="#">Destinations</Link>
                 <ul className="dropdown">
                   <li>
-                    <a href="Kenya ">Kenya</a>
+                    <Link href="Kenya ">Kenya</Link>
                   </li>
                   <li>
-                    <a href="Tanzania ">Tanzania</a>
+                    <Link href="Tanzania ">Tanzania</Link>
                   </li>
                   <li>
-                    <a href="Uganda ">Uganda</a>
+                    <Link href="Uganda ">Uganda</Link>
                   </li>
                   <li>
-                    <a href="Rwanda ">Rwanda</a>
+                    <Link href="Rwanda ">Rwanda</Link>
                   </li>
                   <li>
-                    <a href="Ethiopia ">Ethiopia</a>
+                    <Link href="Ethiopia ">Ethiopia</Link>
                   </li>
                   <li>
-                    <a href="Islands ">Indian Ocean Islands</a>
+                    <Link href="Islands ">Indian Ocean Islands</Link>
                   </li>
                   <li>
-                    <a href="Southern ">Southern Africa</a>
+                    <Link href="Southern ">Southern Africa</Link>
                   </li>
                   <li>
-                    <a href="Outbound ">Outbound Destinations</a>
+                    <Link href="Outbound ">Outbound Destinations</Link>
                   </li>
                 </ul>
               </li>
               <li className="has-children">
-                <a href="about ">About Us</a>
+                <Link href="about ">About Us</Link>
                 <ul className="dropdown">
                   <li>
-                    <a href="who we are ">Our Story</a>
+                    <Link href="who we are ">Our Story</Link>
                   </li>
                   <li>
-                    <a href="team ">Our Team</a>
+                    <Link href="team ">Our Team</Link>
                   </li>
                   <li>
-                    <a href="services ">Our Services</a>
+                    <Link href="services ">Our Services</Link>
                   </li>
                   <li>
-                    <a href="values ">Our Values</a>
+                    <Link href="values ">Our Values</Link>
                   </li>
                   <li>
-                    <a href="process ">Our process</a>
+                    <Link href="process ">Our process</Link>
                   </li>
                   <li>
-                    <a href="GreenwiseDifference ">The Greenwise Difference</a>
+                    <Link href="GreenwiseDifference ">
+                      The Greenwise Difference
+                    </Link>
                   </li>
                   <li>
-                    <a href="terms ">Terms & Conditions</a>
+                    <Link href="terms ">Terms & Conditions</Link>
                   </li>
                 </ul>
               </li>
 
               {/* <!-- <li className="has-children">
-						<a href="themes ">Travel Themes</a>
+						<Link href="themes ">Travel Themes</Link>
 						<ul className="dropdown">
-							<li><a href="about ">Heritage Tours</a></li>
-							<li><a href="about ">Honeymoon Tours</a></li>
-							<li><a href="about ">Wildlife Tours</a></li>
-							<li><a href="about ">Adventure</a></li>
-							<li><a href="about ">Nature & Landscape</a></li>
-							<li><a href="about ">Beach</a></li>
-							<li><a href="about ">Special Interests</a></li>
+							<li><Link href="about ">Heritage Tours</Link></li>
+							<li><Link href="about ">Honeymoon Tours</Link></li>
+							<li><Link href="about ">Wildlife Tours</Link></li>
+							<li><Link href="about ">Adventure</Link></li>
+							<li><Link href="about ">Nature & Landscape</Link></li>
+							<li><Link href="about ">Beach</Link></li>
+							<li><Link href="about ">Special Interests</Link></li>
 						</ul>
 					</li> --> */}
               <li>
-                <a href="themes ">Itineraries</a>
+                <Link href="themes ">Itineraries</Link>
               </li>
               <li>
-                <a href="blog ">Blogs</a>
+                <Link href="blog ">Blogs</Link>
               </li>
               <li>
-                <a href="contact ">Contact Us</a>
+                <Link href="contact ">Contact Us</Link>
               </li>
             </ul>
 
-            <a
+            <Link
               href="#"
               className="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
               data-toggle="collapse"
               data-target="#main-navbar"
             >
               <span></span>
-            </a>
-            {/* <a href="index " className="logo m-0"><img src="GREENWISE LOGOS 3-01.png" alt="logo"></a> */}
+            </Link>
+            {/* <Link href="index " className="logo m-0"><Image src="GREENWISE LOGOS 3-01.png" alt="logo"></Link> */}
           </div>
         </div>
       </nav>

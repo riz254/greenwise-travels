@@ -1,11 +1,25 @@
+// components/Footer.tsx
+import {
+  FaXTwitter,
+  FaInstagram,
+  FaFacebook,
+  FaLinkedin,
+  FaYoutube,
+  FaTiktok,
+  FaPhone,
+  FaMarker,
+  FaEnvelope,
+} from "react-icons/fa6";
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="site-footer  pt-10">
+    <footer className="site-footer bg-gray-100 pt-10">
       <div className="inner first">
         <div className="container mx-auto px-6">
-          <div className="row text-center md:text-left flex flex-wrap justify-between">
+          <div className="flex flex-wrap text-center md:text-left justify-between">
             {/* Vision + Mission */}
-            <div className="col-lg-5 mt-5 w-full md:w-5/12">
+            <div className="w-full md:w-5/12 mt-5">
               <div className="widget">
                 <h3 className="heading text-xl font-bold">Our Vision</h3>
                 <p className="mt-2 text-gray-700">
@@ -22,148 +36,167 @@ export default function Footer() {
 
               {/* Social Links */}
               <div className="widget mt-6">
-                <ul className="flex justify-center md:justify-start space-x-4 text-xl">
+                <ul className="flex justify-center md:justify-start space-x-4 text-2xl text-gray-600">
                   <li>
-                    <a
+                    <Link
                       href="https://x.com/greenwise_t"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-green-600"
                     >
-                      <i className="fa-brands fa-x-twitter"></i>
-                    </a>
+                      <FaXTwitter />
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="https://www.instagram.com/greenwise_travels/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-green-600"
                     >
-                      <i className="fa-brands fa-instagram"></i>
-                    </a>
+                      <FaInstagram />
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="https://www.facebook.com/greenwisetravels"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-green-600"
                     >
-                      <i className="fa-brands fa-facebook"></i>
-                    </a>
+                      <FaFacebook />
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="https://www.linkedin.com/company/greenwise-travels"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-green-600"
                     >
-                      <i className="fa-brands fa-linkedin"></i>
-                    </a>
+                      <FaLinkedin />
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="http://www.youtube.com/@Greenwise_Africa"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-green-600"
                     >
-                      <i className="fa-brands fa-youtube"></i>
-                    </a>
+                      <FaYoutube />
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="https://www.tiktok.com/@greenwise_travels"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-green-600"
                     >
-                      <i className="fa-brands fa-tiktok"></i>
-                    </a>
+                      <FaTiktok />
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
 
             {/* Pages */}
-            <div className="col-lg-2 mt-5 w-1/2 md:w-2/12">
+            <div className="w-1/2 md:w-2/12 mt-5">
               <div className="widget">
                 <h3 className="heading font-bold mb-3">Pages</h3>
-                <ul className="list-unstyled space-y-1 text-gray-700">
+                <ul className="links list-unstyled  ">
                   <li>
-                    <a href="index">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <a href="about">About Us</a>
+                    <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <a href="about">Destinations</a>
+                    <Link href="/about">Destinations</Link>
                   </li>
                   <li>
-                    <a href="themes">Itineraries</a>
+                    <Link href="/themes">Itineraries</Link>
                   </li>
                   <li>
-                    <a href="elements">Design Your Trip</a>
+                    <Link href="/elements">Design Your Trip</Link>
                   </li>
                   <li>
-                    <a href="contact">Contact Us</a>
+                    <Link href="/contact">Contact Us</Link>
                   </li>
                   <li>
-                    <a href="itinerary">Itineraries</a>
+                    <Link href="/itinerary">Itineraries</Link>
                   </li>
                 </ul>
               </div>
             </div>
 
             {/* Useful Links */}
-            <div className="col-lg-2 mt-5 w-1/2 md:w-2/12">
+            <div className="w-1/2 md:w-2/12 mt-5">
               <div className="widget">
                 <h3 className="heading font-bold mb-3">Useful Links</h3>
-                <ul className="list-unstyled space-y-1 text-gray-700">
+                <ul className="links list-unstyled  ">
                   <li>
-                    <a href="Kenya">Kenya</a>
+                    <Link href="/Kenya">Kenya</Link>
                   </li>
                   <li>
-                    <a href="Tanzania">Tanzania</a>
+                    <Link href="/Tanzania">Tanzania</Link>
                   </li>
                   <li>
-                    <a href="Uganda">Uganda</a>
+                    <Link href="/Uganda">Uganda</Link>
                   </li>
                   <li>
-                    <a href="Rwanda">Rwanda</a>
+                    <Link href="/Rwanda">Rwanda</Link>
                   </li>
                   <li>
-                    <a href="Ethiopia">Ethiopia</a>
+                    <Link href="/Ethiopia">Ethiopia</Link>
                   </li>
                   <li>
-                    <a href="Islands">Indian Ocean Islands</a>
+                    <Link href="/Islands">Indian Ocean Islands</Link>
                   </li>
                   <li>
-                    <a href="Islands">Outbound Destinations</a>
+                    <Link href="/Islands">Outbound Destinations</Link>
                   </li>
                 </ul>
               </div>
             </div>
 
             {/* Contact Info */}
-            <div className="col-lg-3 mt-5 w-full md:w-3/12">
+            <div className="w-full md:w-3/12 mt-5">
               <div className="widget">
-                <h3 className="heading font-bold mb-4">To Reach Us</h3>
-                <ul className="list-unstyled space-y-2 text-gray-700">
-                  <li className="phone">
-                    <a href="tel:+254759527900">+254 759 527900</a>
+                <h3 className="heading font-bold text-lg mb-6 text-gray-800">
+                  To Reach Us
+                </h3>
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-center gap-3">
+                    <FaPhone className="text-green-600" />
+                    <Link
+                      href="tel:+254759527900"
+                      className="hover:text-green-700"
+                    >
+                      +254 759 527900
+                    </Link>
                   </li>
-                  <li>
-                    <a href="tel:+254725205716">+254 725 205716</a>
+                  <li className="flex items-center gap-3">
+                    <FaPhone className="text-green-600" />
+                    <Link
+                      href="tel:+254725205716"
+                      className="hover:text-green-700"
+                    >
+                      +254 725 205716
+                    </Link>
                   </li>
-                  <li className="email">
-                    <a href="mailto:info@greenwisetravels.com">
+                  <li className="flex items-center gap-3">
+                    <FaEnvelope className="text-green-600" />
+                    <Link
+                      href="mailto:info@greenwisetravels.com"
+                      className="hover:text-green-700"
+                    >
                       info@greenwisetravels.com
-                    </a>
+                    </Link>
                   </li>
-                  <li className="address">
+                  <li className="flex items-start gap-3">
+                    <FaMarker className="text-green-600 mt-1" />
                     <p>
                       6th Floor, Utumishi Co-op House, Mamlaka Road <br />
                       P.O. Box 4892-00100 Nairobi, Kenya
@@ -176,7 +209,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="copyright  text-center py-4 mt-8">
+        <div className="copyright border-t border-gray-100 text-center py-4 mt-8 ">
           <p>
             &copy; {new Date().getFullYear()} Greenwise Travels | All Rights
             Reserved.

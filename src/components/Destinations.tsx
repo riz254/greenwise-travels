@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const destinations = [
   {
@@ -21,7 +22,7 @@ const destinations = [
     link: "/destinations/uganda",
   },
   {
-    name: "ETHIOPIA",
+    name: "Ethiopia",
     image: "/images/images/Ethiopia.png",
     link: "/destinations/rwanda",
   },
@@ -67,9 +68,10 @@ export default function Destinations() {
                 transition={{ duration: 0.5 }}
                 className="relative h-80 bg-gray-100"
               >
-                <img
+                <Image
                   src={d.image}
                   alt={d.name}
+                  fill
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
@@ -105,7 +107,7 @@ export default function Destinations() {
 //               key={i}
 //               className="group relative overflow-hidden rounded-lg shadow-lg"
 //             >
-//               <img
+//               <Image
 //                 src={d.img}
 //                 alt={d.title}
 //                 className="h-60 w-full object-cover group-hover:scale-110 transition"

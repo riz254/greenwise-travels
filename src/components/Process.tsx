@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
-import Carousel from "react-bootstrap/Carousel";
+// import Image from "next/image";
 
-import { FaSearch, FaPlane, FaSmile } from "react-icons/fa";
+// import { FaSearch, FaPlane, FaSmile } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
@@ -102,11 +101,11 @@ export default function Process() {
     //   </div>
     // </section>
 
-    <section className="max-w-6xl mx-auto py-10 mt-12 bg-gray-50">
-      <div class="col-lg-12 text-center">
+    <section className="max-w-full mx-auto  " style={{ padding: "80px" }}>
+      <div className="col-lg-12 text-center">
         <a href="process">
           <h2
-            class="section-title text-center mt-5 mb-4"
+            className="section-title text-center mt-5 mb-4"
             style={{ color: "rgb(0, 0, 0)" }}
           >
             Plan Your Trip
@@ -114,7 +113,7 @@ export default function Process() {
         </a>
       </div>
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={3} // 3 cards visible
         slidesPerGroup={1} // swipe 1 at a time
