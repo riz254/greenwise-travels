@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+// import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const images = [
@@ -12,11 +12,11 @@ const images = [
 ];
 
 export default function CascadingImageStack() {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
-  const handleClick = () => {
-    setIndex((prev) => (prev + 1) % images.length);
-  };
+  // const handleClick = () => {
+  //   setIndex((prev) => (prev + 1) % images.length);
+  // };
 
   return (
     // <div className="flex flex-col items-center justify-center min-h-screen bg-white">
@@ -75,40 +75,40 @@ export default function CascadingImageStack() {
     //   </p>
     // </div>
 
-      <section className="hero relative py-20 bg-white">
+    <section className="hero relative py-20 bg-white">
       <div className=" mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
         {/* Left: Stacked Images */}
-  <div className="relative w-full md:w-1/2 h-[500px] mx-auto">
-      {/* First Image */}
-      <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[70%] h-[70%]">
-        <Image
-            src="/images/safari.jpg"
-          alt="Safari Experience"
-          fill
-          className="object-cover rounded-xl shadow-xl"
-        />
-      </div>
+        <div className="relative w-full md:w-1/2 h-[500px] mx-auto">
+          {/* First Image */}
+          <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[70%] h-[70%]">
+            <Image
+              src="/images/safari.jpg"
+              alt="Safari Experience"
+              fill
+              className="object-cover rounded-xl shadow-xl"
+            />
+          </div>
 
-      {/* Second Image */}
-      <div className="absolute top-[30%] left-[40%] w-[60%] h-[60%]">
-        <Image
-            src="/images/safari.jpg"
-          alt="Cultural Experience"
-          fill
-          className="object-cover rounded-xl shadow-2xl"
-        />
-      </div>
+          {/* Second Image */}
+          <div className="absolute top-[30%] left-[40%] w-[60%] h-[60%]">
+            <Image
+              src="/images/safari.jpg"
+              alt="Cultural Experience"
+              fill
+              className="object-cover rounded-xl shadow-2xl"
+            />
+          </div>
 
-      {/* Third Image */}
-      <div className="absolute top-[35%] left-[-0%] w-[50%] h-[50%]">
-        <Image
-            src="/images/safari.jpg"
-          alt="Adventure Experience"
-          fill
-          className="object-cover rounded-xl shadow-lg"
-        />
-      </div>
-    </div>
+          {/* Third Image */}
+          <div className="absolute top-[35%] left-[-0%] w-[50%] h-[50%]">
+            <Image
+              src="/images/safari.jpg"
+              alt="Adventure Experience"
+              fill
+              className="object-cover rounded-xl shadow-lg"
+            />
+          </div>
+        </div>
 
         {/* Right: Text Content */}
         <div className="container w-50 md:w-1/2 space-y-10">

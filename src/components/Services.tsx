@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 export default function Services() {
-  const services = [
-    "Safari Adventures",
-    "Beach Holidays",
-    "Mountain Treks",
-    "Cultural Tours",
-    "Luxury Travel",
-    "Budget Safaris",
-  ];
+  // const services = [
+  //   "Safari Adventures",
+  //   "Beach Holidays",
+  //   "Mountain Treks",
+  //   "Cultural Tours",
+  //   "Luxury Travel",
+  //   "Budget Safaris",
+  // ];
   const serviceStyle = {
     backgroundImage: "url('/images/images/kenya-zebra-rainbow.webp')",
     backgroundSize: "cover",
@@ -45,14 +47,14 @@ export default function Services() {
           style={{ padding: "100px" }}
         >
           <div className="col-lg-12 text-center">
-            <a href="services">
+            <Link href="services">
               <h2
                 className="section-title text-center mb-2 mt-3"
                 style={{ color: "rgb(218, 255, 216)" }}
               >
                 OUR SERVICES
               </h2>
-            </a>
+            </Link>
             <p style={{ color: "bisque" }}>
               Unleash the potential of your travel with our exceptional services
               and embark on an unforgettable adventures with us.
@@ -132,7 +134,7 @@ export default function Services() {
                 style={{ color: "bisque", textAlign: "left" }}
               >
                 We specialize in organizing educational trips that cater to
-                learners' needs, providing affordable accommodation,
+                learners&apos; needs, providing affordable accommodation,
                 transportation, and enriching experiences. Partner with us for
                 memorable and transformative study tours for universities,
                 schools, and academic institutions.
@@ -184,9 +186,9 @@ export default function Services() {
                 className="mt-3"
                 style={{ color: "bisque", textAlign: "left" }}
               >
-                Boost your team's productivity with our dynamic team building
-                program. Engage in challenging outdoor activities that inspire
-                behavioral change and create lasting impact.
+                Boost your team&apos;s productivity with our dynamic team
+                building program. Engage in challenging outdoor activities that
+                inspire behavioral change and create lasting impact.
               </p>
             </div>
           </div>

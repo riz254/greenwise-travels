@@ -12,7 +12,6 @@
 
 import {
   FaPhone,
-  FaPhoneAlt,
   FaEnvelope,
   FaFacebook,
   FaLinkedin,
@@ -44,95 +43,96 @@ export default function Header() {
       <div className=" bg-green-100 text-green-700  flex items-center justify-between px-4 py-2">
         {/* Left side contacts */}
         <div className="flex space-x-6">
-          <a className="flex no-underline items-center text-green-600 space-x-2">
+          <Link
+            className="flex no-underline items-center text-green-600 space-x-2"
+            href="#"
+          >
             <FaPhone />
             <span
               href="tel:+254759527900"
               className="text-base text-green-600 mr-5"
             >
-              <a>+254 759 527900 </a>
+              <p>+254 759 527900 </p>
             </span>
-          </a>
+          </Link>
 
           <span className="flex items-center space-x-2">
             <FaEnvelope />
-            <a
+            <Link
               href="mailto:info@greenwisetravels.com"
               className="text-base mr-5"
             >
               info@greenwisetravels.com
-            </a>
+            </Link>
           </span>
 
           <span className="flex items-center space-x-2">
             <FaLocationDot />
-            <a href="#" className=" text-base mr-5">
+            <Link href="#" className=" text-base mr-5">
               4892 - Mamlaka Road, Nairobi, KE
-            </a>
+            </Link>
           </span>
         </div>
 
         {/* Right side socials */}
         <div className="flex space-x-3">
-          <a
+          <Link
             href="http://www.youtube.com/@Greenwise_Africa"
             target="_blank"
             rel="noopener noreferrer"
             style={iconStyle}
           >
             <FaYoutube />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://www.tiktok.com/@greenwise_travels"
             target="_blank"
             rel="noopener noreferrer"
             style={iconStyle}
           >
             <FaTiktok />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://x.com/greenwise_t"
             target="_blank"
             rel="noopener noreferrer"
             style={iconStyle}
           >
             <FaXTwitter />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://www.instagram.com/greenwise_travels/"
             target="_blank"
             rel="noopener noreferrer"
             style={iconStyle}
           >
             <FaInstagram />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://www.facebook.com/greenwisetravels"
             target="_blank"
             rel="noopener noreferrer"
             style={iconStyle}
           >
             <FaFacebook />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://www.linkedin.com/company/greenwise-travels"
             target="_blank"
             rel="noopener noreferrer"
             style={iconStyle}
           >
             <FaLinkedin />
-          </a>
+          </Link>
         </div>
       </div>
       {/* //   ); */}
       {/* // } */}
-
-
     </>
   );
 }

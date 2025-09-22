@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Itineraries() {
   const itineraries = [
     {
@@ -7,7 +9,7 @@ export default function Itineraries() {
       price: "$1,200",
     },
     {
-      img: "/images/images/lake\ nakuru\ flamingoes.jpg",
+      img: "/images/images/lake nakuru flamingoes.jpg",
       title: "8-Day Samburu-Nakuru-Masai Mara Safari",
       // desc: "Enjoy Safari.",
       price: "$800",
@@ -44,9 +46,7 @@ export default function Itineraries() {
         className=" mt-24 mx-auto px-6 text-center "
         style={{ padding: "100px" }}
       >
-        <h2 className="section-title ">
-          Featured Itineraries
-        </h2>
+        <h2 className="section-title ">Featured Itineraries</h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {itineraries.map((i, idx) => (
@@ -55,9 +55,10 @@ export default function Itineraries() {
               className="relative h-72 w-full overflow-hidden rounded-lg shadow-lg group"
             >
               {/* Background Image */}
-              <img
+              <Image
                 src={i.img}
                 alt={i.title}
+                fill
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
