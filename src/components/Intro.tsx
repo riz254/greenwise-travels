@@ -75,8 +75,11 @@ export default function CascadingImageStack() {
     //   </p>
     // </div>
 
-    <section className="hero relative py-20 bg-green-50">
-      <div className=" mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+    <section
+      className="h-screen relative  bg-green-50"
+      style={{ padding: "100px" }}
+    >
+      <div className="mx-auto pt-20 flex flex-col md:flex-row items-center gap-12">
         {/* Left: Stacked Images */}
         <div className="relative w-fit md:w-1/2 h-[300px] mx-auto">
           {/* First Image */}
@@ -113,10 +116,13 @@ export default function CascadingImageStack() {
         {/* Right: Text Content */}
         <div className=" w-50 md:w-1/2 space-y-10">
           <div>
-            <h2 className="text-green-100 font-semibold ">
+            <h2
+              className="text-right font-semibold "
+              style={{ color: "green", fontSize: "20pt" }}
+            >
               Discover Africa, with Africans!
             </h2>
-            <p className="mt-2  md:text-3xl font-bold leading-snug text-gray-800">
+            <p className="mt-2 text-right md:text-3xl font-medium leading-snug ">
               The best way to discover Africa is with Africans. We are natives
               of this land and we have spent our entire life here, discovering
               Africa’s best-kept secrets.
@@ -124,20 +130,29 @@ export default function CascadingImageStack() {
           </div>
 
           <div>
-            <h2 className="text-green-700 font-semibold ">
-              We take the initiative, so you can travel stress-free
+            <h2
+              className="text-right font-extraBold"
+              style={{ color: " rgb(8, 99, 8)", fontSize: "20pt" }}
+            >
+              We take the initiative,
             </h2>
-            <p className="mt-2  md:text-3xl font-bold leading-snug text-gray-800">
+            <h2
+              className="text-right font-extraBold"
+              style={{ color: " rgb(8, 99, 8)", fontSize: "20pt" }}
+            >
+              so you can travel stress-free
+            </h2>
+            <p className="mt-2 text-right md:text-3xl font-medium leading-snug text-gray-800">
               Our experts are ready to plan your private, personalized, and
               sustainable African safari experiences!
             </p>
           </div>
 
           <div>
-            <h3 className="text-center text-xl md:text-2xl font-medium text-gray-700">
+            <p className="text-right text-xl md:text-2xl font-medium text-gray-800">
               We welcome you to walk in our footsteps for the greatest African
               safari and adventure experience.
-            </h3>
+            </p>
           </div>
         </div>
       </div>

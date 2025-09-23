@@ -51,17 +51,24 @@ const destinations = [
 
 export default function Destinations() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-6">
-        <h2 className="text-5xl font-semibold text-center text-green-800 mb-12">
+    <section className="py-20 bg-white" style={{ padding: "50px" }}>
+      <div className=" mx-auto px-6">
+        <h2
+          className="text-5xl font-semibold text-center text-green-900 mb-4"
+          style={{ marginBottom: "50px" }}
+        >
           Popular Destinations
         </h2>
+        {/* <p>
+          Discover stunning destinations, from serene beaches to towering peaks,
+          vibrant cultures, and natural wonders. Bon voyage!
+        </p> */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {destinations.map((d, i) => (
             <Link
               href={d.link}
               key={i}
-              className="group block overflow-hidden rounded-ss-xl shadow-lg"
+              className="group block overflow-hidden rounded shadow-lg"
             >
               <motion.div
                 whileHover={{ scale: 1.03 }}

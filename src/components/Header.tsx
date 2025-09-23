@@ -38,7 +38,7 @@ export default function Header() {
 
   // export default function Header() {
   return (
-    <>
+    <section className="header fixed  top-0 left-0 w-full z-[99] bg-green-100 text-green-700">
       {/* // return ( */}
       <div className=" bg-green-100 text-green-700  flex items-center justify-between px-4 py-2">
         {/* Left side contacts */}
@@ -127,6 +127,6 @@ export default function Header() {
       </div>
       {/* //   ); */}
       {/* // } */}
-    </>
+    </section>
   );
 }

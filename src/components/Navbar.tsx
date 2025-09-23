@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="  w-full ">
         <Header />
       </div>
-      <nav className="site-nav  site-navigation ">
+      <nav className=" site-nav ">
         {/* Logo */}
         <div className="relative h-20 w-40">
           <Link href="/">
@@ -127,7 +127,7 @@ export default function Navbar() {
 
             <Link
               href="#"
-              className="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+              className="burger hidden ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
               data-toggle="collapse"
               data-target="#main-navbar"
             >

@@ -1,16 +1,14 @@
-// /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  important: true,
-
   content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}", // everything inside src
-    "./app/**/*.{js,ts,jsx,tsx,mdx}", // if you also have an app/ at root
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", // if you have src/
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        trebuchet: ['"Trebuchet MS"', "sans-serif"],
+        quicksand: ["Inter", "sans-serif"], // example custom font
       },
     },
   },

@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap'); */
 
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 
 
@@ -162,10 +160,10 @@ p {
   color: #1A374D !important;
 }
 
-.text-white-opacity {
+/* .text-white-opacity {
   opacity: .7;
 
-}
+} */
 
 /* text under title of page
 .text-white {
@@ -263,17 +261,17 @@ p {
 }
 
 /* background video  */
-.showcase {
+/* .showcase {
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  /* color: #fff; */
-  padding: 0 20px;
+  text-align: center; */
+/* color: #fff; */
+/* padding: 0 20px;
   overflow: hidden;
   width: 100%;
-}
+} */
 
 
 /*PRELOADING------------ */
@@ -337,7 +335,7 @@ p {
   color: rgb(0, 128, 0);
   height: 40px;
   width: 100vw;
-  padding: 10px 50px 40px 50px;
+  padding: 5px 50px 40px 50px;
 }
 
 @media (max-width: 1200px) {
@@ -359,14 +357,9 @@ p {
   z-index: 9;
   width: 100vw;
   font-size: 15pt;
-  padding: 20px;
-  /* background-color: rgba(0, 41, 0, 0.656); */
-  background-color: color-mix(in oklab, var(--color-green-950)
-      /* oklch(26.6% 0.065 152.934) = #032e15 */
-      95%, transparent);
+  padding: 18px;
+  background-color: rgba(0, 41, 0, 0.656);
 
-  /* background-color: #02371a; */
-  /* background: url('https://lirp.cdn-website.com/396dd29d/dms3rep/multi/opt/Grunge_black_background_top-2304w.png') no-repeat center center; */
   background-size: cover;
   transition: background-color 0.3s ease, background-image 0.3s ease;
   /* Smooth transition for background color and image */
@@ -381,7 +374,7 @@ p {
   /* Blend mode to mix the color and the image */
   background-image: none;
   /* Remove the background image when scrolled */
-  height: 90px;
+  height: 70px;
 }
 
 
@@ -1011,7 +1004,6 @@ p {
 
 /*hero section*/
 .hero {
-  padding: 100px;
   /* width: 100vw; */
 }
 
@@ -1584,7 +1576,7 @@ p {
 
 .feature {
   padding: 30px;
-  background: rgba(0, 0, 0, 0.616);
+  background: rgba(0, 0, 0, 0.677);
   border-radius: 20px;
   min-height: calc(100% - 15px);
   top: 0;
