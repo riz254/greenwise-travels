@@ -134,7 +134,7 @@ export default function SectionWithFixedOverlay() {
                 className="mb-6 text-lg leading-relaxed"
                 style={{ margin: "30px" }}
               >
-                Experience the world like never before with our company's
+                Experience the world like never before with our company&apos;s
                 immersive and unforgettable travel adventures! Get ready for an
                 incredible journey which includes activities such as:
               </p>
