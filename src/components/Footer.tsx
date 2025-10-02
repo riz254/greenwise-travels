@@ -14,7 +14,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="site-footer bg-gray-100 pt-10">
+    <footer
+      className="site-footer bg-gray-100 pt-10"
+      style={{ padding: "50px" }}
+    >
       <div className="inner first">
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap text-center md:text-left justify-between">
@@ -36,67 +39,58 @@ export default function Footer() {
 
               {/* Social Links */}
               <div className="widget mt-6">
-                <ul className="flex justify-center md:justify-start space-x-4 text-2xl text-gray-600">
-                  <li>
-                    <Link
-                      href="https://x.com/greenwise_t"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-green-600"
-                    >
-                      <FaXTwitter />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://www.instagram.com/greenwise_travels/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-green-600"
-                    >
-                      <FaInstagram />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://www.facebook.com/greenwisetravels"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-green-600"
-                    >
-                      <FaFacebook />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://www.linkedin.com/company/greenwise-travels"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-green-600"
-                    >
-                      <FaLinkedin />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="http://www.youtube.com/@Greenwise_Africa"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-green-600"
-                    >
-                      <FaYoutube />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://www.tiktok.com/@greenwise_travels"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-green-600"
-                    >
-                      <FaTiktok />
-                    </Link>
-                  </li>
+                <ul className="flex justify-center md:justify-start gap-8  space-x-4 text-5xl  text-lime-600">
+                  <Link
+                    href="https://x.com/greenwise_t"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-green-600 text-4xl"
+                  >
+                    <FaXTwitter />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/greenwise_travels/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-green-600"
+                  >
+                    <FaInstagram />
+                  </Link>
+                  <Link
+                    href="https://www.facebook.com/greenwisetravels"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-green-600"
+                  >
+                    <FaFacebook />
+                  </Link>
+
+                  <Link
+                    href="https://www.linkedin.com/company/greenwise-travels"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-green-600"
+                  >
+                    <FaLinkedin />
+                  </Link>
+
+                  <Link
+                    href="http://www.youtube.com/@Greenwise_Africa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-green-600"
+                  >
+                    <FaYoutube />
+                  </Link>
+
+                  <Link
+                    href="https://www.tiktok.com/@greenwise_travels"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-green-600"
+                  >
+                    <FaTiktok />
+                  </Link>
                 </ul>
               </div>
             </div>

@@ -26,7 +26,7 @@ export default function Navbar() {
       </div>
       <nav className=" site-nav ">
         {/* Logo */}
-        <div className="relative h-20 w-40">
+        <div className="relative h-20 w-40" style={{ marginLeft: "50px" }}>
           <Link href="/">
             <Image
               src="/images/GREENWISE LOGOS 3-01.png"

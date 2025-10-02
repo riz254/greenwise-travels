@@ -76,8 +76,8 @@ export default function CascadingImageStack() {
     // </div>
 
     <section
-      className="h-screen relative  bg-green-50"
-      style={{ padding: "100px" }}
+      className=" h-screen relative  bg-green-50"
+      style={{ padding: "50px", marginBottom: "20px" }}
     >
       <div className="mx-auto pt-20 flex flex-col md:flex-row items-center gap-12">
         {/* Left: Stacked Images */}
@@ -118,11 +118,14 @@ export default function CascadingImageStack() {
           <div>
             <h2
               className="text-right font-semibold "
-              style={{ color: "green", fontSize: "20pt" }}
+              style={{ color: "green", fontSize: "20pt", margin: "10px" }}
             >
               Discover Africa, with Africans!
             </h2>
-            <p className="mt-2 text-right md:text-3xl font-medium leading-snug ">
+            <p
+              className="mt-2 text-right md:text-3xl font-medium leading-snug "
+              style={{ margin: "10px" }}
+            >
               The best way to discover Africa is with Africans. We are natives
               of this land and we have spent our entire life here, discovering
               Africa’s best-kept secrets.
@@ -142,17 +145,23 @@ export default function CascadingImageStack() {
             >
               so you can travel stress-free
             </h2>
-            <p className="mt-2 text-right md:text-3xl font-medium leading-snug text-gray-800">
+            <p
+              className="mt-2 text-right md:text-3xl font-medium leading-snug text-gray-800"
+              style={{ margin: "10px" }}
+            >
               Our experts are ready to plan your private, personalized, and
               sustainable African safari experiences!
             </p>
           </div>
 
           <div>
-            <p className="text-right text-xl md:text-2xl font-medium text-gray-800">
+            <h2
+              className="text-right font-stretch-90% text-xl md:text-2xl font-semibold text-lime-700"
+              style={{ fontSize: "20pt", margin: "10px" }}
+            >
               We welcome you to walk in our footsteps for the greatest African
               safari and adventure experience.
-            </p>
+            </h2>
           </div>
         </div>
       </div>

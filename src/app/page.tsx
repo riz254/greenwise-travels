@@ -5,6 +5,7 @@ import GreenwiseDifference from "@/components/GreenwiseDifference";
 import Destinations from "@/components/Destinations";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
+import Counter from "@/components/Counter";
 import Itineraries from "@/components/Itineraries";
 import Footer from "@/components/Footer";
 
@@ -18,9 +19,9 @@ export default function Home() {
       <Destinations />
       <Services />
       <Process />
+      <Counter />
       <Itineraries />
       <Footer />
     </>
   );
 }
-

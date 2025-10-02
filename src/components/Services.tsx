@@ -22,21 +22,21 @@ export default function Services() {
   const services = [
     {
       title: "Wildlife & Adventure Tours",
-      icon: <FaMountain size={40} className="text-green-200 mb-3 mx-auto" />,
+      icon: <FaMountain size={40} className="text-lime-200 mb-3 mx-auto" />,
       description: `Africa is renowned for its amazing wildlife reserves and 
       sandy beaches which attract countless visitors. We know exactly where to 
       take you for that incredible experience!`,
     },
     {
       title: "Meetings & Conferences",
-      icon: <FaUsers size={40} className="text-green-200 mb-3 mx-auto" />,
+      icon: <FaUsers size={40} className="text-lime-200 mb-3 mx-auto" />,
       description: `We offer a comprehensive range of facilities for all types 
       of meetings and conferences, including international conventions.`,
     },
     {
       title: "Educational Trips",
       icon: (
-        <FaGraduationCap size={40} className="text-green-200 mb-3 mx-auto" />
+        <FaGraduationCap size={40} className="text-lime-200 mb-3 mx-auto" />
       ),
       description: `We organize study tours for universities, schools, and 
       academic institutions with affordable accommodation and enriching experiences.`,
@@ -44,22 +44,20 @@ export default function Services() {
     {
       title: "Airfare Quotation & Ticketing",
       icon: (
-        <FaPlaneDeparture size={40} className="text-green-200 mb-3 mx-auto" />
+        <FaPlaneDeparture size={40} className="text-lime-200 mb-3 mx-auto" />
       ),
       description: `Get the best airfares through our airline relations and advanced 
       reservation systems. Personalized advice on schedules, fares, and benefits.`,
     },
     {
       title: "Team Building Retreats",
-      icon: (
-        <FaHandsHelping size={40} className="text-green-200 mb-3 mx-auto" />
-      ),
+      icon: <FaHandsHelping size={40} className="text-lime-200 mb-3 mx-auto" />,
       description: `Boost your team’s productivity with outdoor activities that inspire 
       behavioral change and create lasting impact.`,
     },
     {
       title: "Mission & Humanitarian Tours",
-      icon: <FaGlobe size={40} className="text-green-200 mb-3 mx-auto" />,
+      icon: <FaGlobe size={40} className="text-lime-200 mb-3 mx-auto" />,
       description: `Partner with us for cost-effective mission and humanitarian 
       tours that make a meaningful impact on underprivileged communities.`,
     },
@@ -72,7 +70,7 @@ export default function Services() {
       <div className="relative mx-auto px-6 text-center">
         {/* Title */}
         <Link href="/services">
-          <h2 className="text-4xl font-bold mb-4 text-green-100">
+          <h2 className="text-4xl font-bold mb-4 text-green-200">
             OUR SERVICES
           </h2>
         </Link>
@@ -80,23 +78,41 @@ export default function Services() {
           Unleash the potential of your travel with our exceptional services and
           embark on unforgettable adventures with us.
         </p>
-
         {/* Services Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => (
-            <div key={i} className="feature">
-              <div className="flex flex-col items-center text-center ">
-                {service.icon}
-                <h3
-                  className="text-2xl text-white font-semibold  mb-3 tracking-wide"
-                  style={{ padding: "15px" }}
+            <div
+              key={i}
+              className=" relative rounded-2xl bg-black/50 backdrop-blur-md 
+                         border border-white/20 shadow-xl p-8 transition 
+                         transform hover:-translate-y-3 hover:shadow-2xl h-fit "
+              style={{ top: "20px", padding: "30px" }}
+            >
+              {/* Circular glowing icon */}
+              <div className="relative mx-auto mb-6 w-20 h-20">
+                <div
+                  className="absolute inset-0 rounded-full bg-gradient-to-tr 
+                                from-green-300 via-lime-400 to-green-600 
+                                opacity-30 blur-xl group-hover:opacity-60 transition"
+                ></div>
+                <div
+                  className="relative flex items-center justify-center w-full h-full 
+                                rounded-full bg-black/40 border border-green-400/50 shadow-lg"
                 >
-                  {service.title}
-                </h3>
-                <p className="text-sm text-amber-100 text-left leading-relaxed">
-                  {service.description}
-                </p>
+                  {service.icon}
+                </div>
               </div>
+
+              {/* Title + Desc */}
+              <h3
+                className=" font-semibold text-green-200 mb-3 tracking-wide"
+                style={{ fontSize: "1.7rem", marginBottom: "10px" }}
+              >
+                {service.title}
+              </h3>
+              <p className="font-light text-stone-100 float-left ring-offset-gray-600  leading-snug  ">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>

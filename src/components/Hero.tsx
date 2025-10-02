@@ -76,8 +76,8 @@ export default function Hero() {
         <div className="mt-16" style={{ margin: "20px" }}>
           <Link
             href="/about"
-            className="inline-block bg-green-600 text-lg text-white rounded-lg shadow-md hover:bg-green-700 hover:text-xl transition"
-            style={{ padding: "3px", color: "white" }}
+            className="inline-block bg-green-600 text-xl text-white rounded-lg shadow-md hover:bg-green-700 hover:text-xl transition"
+            style={{ padding: "10px", color: "white" }}
           >
             Read More
           </Link>
