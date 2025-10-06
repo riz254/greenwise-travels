@@ -24,7 +24,7 @@ export default function Footer() {
             {/* Vision + Mission */}
             <div className="w-full md:w-5/12 mt-5">
               <div className="widget">
-                <h3 className="heading text-xl font-bold">Our Vision</h3>
+                <h3 className="  ">Our Vision</h3>
                 <p className="mt-2 text-gray-700">
                   Africa’s leading responsible travel organization, promoting
                   awareness on responsible tourism and offering green travel
@@ -38,13 +38,13 @@ export default function Footer() {
               </div>
 
               {/* Social Links */}
-              <div className="widget mt-6">
-                <ul className="flex justify-center md:justify-start gap-8  space-x-4 text-5xl  text-lime-600">
+              <div className=" mt-6">
+                <ul className="flex justify-center md:justify-start gap-6  space-x-4 text-3xl  ">
                   <Link
                     href="https://x.com/greenwise_t"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-green-600 text-4xl"
+                    className="hover:text-green-600 text-lime-600"
                   >
                     <FaXTwitter />
                   </Link>
@@ -52,7 +52,7 @@ export default function Footer() {
                     href="https://www.instagram.com/greenwise_travels/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-green-600"
+                    className="hover:text-green-600 text-lime-600"
                   >
                     <FaInstagram />
                   </Link>
@@ -60,7 +60,7 @@ export default function Footer() {
                     href="https://www.facebook.com/greenwisetravels"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-green-600"
+                    className="hover:text-green-600 text-lime-600"
                   >
                     <FaFacebook />
                   </Link>
@@ -69,7 +69,7 @@ export default function Footer() {
                     href="https://www.linkedin.com/company/greenwise-travels"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-green-600"
+                    className="hover:text-green-600 text-lime-600"
                   >
                     <FaLinkedin />
                   </Link>
@@ -78,7 +78,7 @@ export default function Footer() {
                     href="http://www.youtube.com/@Greenwise_Africa"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-green-600"
+                    className="hover:text-green-600 text-lime-600"
                   >
                     <FaYoutube />
                   </Link>
@@ -87,7 +87,7 @@ export default function Footer() {
                     href="https://www.tiktok.com/@greenwise_travels"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-green-600"
+                    className=" hover:text-green-600 "
                   >
                     <FaTiktok />
                   </Link>

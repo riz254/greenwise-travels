@@ -2350,15 +2350,17 @@ p {
   font-size: 18px;
   /* margin-bottom: 25px; */
   color: #00ff00;
-  font-family: "Sedan Sc";
+  /* font-family: "Sedan Sc"; */
   letter-spacing: 1pt;
   text-align: left;
 }
 
 .site-footer .widget p {
   font-size: 11pt !important;
-  margin: 20px;
-  font-weight: 600;
+  padding-right : 50px;
+  padding-left : 50px;
+  padding-top : 20px;
+  padding-bottom : 20px;
   text-align: left !important;
   color: wheat;
 }
