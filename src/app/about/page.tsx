@@ -59,13 +59,13 @@ export default function AboutUs() {
             </h2>
             <p className="story text-justify !leading-8 !mb-6">
               Welcome to our Kenyan-based travel solutions! We craft tailor-made
-              sustainable journeys across Africa's top destinations. From
+              sustainable journeys across Africa&apos;s top destinations. From
               wildlife to culture, we have something for every passion. With
               trusted partners worldwide, we ensure your comfort and peace of
               mind, even in the remotest corners. Our expert team customizes
               each safari program to meet your unique expectations. Let us
               create an unforgettable experience just for you – one that sets
-              your journey apart. Explore Africa's wonders with us!
+              your journey apart. Explore Africa&apos;s wonders with us!
             </p>
 
             {/* Carousel - replaced owl with flex grid */}
