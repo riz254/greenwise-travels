@@ -65,7 +65,7 @@ export default function Hero() {
                 scale: 0.97,
                 transition: { duration: 0.6, ease: "easeInOut" },
               }}
-              className="text-white text-3xl sm:text-4xl md:text-6xl font-semibold  text-shadow-lg"
+              className="text-white text-4xl sm:text-4xl md:text-5xl font-semibold  text-shadow-lg"
             >
               {MESSAGES[index]}
             </motion.h1>

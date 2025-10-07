@@ -332,13 +332,15 @@ p {
 /* header on top of navbar  */
 .header {
   z-index: 99;
-  background-color: rgb(212, 255, 212);
+  /* background-color: rgb(212, 255, 212); */
+    background-color: rgba(0, 41, 0, 0.656);
+
   position: relative;
-  padding: 10px;
-  color: rgb(0, 128, 0);
-  height: 40px;
+  /* padding: 10px; */
+  /* color: rgb(0, 128, 0); */
+  /* height: 40px; */
   width: 100vw;
-  padding: 5px 50px 40px 50px;
+  /* padding: 5px 50px 40px 50px; */
 }
 
 @media (max-width: 1200px) {
@@ -360,20 +362,24 @@ p {
   z-index: 9;
   width: 100vw;
   font-size: 15pt;
-  padding: 18px;
-  background-color: rgba(0, 41, 0, 0.656);
+  padding: 10px 80px;
+  /* background-color: rgba(0, 41, 0, 0.656); */
+  /* background-color: rgb(212, 255, 212); */
+  background-color: rgb(212, 255, 212);
 
   background-size: cover;
   transition: background-color 0.3s ease, background-image 0.3s ease;
   /* Smooth transition for background color and image */
+  backdrop-filter: none;
 }
 
 .site-nav.scrolled {
-  background-color: #002410;
+  background-color: #002410 !important;
 
   /* background-color: #023f00; */
   /*Background color after scrolling */
   background-blend-mode: overlay;
+  
   /* Blend mode to mix the color and the image */
   background-image: none;
   /* Remove the background image when scrolled */
@@ -400,14 +406,15 @@ p {
   padding: 10px 15px;
   display: inline-block;
   text-decoration: none !important;
-  color: rgba(255, 255, 255, 0.7);
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: black;
 }
 
 .site-nav .site-navigation .site-menu>li>a:hover {
-  color: #e2ffe1 !important;
+  color: #058f00 !important;
   transform: scale(1.12);
-  font-weight: 900;
-  letter-spacing: 1pt;
+  font-weight: 500;
+  letter-spacing: 0.5pt;
 }
 
 .site-nav .site-navigation .site-menu>li.cta-button a {
@@ -417,14 +424,10 @@ p {
   border-radius: 30px;
 }
 
-.site-nav .site-navigation .site-menu>li.cta-button a:hover {
-  color: #000000;
-  background: #1A374D;
-  border-color: #1A374D;
-}
 
 .site-nav .site-navigation .site-menu>li.active>a {
-  color: #ffffff;
+  /* color: #ffffff; */
+  text-decoration: dashed;
 }
 
 .site-nav .site-navigation .site-menu .has-children {

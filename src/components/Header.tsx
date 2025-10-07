@@ -1,14 +1,4 @@
-// import {
-//   FaPhone,
-//   FaEnvelope,
-//   FaYoutube,
-//   FaTiktok,
-//   FaTwitter,
-//   FaInstagram,
-//   FaFacebook,
-//   FaLocationDot,
-//   FaLinkedin,
-// } from "react-icons/fa6";
+"use client";
 
 import {
   FaPhone,
@@ -16,13 +6,15 @@ import {
   FaFacebook,
   FaLinkedin,
   FaInstagram,
-} from "react-icons/fa";
+  FaYoutube,
+  FaTiktok,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaYoutube, FaTiktok, FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Header() {
-  const iconStyle = {
+    const iconStyle = {
     // width: "30px",
     height: "30px",
     borderRadius: "50%",
@@ -34,99 +26,47 @@ export default function Header() {
     fontSize: "20px",
     textDecoration: "none",
   };
-  // }
-
-  // export default function Header() {
   return (
-    <section className="header fixed  top-0 left-0 w-full z-[99] bg-green-100 text-green-700">
-      {/* // return ( */}
-      <div className=" bg-green-100 text-green-700  flex items-center justify-between px-4 py-2">
-        {/* Left side contacts */}
-        <div className="flex space-x-6">
-          <Link
-            className="flex no-underline items-center text-green-600 space-x-2"
-            href="#"
-          >
-            <FaPhone />
-            <span className="text-base text-green-600 mr-5">
-              <p>+254 759 527900 </p>
-            </span>
-          </Link>
-
-          <span className="flex items-center space-x-2">
-            <FaEnvelope />
-            <Link href="#" className="text-base mr-5">
-              info@greenwisetravels.com
-            </Link>
-          </span>
-
-          <span className="flex items-center space-x-2">
-            <FaLocationDot />
-            <Link href="#" className=" text-base mr-5">
-              4892 - Mamlaka Road, Nairobi, KE
-            </Link>
-          </span>
+    <header className="header text-gray-100 !p-2">
+      <div className=" max-w-7xl !mx-auto flex flex-col sm:flex-row items-center justify-between !px-6">
+        {/* Left Section */}
+        <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4">
+          <div className="flex items-center gap-2">
+            <FaPhone className="text-emerald-600 text-2xl " />
+            <p>+254 759 527900</p>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaEnvelope className="text-emerald-600 text-2xl" />
+            <p>info@greenwisetravels.com</p>
+          </div>
+          <div className="hidden md:flex items-center gap-2">
+            <FaLocationDot className="text-emerald-600 text-2xl" />
+            <p>4892 - Mamlaka Road, Nairobi, KE</p>
+          </div>
         </div>
 
-        {/* Right side socials */}
-        <div className="flex space-x-3">
-          <Link
-            href="http://www.youtube.com/@Greenwise_Africa"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={iconStyle}
-          >
-            <FaYoutube />
-          </Link>
-
-          <Link
-            href="https://www.tiktok.com/@greenwise_travels"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={iconStyle}
-          >
-            <FaTiktok />
-          </Link>
-
-          <Link
-            href="https://x.com/greenwise_t"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={iconStyle}
-          >
-            <FaXTwitter />
-          </Link>
-
-          <Link
-            href="https://www.instagram.com/greenwise_travels/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={iconStyle}
-          >
-            <FaInstagram />
-          </Link>
-
-          <Link
-            href="https://www.facebook.com/greenwisetravels"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={iconStyle}
-          >
-            <FaFacebook />
-          </Link>
-
-          <Link
-            href="https://www.linkedin.com/company/greenwise-travels"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={iconStyle}
-          >
-            <FaLinkedin />
-          </Link>
+        {/* Right Section */}
+        <div className="flex items-center justify-center  gap-3 mt-2 sm:mt-0">
+          {[
+            { href: "http://www.youtube.com/@Greenwise_Africa", icon: <FaYoutube /> },
+            { href: "https://www.tiktok.com/@greenwise_travels", icon: <FaTiktok /> },
+            { href: "https://x.com/greenwise_t", icon: <FaXTwitter /> },
+            { href: "https://www.instagram.com/greenwise_travels/", icon: <FaInstagram /> },
+            { href: "https://www.facebook.com/greenwisetravels", icon: <FaFacebook /> },
+            { href: "https://www.linkedin.com/company/greenwise-travels", icon: <FaLinkedin /> },
+          ].map((social, i) => (
+            <Link
+              key={i}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="!p-2 text-md bg-white rounded-full hover:bg-lime-400 transition-all duration-200"
+            >
+              {social.icon}
+            </Link>
+          ))}
         </div>
       </div>
-      {/* //   ); */}
-      {/* // } */}
-    </section>
+    </header>
   );
 }
