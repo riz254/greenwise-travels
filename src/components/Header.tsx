@@ -14,18 +14,18 @@ import { FaLocationDot } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Header() {
-    const iconStyle = {
-    // width: "30px",
-    height: "30px",
-    borderRadius: "50%",
-    background: "none",
-    display: "inline-flex",
-    justifyContent: "center",
-    alignItems: "center",
-    color: "green",
-    fontSize: "20px",
-    textDecoration: "none",
-  };
+  //   const iconStyle = {
+  //   // width: "30px",
+  //   height: "30px",
+  //   borderRadius: "50%",
+  //   background: "none",
+  //   display: "inline-flex",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   color: "green",
+  //   fontSize: "20px",
+  //   textDecoration: "none",
+  // };
   return (
     <header className="header text-gray-100 !p-2">
       <div className=" max-w-7xl !mx-auto flex flex-col sm:flex-row items-center justify-between !px-6">
@@ -48,12 +48,27 @@ export default function Header() {
         {/* Right Section */}
         <div className="flex items-center justify-center  gap-3 mt-2 sm:mt-0">
           {[
-            { href: "http://www.youtube.com/@Greenwise_Africa", icon: <FaYoutube /> },
-            { href: "https://www.tiktok.com/@greenwise_travels", icon: <FaTiktok /> },
+            {
+              href: "http://www.youtube.com/@Greenwise_Africa",
+              icon: <FaYoutube />,
+            },
+            {
+              href: "https://www.tiktok.com/@greenwise_travels",
+              icon: <FaTiktok />,
+            },
             { href: "https://x.com/greenwise_t", icon: <FaXTwitter /> },
-            { href: "https://www.instagram.com/greenwise_travels/", icon: <FaInstagram /> },
-            { href: "https://www.facebook.com/greenwisetravels", icon: <FaFacebook /> },
-            { href: "https://www.linkedin.com/company/greenwise-travels", icon: <FaLinkedin /> },
+            {
+              href: "https://www.instagram.com/greenwise_travels/",
+              icon: <FaInstagram />,
+            },
+            {
+              href: "https://www.facebook.com/greenwisetravels",
+              icon: <FaFacebook />,
+            },
+            {
+              href: "https://www.linkedin.com/company/greenwise-travels",
+              icon: <FaLinkedin />,
+            },
           ].map((social, i) => (
             <Link
               key={i}

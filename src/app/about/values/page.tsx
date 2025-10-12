@@ -3,95 +3,95 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero2";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
-const fadeIn = (direction = "up", delay = 0) => {
-  return {
-    hidden: {
-      opacity: 0,
-      y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
-      x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
-    },
-    show: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        delay,
-        ease: "easeOut",
-      },
-    },
-  };
-};
+// const fadeIn = (direction = "up", delay = 0) => {
+//   return {
+//     hidden: {
+//       opacity: 0,
+//       y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
+//       x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
+//     },
+//     show: {
+//       opacity: 1,
+//       x: 0,
+//       y: 0,
+//       transition: {
+//         duration: 0.6,
+//         delay,
+//         ease: "easeOut",
+//       },
+//     },
+//   };
+// };
 
 export default function OurValues() {
-  const sections = [
-    {
-      title: "To Our Esteemed Customers",
-      color: "from-green-200/50 via-green-100/40 to-green-50/30",
-      items: [
-        {
-          title: "Commitment to Excellence",
-          text: "We deliver exceptional service beyond comparison, anticipating our customers’ changing needs with creativity.",
-        },
-        {
-          title: "Value for Money & Satisfaction",
-          text: "We ensure expectations are exceeded through continuous improvement and exceptional quality.",
-        },
-        {
-          title: "Creativity and Innovation",
-          text: "We embrace new trends and ideas, turning them into unique, customer-focused travel experiences.",
-        },
-        {
-          title: "Timeliness",
-          text: "We provide outstanding service promptly, ensuring reliability and efficiency in everything we do.",
-        },
-      ],
-    },
-    {
-      title: "To Community and Environment",
-      color: "from-green-100/40 via-emerald-50/40 to-lime-100/40",
-      items: [
-        {
-          title: "Community Empowerment",
-          text: "We give back to host communities, harnessing tourism to uplift livelihoods.",
-        },
-        {
-          title: "Environmental Conservation",
-          text: "We promote responsible travel and sustainable resource use.",
-        },
-        {
-          title: "Corporate Social Responsibility",
-          text: "Our CESR philosophy is at our core, not a token effort — driving lasting positive impact.",
-        },
-      ],
-    },
-    {
-      title: "To Partners and Friends",
-      color: "from-emerald-100/40 via-green-50/40 to-emerald-50/40",
-      items: [
-        {
-          title: "Transparency and Accountability",
-          text: "We conduct business openly, honoring the trust of our partners.",
-        },
-        {
-          title: "Credible and Measurable Impacts",
-          text: "We aim to create tangible, measurable change through our initiatives.",
-        },
-      ],
-    },
-    {
-      title: "To Our Team",
-      color: "from-green-50/40 via-lime-50/40 to-green-100/40",
-      items: [
-        {
-          title: "Staff Empowerment",
-          text: "Our team is our foundation — continuously trained, equipped, and supported to excel.",
-        },
-      ],
-    },
-  ];
+  //   const sections = [
+  //     {
+  //       title: "To Our Esteemed Customers",
+  //       color: "from-green-200/50 via-green-100/40 to-green-50/30",
+  //       items: [
+  //         {
+  //           title: "Commitment to Excellence",
+  //           text: "We deliver exceptional service beyond comparison, anticipating our customers’ changing needs with creativity.",
+  //         },
+  //         {
+  //           title: "Value for Money & Satisfaction",
+  //           text: "We ensure expectations are exceeded through continuous improvement and exceptional quality.",
+  //         },
+  //         {
+  //           title: "Creativity and Innovation",
+  //           text: "We embrace new trends and ideas, turning them into unique, customer-focused travel experiences.",
+  //         },
+  //         {
+  //           title: "Timeliness",
+  //           text: "We provide outstanding service promptly, ensuring reliability and efficiency in everything we do.",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "To Community and Environment",
+  //       color: "from-green-100/40 via-emerald-50/40 to-lime-100/40",
+  //       items: [
+  //         {
+  //           title: "Community Empowerment",
+  //           text: "We give back to host communities, harnessing tourism to uplift livelihoods.",
+  //         },
+  //         {
+  //           title: "Environmental Conservation",
+  //           text: "We promote responsible travel and sustainable resource use.",
+  //         },
+  //         {
+  //           title: "Corporate Social Responsibility",
+  //           text: "Our CESR philosophy is at our core, not a token effort — driving lasting positive impact.",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "To Partners and Friends",
+  //       color: "from-emerald-100/40 via-green-50/40 to-emerald-50/40",
+  //       items: [
+  //         {
+  //           title: "Transparency and Accountability",
+  //           text: "We conduct business openly, honoring the trust of our partners.",
+  //         },
+  //         {
+  //           title: "Credible and Measurable Impacts",
+  //           text: "We aim to create tangible, measurable change through our initiatives.",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "To Our Team",
+  //       color: "from-green-50/40 via-lime-50/40 to-green-100/40",
+  //       items: [
+  //         {
+  //           title: "Staff Empowerment",
+  //           text: "Our team is our foundation — continuously trained, equipped, and supported to excel.",
+  //         },
+  //       ],
+  //     },
+  //   ];
 
   return (
     <>

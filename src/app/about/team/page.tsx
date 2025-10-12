@@ -6,7 +6,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero2";
 
-const team = [
+// 1️⃣ Define a Type for Team Member
+type TeamMember = {
+  name: string;
+  title: string;
+  image: string;
+  bio: string;
+};
+
+const team: TeamMember[] = [
   {
     name: "KEN OBAT",
     title: "Team Leader",
@@ -46,14 +54,15 @@ const team = [
 ];
 
 export default function TeamSection() {
-  const [selectedMember, setSelectedMember] = useState<any>(null);
+  // 2️⃣ Use the type instead of `any`
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   return (
     <>
       <Navbar />
       <Hero />
       <section className="bg-green-50 !py-20">
-        <div className=" !mx-auto px-6 text-center">
+        <div className="!mx-auto px-6 text-center">
           <h2 className="!text-3xl md:text-4xl font-bold text-green-800 !mb-6">
             Meet The Team
           </h2>
@@ -86,7 +95,6 @@ export default function TeamSection() {
           </div>
         </div>
 
-        {/* Modal Popup */}
         {selectedMember && (
           <div
             className="fixed inset-0 !bg-opacity-0 backdrop-blur-lg flex justify-center items-center z-50"
@@ -109,7 +117,6 @@ export default function TeamSection() {
                 height={400}
                 className="rounded-xs w-fit h-[fit] object-cover mb-4"
               />
-              {/* Right: Text */}
               <div className="md:w-1/2 w-full flex flex-col justify-left">
                 <h3 className="text-2xl font-bold text-green-800 mb-1">
                   {selectedMember.name}
