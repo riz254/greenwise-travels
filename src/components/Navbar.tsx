@@ -25,8 +25,9 @@ export default function Navbar() {
 
       <nav
         className={`site-nav fixed top-0 w-full z-50 transition-all duration-300 ${
-       scrolled ? "bg-[#002410]/60 backdrop-blur-md shadow-md" : "bg-transparent"
-
+          scrolled
+            ? "bg-[#002410]/60 backdrop-blur-md shadow-md"
+            : "bg-transparent"
         }`}
       >
         <div className="relative h-20 w-40 ml-[50px]">
@@ -50,33 +51,71 @@ export default function Navbar() {
               <li className="has-children">
                 <Link href="#">Destinations</Link>
                 <ul className="dropdown">
-                  <li><Link href="/Kenya">Kenya</Link></li>
-                  <li><Link href="/Tanzania">Tanzania</Link></li>
-                  <li><Link href="/Uganda">Uganda</Link></li>
-                  <li><Link href="/Rwanda">Rwanda</Link></li>
-                  <li><Link href="/Ethiopia">Ethiopia</Link></li>
-                  <li><Link href="/Islands">Indian Ocean Islands</Link></li>
-                  <li><Link href="/Southern">Southern Africa</Link></li>
-                  <li><Link href="/Outbound">Outbound Destinations</Link></li>
+                  <li>
+                    <Link href="/Kenya">Kenya</Link>
+                  </li>
+                  <li>
+                    <Link href="/Tanzania">Tanzania</Link>
+                  </li>
+                  <li>
+                    <Link href="/Uganda">Uganda</Link>
+                  </li>
+                  <li>
+                    <Link href="/Rwanda">Rwanda</Link>
+                  </li>
+                  <li>
+                    <Link href="/Ethiopia">Ethiopia</Link>
+                  </li>
+                  <li>
+                    <Link href="/Islands">Indian Ocean Islands</Link>
+                  </li>
+                  <li>
+                    <Link href="/Southern">Southern Africa</Link>
+                  </li>
+                  <li>
+                    <Link href="/Outbound">Outbound Destinations</Link>
+                  </li>
                 </ul>
               </li>
 
               <li className="has-children">
                 <Link href="/about">About Us</Link>
                 <ul className="dropdown">
-                  <li><Link href="/who-we-are">Our Story</Link></li>
-                  <li><Link href="/team">Our Team</Link></li>
-                  <li><Link href="/services">Our Services</Link></li>
-                  <li><Link href="/values">Our Values</Link></li>
-                  <li><Link href="/process">Our Process</Link></li>
-                  <li><Link href="/GreenwiseDifference">The Greenwise Difference</Link></li>
-                  <li><Link href="/terms">Terms & Conditions</Link></li>
+                  <li>
+                    <Link href="/who-we-are">Our Story</Link>
+                  </li>
+                  <li>
+                    <Link href="/about/team">Our Team</Link>
+                  </li>
+                  <li>
+                    <Link href="/about/services">Our Services</Link>
+                  </li>
+                  <li>
+                    <Link href="/about/values">Our Values</Link>
+                  </li>
+                  <li>
+                    <Link href="/about/process">Our Process</Link>
+                  </li>
+                  <li>
+                    <Link href="/GreenwiseDifference">
+                      The Greenwise Difference
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/terms">Terms & Conditions</Link>
+                  </li>
                 </ul>
               </li>
 
-              <li><Link href="/themes">Itineraries</Link></li>
-              <li><Link href="/blog">Blogs</Link></li>
-              <li><Link href="/contact">Contact Us</Link></li>
+              <li>
+                <Link href="/themes">Itineraries</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blogs</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact Us</Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 // src/pages/about-us.tsx
+import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -39,14 +40,14 @@ export default function AboutUs() {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute  inset-0 flex flex-col items-center justify-center text-center text-white bg-black/40">
-              <h2 className="!mb-0 text-[40pt] font-bold">About Us</h2>
-              <p className="text-lg">
-                <span className="block text-[16pt]">
-                  We Are Specialists In Customized
-                </span>
-                <span className="text-[16pt]"> Trips To </span>
-                <span className="typed-words text-[16pt]"></span>
-              </p>
+            <h2 className="!mb-0 text-[40pt] font-bold">About Us</h2>
+            <p className="text-lg">
+              <span className="block text-[16pt]">
+                We Are Specialists In Customized
+              </span>
+              <span className="text-[16pt]"> Trips To </span>
+              <span className="typed-words text-[16pt]"></span>
+            </p>
           </div>
         </section>
 
@@ -146,6 +147,122 @@ export default function AboutUs() {
             `}</style>
 
             {/* Mission & Vision */}
+            <div className="max-w-5xl mx-auto !px-6 !py-16 ">
+              <h4 className="text-3xl font-bold text-center mb-6 text-green-900">
+                Who Are We
+              </h4>
+
+              <p className="mb-6 leading-relaxed">
+                We are a Kenyan-based travel solutions provider offering
+                tailor-made sustainable travel services and programs across
+                Africa’s top destinations. Our main destinations include:
+              </p>
+
+              <ul className="list-disc list-inside mb-6 space-y-2">
+                <li>
+                  <Link
+                    href="/kenya"
+                    className="text-green-700 hover:underline"
+                  >
+                    Kenya
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/tanzania"
+                    className="text-green-700 hover:underline"
+                  >
+                    Tanzania
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/uganda"
+                    className="text-green-700 hover:underline"
+                  >
+                    Uganda
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/rwanda"
+                    className="text-green-700 hover:underline"
+                  >
+                    Rwanda
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/ethiopia"
+                    className="text-green-700 hover:underline"
+                  >
+                    Ethiopia
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/indianocean"
+                    className="text-green-700 hover:underline"
+                  >
+                    The Indian Ocean Islands of Zanzibar, Seychelles, Mauritius
+                    and Maldives
+                  </Link>
+                </li>
+              </ul>
+
+              <p className="mb-6 leading-relaxed">
+                Through our established business partnerships, we also
+                facilitate travel to other destinations outside Africa,
+                including Europe, Asia and the Americas. We offer competitive
+                packages for people with passion for wildlife, birdlife,
+                culture, landscapes, adventure, study, and exploration.
+              </p>
+
+              <p className="mb-6 leading-relaxed">
+                All our undertakings are aimed at producing the best results for
+                our customers, without compromising our mission and core values.
+                We pay meticulous attention to the principles of responsible
+                travel.
+              </p>
+
+              <p className="mb-6 text-right leading-relaxed">
+                As specialists in tours and travel arrangements, we are totally
+                focused and committed to offering our clients access to high
+                quality travel services. In order to accomplish this commitment,
+                we have partnered with some of the leading and like-minded
+                travel industry players across the globe and built long standing
+                relationships with them — so even when making a trip with us to
+                the remotest parts of the world, your comfort and peace of mind
+                are guaranteed.
+              </p>
+
+              <p className="mb-6 leading-relaxed">
+                All our safari programs are custom-designed to suit your
+                individual needs and expectations. This website contains only an
+                overview of what we do, but there’s more than you can imagine.
+                Upon receipt of your inquiry, our travel experts will design
+                your trip just for you — creating a unique identity around your
+                program that differentiates it from any other, even if the
+                itinerary looks similar.
+              </p>
+
+              <p className="mb-8 leading-relaxed">
+                Our professional workforce understands that quality service
+                makes good business sense! We therefore strive to provide
+                flexible travel solutions that offer choices which suit both
+                corporate and individual budgets.
+              </p>
+
+              <div className="w-100 aspect-[16/9] relative rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/images/Esirai-Gallery-6.jpg"
+                  alt="Esirai Gallery"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
             <h2 className="text-2xl font-bold !mt-8 !mb-3">Our Mission</h2>
             <p className="story">
               To inspire a generation of responsible travellers, dedicated to
@@ -195,7 +312,10 @@ export default function AboutUs() {
                   img: "Erika Drazen.jpg",
                 },
               ].map((person, i) => (
-                <div key={i} className="w-full aspect-square relative flex flex-col items-center text-center">
+                <div
+                  key={i}
+                  className="w-full aspect-square relative flex flex-col items-center text-center"
+                >
                   <Image
                     src={`/images/images/${person.img}`}
                     alt={person.name}
