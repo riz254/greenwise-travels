@@ -51,8 +51,8 @@ const destinations = [
 
 export default function Destinations() {
   return (
-    <section className="py-20 bg-white" style={{ padding: "50px" }}>
-      <div className=" mx-auto px-6">
+    <section className="!p-20 ">
+      <div className=" !mx-auto !px-6">
         <h2
           className="text-5xl font-semibold text-center text-green-900 mb-4"
           style={{ marginBottom: "50px" }}
@@ -73,7 +73,7 @@ export default function Destinations() {
               <motion.div
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.5 }}
-                className="relative h-80 bg-gray-100"
+                className="relative h-100 bg-gray-100"
               >
                 <Image
                   src={d.image}
@@ -82,7 +82,7 @@ export default function Destinations() {
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                <h3 className="absolute bottom-6 left-6 text-2xl font-bold text-white drop-shadow-lg">
+                <h3 className="absolute bottom-6 left-6 !text-3xl font-bold text-white shadow-lg ">
                   {d.name}
                 </h3>
               </motion.div>

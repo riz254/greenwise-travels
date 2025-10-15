@@ -42,45 +42,54 @@ const features = [
 
 export default function GreenwiseDifference() {
   return (
-    <section
-      className="bg-gray-5 py-16 h-full p-40"
-      style={{
-        backgroundImage: "url('/images/safari.jpg')",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        // padding: "80px",
-      }}
-    >
-      {" "}
-      <div className=" mx-auto px-6 text-center  ">
-        <h2
-          className="section-title text-center mb-2 mt-3 text-white"
-          // style={{ color: "rgb(218, 255, 216)" }}
+    <>
+      <div
+        className=""
+        style={{
+          backgroundImage: "url('/images/images/P1060375.jpg')",
+          backgroundSize: "cover",
+        }}
+      >
+        <section
+          className="bg-gradient-to-bl bg-green-100 !py-16 h-full !p-40 rounded-tr-full"
+          style={{
+            backgroundImage:
+              "url('https://www.transparenttextures.com/patterns/wall-4-light.png')",
+            backgroundBlendMode: "multiply",
+          }}
         >
           {" "}
-          The Greenwise Difference
-        </h2>
-        <div
-          className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
-          style={{ padding: "80px" }}
-        >
-          {features.map((f, i) => (
-            <div
-              key={i}
-              className="rounded-lg bg-green-100 p-8 shadow-md h-full hover:shadow-lg transition items-center text-center"
-              style={{ padding: "50px" }}
+          <div className=" mx-auto px-6 text-center  ">
+            <h2
+              className="section-title text-center mb-2 mt-3 text-green-900"
+              // style={{ color: "rgb(218, 255, 216)" }}
             >
-              {f.icon}
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                {f.title}
-              </h3>
-              <p className="text-gray-600 space-x-2 font-medium">{f.desc}</p>
+              {" "}
+              The Greenwise Difference
+            </h2>
+            <div
+              className="!mt-12 grid !p-20 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+              // style={{ padding: "80px" }}
+            >
+              {features.map((f, i) => (
+                <div
+                  key={i}
+                  className="rounded-lg  p-8  h-full hover:shadow-lg hover:shadow-lime-950 hover:scale-110 transition items-center text-center"
+                  style={{ padding: "50px" }}
+                >
+                  {f.icon}
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                    {f.title}
+                  </h3>
+                  <p className="text-gray-600 space-x-2 font-medium">
+                    {f.desc}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </>
   );
 }

@@ -75,15 +75,63 @@ export default function CascadingImageStack() {
     //   </p>
     // </div>
 
-    <section
-      className=" h-screen relative  bg-green-50"
-      style={{ padding: "50px", marginBottom: "20px" }}
-    >
-      <div className="mx-auto pt-20 flex flex-col md:flex-row items-center gap-12">
+    <section className="min-h-fit relative bg-green-50 !p-8 md:!p-20">
+      <div className="!mx-auto flex flex-col md:flex-row items-center gap-12 max-w-7xl">
+        {/* Right: Text Content */}
+        <div className="w-full !p-8 md:w-1/2 space-y-10">
+          <div>
+            <h2
+              className="text-left font-semibold text-green-700 text-xl md:text-2xl mb-2"
+              style={{ margin: "10px" }}
+            >
+              Discover Africa, with Africans!
+            </h2>
+            <p
+              className="mt-2 text-left text-lg md:text-2xl font-medium leading-snug text-gray-800"
+              style={{ margin: "10px" }}
+            >
+              The best way to discover Africa is with Africans. We are natives
+              of this land and we have spent our entire life here, discovering
+              Africa’s best-kept secrets.
+            </p>
+          </div>
+
+          <div>
+            <h2
+              className="text-left font-extrabold text-green-800 text-xl md:text-2xl"
+              style={{ margin: "10px" }}
+            >
+              We take the initiative,
+            </h2>
+            <h2
+              className="text-left font-extrabold text-green-800 text-xl md:text-2xl"
+              style={{ margin: "10px" }}
+            >
+              so you can travel stress-free
+            </h2>
+            <p
+              className="mt-2 text-left text-lg md:text-2xl font-medium leading-snug text-gray-800"
+              style={{ margin: "10px" }}
+            >
+              Our experts are ready to plan your private, personalized, and
+              sustainable African safari experiences!
+            </p>
+          </div>
+
+          <div>
+            <h2
+              className="text-left text-xl md:text-2xl font-semibold text-lime-700"
+              style={{ margin: "10px" }}
+            >
+              We welcome you to walk in our footsteps for the greatest African
+              safari and adventure experience.
+            </h2>
+          </div>
+        </div>
         {/* Left: Stacked Images */}
-        <div className="relative w-fit md:w-1/2 h-[300px] mx-auto">
+        <div className="relative w-full md:w-1/2 h-[400px] flex justify-center md:justify-start">
           {/* First Image */}
-          <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[70%] h-[70%]">
+          <div className="absolute top-[-25%] left-1/2 -translate-x-1/2 w-[70%] h-[70%]">
             <Image
               src="/images/images/kenya-giraffe-manor.jpeg"
               alt="Safari Experience"
@@ -110,58 +158,6 @@ export default function CascadingImageStack() {
               fill
               className="object-cover rounded-xl shadow-lg"
             />
-          </div>
-        </div>
-
-        {/* Right: Text Content */}
-        <div className=" w-50 md:w-1/2 space-y-10">
-          <div>
-            <h2
-              className="text-right font-semibold "
-              style={{ color: "green", fontSize: "20pt", margin: "10px" }}
-            >
-              Discover Africa, with Africans!
-            </h2>
-            <p
-              className="mt-2 text-right md:text-3xl font-medium leading-snug "
-              style={{ margin: "10px" }}
-            >
-              The best way to discover Africa is with Africans. We are natives
-              of this land and we have spent our entire life here, discovering
-              Africa’s best-kept secrets.
-            </p>
-          </div>
-
-          <div>
-            <h2
-              className="text-right font-extraBold"
-              style={{ color: " rgb(8, 99, 8)", fontSize: "20pt" }}
-            >
-              We take the initiative,
-            </h2>
-            <h2
-              className="text-right font-extraBold"
-              style={{ color: " rgb(8, 99, 8)", fontSize: "20pt" }}
-            >
-              so you can travel stress-free
-            </h2>
-            <p
-              className="mt-2 text-right md:text-3xl font-medium leading-snug text-gray-800"
-              style={{ margin: "10px" }}
-            >
-              Our experts are ready to plan your private, personalized, and
-              sustainable African safari experiences!
-            </p>
-          </div>
-
-          <div>
-            <h2
-              className="text-right font-stretch-90% text-xl md:text-2xl font-semibold text-lime-700"
-              style={{ fontSize: "20pt", margin: "10px" }}
-            >
-              We welcome you to walk in our footsteps for the greatest African
-              safari and adventure experience.
-            </h2>
           </div>
         </div>
       </div>

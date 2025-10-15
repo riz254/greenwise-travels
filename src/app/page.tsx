@@ -15,8 +15,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Intro />
-      <GreenwiseDifference />
       <Destinations />
+      <GreenwiseDifference />
       <Services />
       <Process />
       <Counter />

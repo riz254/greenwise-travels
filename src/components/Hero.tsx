@@ -73,11 +73,11 @@ export default function Hero() {
         </div>
 
         {/* CTA Button */}
-        <div className="mt-16" style={{ margin: "20px" }}>
+        <div className="!mt-16">
           <Link
             href="/about"
-            className="inline-block bg-green-600 text-xl text-white rounded-lg shadow-md hover:bg-green-700 hover:text-xl transition"
-            style={{ padding: "10px", color: "white" }}
+            className="inline-block   !p-3 white bg-lime-100 text-lg text-black  rounded-lg shadow-md hover:bg-lime-500 hover:text-xl transition"
+            // style={{ padding: "10px", color: "white" }}
           >
             Read More
           </Link>

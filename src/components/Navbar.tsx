@@ -24,11 +24,8 @@ export default function Navbar() {
       </div>
 
       <nav
-        className={`site-nav fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-[#002410]/60 backdrop-blur-md shadow-md"
-            : "bg-transparent"
-        }`}
+        className="site-nav  relative bg-black/50 backdrop-blur-sm shadow-lg 
+                         "
       >
         <div className="relative h-20 w-40 ml-[50px]">
           <Link href="/">
@@ -97,7 +94,7 @@ export default function Navbar() {
                     <Link href="/about/process">Our Process</Link>
                   </li>
                   <li>
-                    <Link href="/GreenwiseDifference">
+                    <Link href="/about/GreenwiseDifference">
                       The Greenwise Difference
                     </Link>
                   </li>
