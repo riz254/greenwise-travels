@@ -32,7 +32,7 @@ export const itineraries = [
   },
   {
     title: "Migration Safari",
-    image: "/images/images/maraMigration.jpg",
+    image: "/images/images/MaraMigration.jpg",
     location: "Masai Mara",
     duration: "13 Days ",
     difficulty: "Medium",
