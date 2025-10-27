@@ -189,7 +189,9 @@ export default function GreenwiseDifference() {
                     }}
                     className="h-[50vh] w-60 rounded-xl overflow-hidden relative cursor-pointer grid"
                     onClick={() =>
-                      setIndex((currentIndex + i + 1) % destinations.length)
+                      setCurrentIndex(
+                        (currentIndex + i + 1) % destinations.length
+                      )
                     }
                     style={{
                       backgroundImage: `url(${place.image})`,
