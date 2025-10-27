@@ -18,15 +18,15 @@ type Destinations = {
 const destinations: Destinations[] = [
   {
     name: "Amboseli National Park",
-    description: `Known as the "Land of Giants," Amboseli offers incredible wildlife encounters, including
+    description: `Known as the 'Land of Giants', Amboseli offers incredible wildlife encounters, including
         lions, cheetahs, and over
-        400 bird species, all set against the backdrop of Africa's highest peak.`,
+        400 bird species, all set against the backdrop of Africa&apos;s highest peak.`,
     image:
       "/images/images/Attractions-in-Amboseli-National-Park-Kenyasa-750x450.jpg",
   },
   {
     name: "Maasai Mara National Reserve",
-    description: `Arguably, the world's greatest safari destination, the iconic Masai
+    description: `Arguably, the world&apos;s greatest safari destination, the iconic Masai
 							Mara National Reserve is one of the best game viewing areas in Africa. Home to the "Big
 							Five" and the Great Migration, the
 							reserve offers unparalleled opportunities for game viewing and cultural experiences with the
@@ -35,7 +35,7 @@ const destinations: Destinations[] = [
   },
   {
     name: "Tsavo National Park",
-    description: `Tsavo National Park, Kenya's largest protected area, is the "Theatre of
+    description: `Tsavo National Park, Kenya&apos;s largest protected area, is the "Theatre of
 							the Wild," housing diverse wildlife like dust-red elephant herds, rhinos, lions, and
 							crocodiles. With a rich history, the park hosts 500 bird species, making it a haven for both
 							mammalian and avian enthusiasts.`,
@@ -77,45 +77,6 @@ const destinations: Destinations[] = [
 							landscapes, home to diverse wildlife, creating a picturesque and vibrant haven for nature
 							enthusiasts.`,
     image: "/images/lake-nakuru-flamingoes.jpg",
-  },
-];
-
-const activities = [
-  {
-    title: "Twin Migration",
-    description:
-      "Experience Kenya's wonders as humpback whales traverse the ocean near the reef, and the great wildebeest migration unfolds in the Mara.",
-    image: "/images/kenya-great-migration-maasai-mara.jpg",
-  },
-  {
-    title: "Animal Orphanage Visit",
-    description:
-      "Get up close and personal with giraffes at the Giraffe Centre and David Sheldrick Wildlife Trust to see orphaned elephants.",
-    image: "/images/orphanage.avif",
-  },
-  {
-    title: "Wildlife Safaris",
-    description:
-      "Delight in a firsthand encounter with Kenya's diverse wildlife as you explore one of the country's 21 world-class National Parks.",
-    image: "/images/safari.jpg",
-  },
-  {
-    title: "Mountain Hiking & Rock Climbing",
-    description:
-      "Embark on a trek to the summit of Mount Kenya or Mount Longonot for a challenging and rewarding hiking experience.",
-    image: "/images/mt-kenya.jpg",
-  },
-  {
-    title: "Experience Culture",
-    description:
-      "Immerse yourself in local cultures by visiting traditional villages, interacting with indigenous communities, and witnessing traditional dances and ceremonies.",
-    image: "/images/culture-kenya.jpg",
-  },
-  {
-    title: "Hot Air Balloon Safaris",
-    description:
-      "Experience the thrill of a hot air balloon safari over the expansive landscapes, providing a unique perspective on wildlife and scenery.",
-    image: "/images/experience4-768x457.jpg",
   },
 ];
 
@@ -163,13 +124,13 @@ export default function GreenwiseDifference() {
         <p className="max-w-fit !mx-auto text-black !mb-6">
           Welcome to Kenya, a land of astounding biodiversity and natural
           beauty. Located in East Africa, Kenya is famous for its diverse
-          landscapes and wildlife. From the iconic Maasai Mara and the "Big
-          Five" to bustling Nairobi's vibrant culture, serene beaches along the
-          coast, and the majestic Mount Kenya, our country offers a blend of
-          adventure, culture, and natural wonders. Experience the warmth of our
-          people, explore local traditions, and savor our rich cuisine. Kenya is
-          an extraordinary destination where you can create unforgettable
-          memories
+          landscapes and wildlife. From the iconic Maasai Mara and the &apos;Big
+          Five&apos; to bustling Nairobi&apos;s vibrant culture, serene beaches
+          along the coast, and the majestic Mount Kenya, our country offers a
+          blend of adventure, culture, and natural wonders. Experience the
+          warmth of our people, explore local traditions, and savor our rich
+          cuisine. Kenya is an extraordinary destination where you can create
+          unforgettable memories
         </p>
         <p className="text-center">
           We welcome you to walk in our footsteps for the greatest African

@@ -9,12 +9,6 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-type Destinations = {
-  name: string;
-  description: string;
-  image: string;
-};
-
 const destinations: Destination[] = [
   {
     name: "Lalibela",
@@ -66,45 +60,6 @@ const destinations: Destination[] = [
   },
 ];
 
-const activities = [
-  {
-    title: "Wildlife Safaris",
-    description:
-      "From spotting Ethiopian wolves in the Bale Mountains to exploring the Simien Mountains, Ethiopia offers unique wildlife encounters in stunning landscapes.",
-    image: "/images/images/Ethiopian-Wolf-Field-Project.jpeg",
-  },
-  {
-    title: "Waterfalls and Hiking",
-    description:
-      "Experience the beauty of the Blue Nile Falls, Ethiopia’s iconic natural wonder, or hike through lush valleys and explore Ethiopia's diverse landscapes.",
-    image: "/images/images/blue-nile-falls.jpg",
-  },
-  {
-    title: "Cultural Immersion in Omo Valley",
-    description:
-      "Meet Ethiopia's diverse tribes in the Omo Valley, where ancient traditions and vibrant communities create a unique cultural experience.",
-    image: "/images/images/omo-valley.jpg",
-  },
-  {
-    title: "Explore Ancient Churches",
-    description:
-      "Visit the famous rock-hewn churches of Lalibela, where ancient religious architecture and spirituality captivate travelers from all over the world.",
-    image: "/images/images/ETH_Lalibela_JPEG_Hero_ETH_Lalibela-1.jpg",
-  },
-  {
-    title: "Explore the Danakil Depression",
-    description:
-      "Discover one of the hottest and most remote places on earth, the Danakil Depression, with its striking landscapes of salt flats, lava lakes, and sulfur springs.",
-    image: "/images/images/danakil-depression.jpg",
-  },
-  {
-    title: "Visit Historic Harar",
-    description:
-      "Walk through the ancient walled city of Harar, explore its vibrant streets, and witness the unique tradition of feeding wild hyenas at night.",
-    image: "/images/images/harar.png",
-  },
-];
-
 export default function GreenwiseDifference() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const current = destinations[currentIndex];
@@ -114,12 +69,6 @@ export default function GreenwiseDifference() {
     setCurrentIndex(
       (prev) => (prev - 1 + destinations.length) % destinations.length
     );
-
-  const nextPreviews = [
-    destinations[(currentIndex + 1) % destinations.length],
-    destinations[(currentIndex + 2) % destinations.length],
-    destinations[(currentIndex + 3) % destinations.length],
-  ];
 
   return (
     <>
@@ -136,8 +85,8 @@ export default function GreenwiseDifference() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40">
           <h2 className="text-[40pt] font-bold">ETHIOPIA</h2>
           <p className="text-lg">
-            Explore Ethiopia's Rich History: Ancient Civilizations, Majestic
-            Mountains, and Timeless Culture.
+            Explore Ethiopia&apos;s Rich History: Ancient Civilizations,
+            Majestic Mountains, and Timeless Culture.
           </p>
         </div>
       </section>
@@ -149,9 +98,9 @@ export default function GreenwiseDifference() {
         <p className="max-w-fit !mx-auto text-black !mb-6">
           Ethiopia, a land of stunning contrasts, offers breathtaking landscapes
           from the towering Simien Mountains to the ancient rock-hewn churches
-          of Lalibela. It's a country where history and culture intertwine in
-          every corner, from the cradle of humanity to the timeless traditions
-          of the Omo Valley tribes.
+          of Lalibela. It&apos;s a country where history and culture intertwine
+          in every corner, from the cradle of humanity to the timeless
+          traditions of the Omo Valley tribes.
         </p>
         <p className="text-center">
           We invite you to embark on a journey through Ethiopia’s diverse

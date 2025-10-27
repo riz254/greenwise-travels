@@ -9,12 +9,6 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-type Destinations = {
-  name: string;
-  description: string;
-  image: string;
-};
-
 const destinations: Destinations[] = [
   {
     name: "Volcanoes National Park",
@@ -98,8 +92,8 @@ export default function GreenwiseDifference() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40">
           <h2 className="text-[40pt] font-bold">RWANDA</h2>
           <p className="text-lg">
-            Explore Rwanda's Hidden Gems: Gorillas, Volcanoes, and Breathtaking
-            Scenery.
+            Explore Rwanda&apos;s Hidden Gems: Gorillas, Volcanoes, and
+            Breathtaking Scenery.
           </p>
         </div>
       </section>
@@ -117,7 +111,7 @@ export default function GreenwiseDifference() {
         </p>
         <p className="text-center">
           Join us and discover the heart of Africa with a journey through
-          Rwanda's natural wonders and remarkable experiences.
+          Rwanda&apos;s natural wonders and remarkable experiences.
         </p>
       </div>
 

@@ -9,12 +9,6 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-type Destinations = {
-  name: string;
-  description: string;
-  image: string;
-};
-
 const destinations: Destinations[] = [
   {
     name: "Tarangire National Park",
@@ -68,12 +62,6 @@ export default function GreenwiseDifference() {
       (prev) => (prev - 1 + destinations.length) % destinations.length
     );
 
-  const nextPreviews = [
-    destinations[(currentIndex + 1) % destinations.length],
-    destinations[(currentIndex + 2) % destinations.length],
-    destinations[(currentIndex + 3) % destinations.length],
-  ];
-
   return (
     <>
       <Navbar />
@@ -89,7 +77,7 @@ export default function GreenwiseDifference() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40">
           <h2 className="text-[40pt] font-bold">TANZANIA</h2>
           <p className="text-lg">
-            Discover Tanzania's Natural Wonders: Wildlife, Kilimanjaro, and
+            Discover Tanzania&apos;s Natural Wonders: Wildlife, Kilimanjaro, and
             Untamed Beauty.
           </p>
         </div>
@@ -101,15 +89,15 @@ export default function GreenwiseDifference() {
         </h2>
         <p className="max-w-fit !mx-auto text-black !mb-6">
           Tanzania stands as the largest country in the East African Community
-          and is home to the regions' extremes. Home of three Natural Wonders of
-          Africa; the Great Wildebeest Migration, Ngorongoro Crater and the
-          Mount Kilimanjaro. All this topped with the beautiful Zanzibar
+          and is home to the regions&apos; extremes. Home of three Natural
+          Wonders of Africa; the Great Wildebeest Migration, Ngorongoro Crater
+          and the Mount Kilimanjaro. All this topped with the beautiful Zanzibar
           Archipelago-Tanzania has all these and more wrapped up in one
           adventurous, welcoming package.
         </p>
         <p className="text-center">
-          e welcome you to walk in our footsteps for the greatest African safari
-          and adventure experience.
+          We welcome you to walk in our footsteps for the greatest African
+          safari and adventure experience.
         </p>
       </div>
 

@@ -44,7 +44,7 @@ const activities = [
 ];
 
 export default function WhatToDo() {
-  const [hovered, setHovered] = useState<any>(null);
+  const [hovered, setHovered] = useState<number | null>(null);
 
   return (
     <section className="relative !py-20 bg-gradient-to-b from-green-50 to-green-100/30 overflow-hidden">

@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {

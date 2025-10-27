@@ -9,12 +9,6 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-type Destinations = {
-  name: string;
-  description: string;
-  image: string;
-};
-
 const destinations = [
   {
     name: "Santorini, Greece",
@@ -60,45 +54,6 @@ const destinations = [
   },
 ];
 
-const activities = [
-  {
-    title: "Twin Migration",
-    description:
-      "Experience Kenya's wonders as humpback whales traverse the ocean near the reef, and the great wildebeest migration unfolds in the Mara.",
-    image: "/images/images/kenya-great-migration-maasai-mara.jpg",
-  },
-  {
-    title: "Animal Orphanage Visit",
-    description:
-      "Get up close and personal with giraffes at the Giraffe Centre and David Sheldrick Wildlife Trust to see orphaned elephants.",
-    image: "/images/images/orphanage.avif",
-  },
-  {
-    title: "Wildlife Safaris",
-    description:
-      "Delight in a firsthand encounter with Kenya's diverse wildlife as you explore one of the country's 21 world-class National Parks.",
-    image: "/images/images/safari.jpg",
-  },
-  {
-    title: "Mountain Hiking & Rock Climbing",
-    description:
-      "Embark on a trek to the summit of Mount Kenya or Mount Longonot for a challenging and rewarding hiking experience.",
-    image: "/images/images/mt-kenya.jpg",
-  },
-  {
-    title: "Experience Culture",
-    description:
-      "Immerse yourself in local cultures by visiting traditional villages, interacting with indigenous communities, and witnessing traditional dances and ceremonies.",
-    image: "/images/images/culture-kenya.jpg",
-  },
-  {
-    title: "Hot Air Balloon Safaris",
-    description:
-      "Experience the thrill of a hot air balloon safari over the expansive landscapes, providing a unique perspective on wildlife and scenery.",
-    image: "/images/images/experience4-768x457.jpg",
-  },
-];
-
 export default function GreenwiseDifference() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const current = destinations[currentIndex];
@@ -108,12 +63,6 @@ export default function GreenwiseDifference() {
     setCurrentIndex(
       (prev) => (prev - 1 + destinations.length) % destinations.length
     );
-
-  const nextPreviews = [
-    destinations[(currentIndex + 1) % destinations.length],
-    destinations[(currentIndex + 2) % destinations.length],
-    destinations[(currentIndex + 3) % destinations.length],
-  ];
 
   return (
     <>
