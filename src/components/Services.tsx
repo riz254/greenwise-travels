@@ -64,32 +64,29 @@ export default function Services() {
   ];
 
   return (
-    <section className="mt-6 h-full py-20 relative" style={serviceStyle}>
+    <section className="mt-6 h-full !py-20 relative" style={serviceStyle}>
       <div className="absolute inset-0 bg-black/10"></div>
 
-      <div className="relative mx-auto px-6 text-center">
+      <div className="relative !mx-auto !px-6 text-center">
         {/* Title */}
         <Link href="/services">
-          <h2 className="text-4xl font-bold mb-4 text-green-200">
+          <h2 className="text-5xl font-bold !mb-10 !p-10 text-green-200">
             OUR SERVICES
           </h2>
         </Link>
-        <p className="text-lg text-bisque mb-12">
-          Unleash the potential of your travel with our exceptional services and
-          embark on unforgettable adventures with us.
-        </p>
+
         {/* Services Grid */}
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => (
             <div
               key={i}
               className=" relative rounded-2xl bg-black/50 backdrop-blur-md 
-                         border border-white/20 shadow-xl p-8 transition 
-                         transform hover:-translate-y-3 hover:shadow-2xl h-fit "
-              style={{ top: "20px", padding: "30px" }}
+                         border border-white/20 shadow-xl !p-8 transition 
+                         transform hover:-translate-y-3 hover:shadow-2xl h-100 "
+              // style={{ top: "20px", padding: "30px" }}
             >
               {/* Circular glowing icon */}
-              <div className="relative mx-auto mb-6 w-20 h-20">
+              <div className="relative !mx-auto  w-20 h-20">
                 <div
                   className="absolute inset-0 rounded-full bg-gradient-to-tr 
                                 from-green-300 via-lime-400 to-green-600 
@@ -105,8 +102,8 @@ export default function Services() {
 
               {/* Title + Desc */}
               <h3
-                className=" font-semibold text-green-200 mb-3 tracking-wide"
-                style={{ fontSize: "1.7rem", marginBottom: "10px" }}
+                className=" font-semibold text-green-200  tracking-wide"
+                style={{ fontSize: "1.7rem" }}
               >
                 {service.title}
               </h3>

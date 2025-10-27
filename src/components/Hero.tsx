@@ -56,7 +56,7 @@ export default function Hero() {
                   duration: 0.8,
                   ease: "easeInOut",
                   type: "spring",
-                  stiffness: 100,
+                  stiffness: 80,
                 },
               }}
               exit={{
@@ -65,7 +65,12 @@ export default function Hero() {
                 scale: 0.97,
                 transition: { duration: 0.6, ease: "easeInOut" },
               }}
-              className="text-white text-4xl sm:text-4xl md:text-5xl font-semibold  text-shadow-lg"
+              className="text-white font-semibold text-shadow-lg leading-tight"
+              style={{
+                fontSize: "clamp(1.6rem, 4.8vw, 3.8rem)", // mobile min, fluid preferred, desktop max
+                lineHeight: 1.05,
+                textAlign: "center",
+              }}
             >
               {MESSAGES[index]}
             </motion.h1>
@@ -76,8 +81,13 @@ export default function Hero() {
         <div className="!mt-16">
           <Link
             href="/about"
-            className="inline-block   !p-3 white bg-lime-100 text-lg text-black  rounded-lg shadow-md hover:bg-lime-500 hover:text-xl transition"
-            // style={{ padding: "10px", color: "white" }}
+            className="inline-block    bg-gradient-to-r from-green-400 via-green-500 to-lime-400 bg-[length:200%_200%] !text-emerald-950 text-lg
+            font-black rounded-2xl 
+            !px-8 !py-3
+            shadow-md
+            transition-all duration-500 ease-in-out
+            will-change-transform
+            hover:scale-110 hover:shadow-lg hover:text-xl hover:shadow-lime-950 hover:bg-[position:right_center]"
           >
             Read More
           </Link>
@@ -85,7 +95,7 @@ export default function Hero() {
       </div>
 
       {/* Credits */}
-      <div className="absolute bottom-3 left-4 z-10 text-white text-sm">
+      <div className="absolute bottom-3 left-4 z-10 text-gray-300 text-sm">
         ©KTB
       </div>
     </section>

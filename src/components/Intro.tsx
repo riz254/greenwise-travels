@@ -75,7 +75,7 @@ export default function CascadingImageStack() {
     //   </p>
     // </div>
 
-    <section className="min-h-fit relative bg-green-50 !p-8 md:!p-20">
+    <section className="min-h-fit relative bg-green-50 !p-8 md:!p-10">
       <div className="!mx-auto flex flex-col md:flex-row items-center gap-12 max-w-7xl">
         {/* Right: Text Content */}
         <div className="w-full !p-8 md:w-1/2 space-y-10">

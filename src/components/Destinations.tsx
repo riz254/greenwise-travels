@@ -22,16 +22,17 @@ const destinations = [
     link: "/destinations/uganda",
   },
   {
-    name: "Ethiopia",
-    image: "/images/images/Ethiopia.png",
-    link: "/destinations/rwanda",
-  },
-  {
     name: "Rwanda",
     image:
       "/images/Visit-Rwanda-Crater-Lake-Volcanoes-e1533416621808-1920x1267.jpg",
     link: "/destinations/rwanda",
   },
+  {
+    name: "Ethiopia",
+    image: "/images/images/Ethiopia.png",
+    link: "/destinations/rwanda",
+  },
+
   {
     name: "Indian Ocean Islands",
     image: "/images/images/maldives.jpg",
@@ -51,10 +52,10 @@ const destinations = [
 
 export default function Destinations() {
   return (
-    <section className="!p-20 ">
+    <section className="!p-10 ">
       <div className=" !mx-auto !px-6">
         <h2
-          className="text-5xl font-semibold text-center text-green-900 mb-4"
+          className="text-5xl font-semibold text-center text-lime-950 mb-4"
           style={{ marginBottom: "50px" }}
         >
           Popular Destinations

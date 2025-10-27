@@ -46,25 +46,28 @@ export default function GreenwiseDifference() {
       <div
         className=""
         style={{
-          backgroundImage: "url('/images/images/P1060375.jpg')",
+          backgroundImage:
+            // "url('/images/images/pexels-taryn-elliott-4840134.jpg')",
+            "url('/images/images/P1060375.jpg')",
+
           backgroundSize: "cover",
         }}
       >
         <section
-          className="bg-gradient-to-bl bg-green-100 !py-16 h-full !p-40 rounded-tr-full"
+          className="bg-gradient-to-bl bg-green-100  h-full !p-20 rounded-tr-full"
           style={{
             backgroundImage:
               "url('https://www.transparenttextures.com/patterns/wall-4-light.png')",
+
             backgroundBlendMode: "multiply",
           }}
         >
           {" "}
-          <div className=" mx-auto px-6 text-center  ">
+          <div className=" !mx-auto !px-6 text-center  ">
             <h2
-              className="section-title text-center mb-2 mt-3 text-green-900"
-              // style={{ color: "rgb(218, 255, 216)" }}
+              className="text-5xl font-semibold text-center text-lime-950 !mt-4 "
+              style={{ marginBottom: "50px" }}
             >
-              {" "}
               The Greenwise Difference
             </h2>
             <div

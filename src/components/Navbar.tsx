@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="relative h-20 w-40 ml-[50px]">
           <Link href="/">
             <Image
-              src="/images/GREENWISE LOGOS 3-01.png"
+              src="/images/GREENWISE-LOGOS-main.png"
               alt="logo"
               fill
               className="object-contain"
@@ -49,28 +49,34 @@ export default function Navbar() {
                 <Link href="#">Destinations</Link>
                 <ul className="dropdown">
                   <li>
-                    <Link href="/Kenya">Kenya</Link>
+                    <Link href="/destinations/Kenya">Kenya</Link>
                   </li>
                   <li>
-                    <Link href="/Tanzania">Tanzania</Link>
+                    <Link href="/destinations/Tanzania">Tanzania</Link>
                   </li>
                   <li>
-                    <Link href="/Uganda">Uganda</Link>
+                    <Link href="/destinations/Uganda">Uganda</Link>
                   </li>
                   <li>
-                    <Link href="/Rwanda">Rwanda</Link>
+                    <Link href="/destinations/Rwanda">Rwanda</Link>
                   </li>
                   <li>
-                    <Link href="/Ethiopia">Ethiopia</Link>
+                    <Link href="/destinations/Ethiopia">Ethiopia</Link>
                   </li>
                   <li>
-                    <Link href="/Islands">Indian Ocean Islands</Link>
+                    <Link href="/destinations/IndianOceanIslands">
+                      Indian Ocean Islands
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/Southern">Southern Africa</Link>
+                    <Link href="/destinations/SouthernAfrica">
+                      Southern Africa
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/Outbound">Outbound Destinations</Link>
+                    <Link href="/destinations/Outbound">
+                      Outbound Destinations
+                    </Link>
                   </li>
                 </ul>
               </li>

@@ -101,11 +101,20 @@ export default function Process() {
     //   </div>
     // </section>
 
-    <section className="max-w-full mx-auto  " style={{ padding: "80px" }}>
-      <div className="col-lg-12 text-center">
-        <a href="process">
+    <section
+      className="max-w-full !mx-auto !p-20 "
+      // style={{
+      //   // padding: "80px",
+      //   backgroundImage:
+      //     "url('https://www.transparenttextures.com/patterns/noisy-net.png')",
+
+      //   backgroundBlendMode: "multiply",
+      // }}
+    >
+      <div className=" text-center">
+        <a href="/about/process">
           <h2
-            className="section-title text-center mt-5 mb-4"
+            className="section-title text-center mt-5 !mb-4"
             style={{ color: "rgb(0, 0, 0)" }}
           >
             Plan Your Trip
@@ -132,6 +141,7 @@ export default function Process() {
             slidesPerView: 3, // 💻 desktop
           },
         }}
+        className="gallery-swiper"
       >
         {cards.map((card, idx) => (
           <SwiperSlide key={idx}>
@@ -146,7 +156,29 @@ export default function Process() {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper>{" "}
+      {/* Inline styles just for this section */}
+      <style jsx global>{`
+        .gallery-swiper .swiper-button-prev,
+        .gallery-swiper .swiper-button-next {
+          display: none !important;
+        }
+        @media (max-width: 767px) {
+          .gallery-swiper .swiper-button-prev,
+          .gallery-swiper .swiper-button-next {
+            display: block !important;
+            color: white;
+            --swiper-navigation-size: 1.5rem;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+          }
+        }
+        .gallery-swiper .swiper-pagination-bullet {
+          background: rgba(255, 255, 255, 0.8);
+        }
+        .gallery-swiper .swiper-pagination-bullet-active {
+          background: #10b981; /* emerald */
+        }
+      `}</style>
     </section>
   );
 }
