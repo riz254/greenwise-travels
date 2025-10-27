@@ -48,7 +48,7 @@ export const itineraries = [
     location: "Zanzibar",
     duration: "14 Days",
     dates: "August 15 - August 30",
-    price: "$520.00",
+    difficulty: "Easy",
     description:
       "From safaris to turquoise beaches and water adventures along the Indian Ocean.",
     country: "Tanzania",
@@ -59,7 +59,7 @@ export const itineraries = [
     location: "Serengeti & Masai Mara",
     duration: "13 Days",
     dates: "October 1 - October 14",
-    price: "$520.00",
+    difficulty: "Medium",
     description:
       "Witness the breathtaking Great Migration, one of nature’s most extraordinary spectacles ",
     country: "Tanzania",
@@ -70,7 +70,7 @@ export const itineraries = [
     location: "Ngorongoro",
     duration: "5 Days",
     dates: "July 5 - July 10",
-    price: "$620.00",
+    difficulty: "Hard",
     description:
       "A UNESCO World Heritage Site teeming with wildlife all within a breathtaking volcanic landscape.",
     country: "Tanzania",
@@ -81,7 +81,7 @@ export const itineraries = [
     location: "Mount Kilimanjaro",
     duration: "9 Days",
     dates: "February 12 - February 20",
-    price: "$950.00",
+    difficulty: "Hard",
     description:
       "Conquer Africa’s highest peak on a guided Kilimanjaro trek a once-in-a-lifetime journey.",
     country: "Tanzania",
