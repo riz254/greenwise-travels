@@ -8,45 +8,45 @@ const destinations = [
   {
     name: "Kenya",
     image: "/images/Heritage Migration Jpeg.jpg",
-    link: "/destinations/kenya",
+    link: "/destinations/Kenya",
   },
   {
     name: "Tanzania",
     image: "/images/climb-kilimanjaro-how-many-days-1536x1152-1.jpg",
-    link: "/destinations/tanzania",
+    link: "/destinations/Tanzania",
   },
   {
     name: "Uganda",
     image:
       "/images/UgandaGorilla-or-Rwanda-which-country-is-better-for-safari-960x720.webp",
-    link: "/destinations/uganda",
+    link: "/destinations/Uganda",
   },
   {
     name: "Rwanda",
     image:
       "/images/Visit-Rwanda-Crater-Lake-Volcanoes-e1533416621808-1920x1267.jpg",
-    link: "/destinations/rwanda",
+    link: "/destinations/Rwanda",
   },
   {
     name: "Ethiopia",
     image: "/images/images/Ethiopia.png",
-    link: "/destinations/rwanda",
+    link: "/destinations/Ethiopia",
   },
 
   {
     name: "Indian Ocean Islands",
     image: "/images/images/maldives.jpg",
-    link: "/destinations/tanzania",
+    link: "/destinations/IndianOceanIslands",
   },
   {
     name: "Southern Africa",
     image: "/images/images/VictoriaFallsSouthernAfrica.jpg",
-    link: "/destinations/southern",
+    link: "/destinations/SouthernAfrica",
   },
   {
     name: "Outbound Destinations",
     image: "/images/images/outbound.jpg",
-    link: "/destinations/outbound",
+    link: "/destinations/Outbound",
   },
 ];
 
