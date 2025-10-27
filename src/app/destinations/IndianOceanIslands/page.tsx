@@ -9,7 +9,7 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-const destinations: Destination[] = [
+const destinations = [
   {
     name: "Zanzibar",
     description:

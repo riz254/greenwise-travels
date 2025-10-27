@@ -9,7 +9,7 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-const destinations: Destinations[] = [
+const destinations = [
   {
     name: "Kruger National Park",
     description:

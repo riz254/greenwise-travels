@@ -9,7 +9,7 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-const destinations: Destinations[] = [
+const destinations = [
   {
     name: "Queen Elizabeth National Park",
     image: "/images/images/434194-queen-elizabeth-national-park-uganda.jpg",

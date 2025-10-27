@@ -9,7 +9,7 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-const destinations: Destinations[] = [
+const destinations = [
   {
     name: "Volcanoes National Park",
     image:
@@ -70,12 +70,6 @@ export default function GreenwiseDifference() {
     setCurrentIndex(
       (prev) => (prev - 1 + destinations.length) % destinations.length
     );
-
-  const nextPreviews = [
-    destinations[(currentIndex + 1) % destinations.length],
-    destinations[(currentIndex + 2) % destinations.length],
-    destinations[(currentIndex + 3) % destinations.length],
-  ];
 
   return (
     <>

@@ -9,7 +9,7 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-const destinations: Destinations[] = [
+const destinations = [
   {
     name: "Tarangire National Park",
     description: `Discover Tarangire National Park, famous for its massive elephant herds and stunning baobab trees. This lesser-known gem offers a unique safari experience with diverse wildlife, including lions, leopards, and a rich variety of bird species amidst beautiful landscapes.`,

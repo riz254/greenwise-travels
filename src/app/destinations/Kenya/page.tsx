@@ -9,13 +9,7 @@ import WhatToDo from "./WhatToDo";
 import WhereToStay from "./WhereToStay";
 import Itineraries from "./Itineraries";
 
-type Destinations = {
-  name: string;
-  description: string;
-  image: string;
-};
-
-const destinations: Destinations[] = [
+const destinations = [
   {
     name: "Amboseli National Park",
     description: `Known as the 'Land of Giants', Amboseli offers incredible wildlife encounters, including
@@ -89,12 +83,6 @@ export default function GreenwiseDifference() {
     setCurrentIndex(
       (prev) => (prev - 1 + destinations.length) % destinations.length
     );
-
-  const nextPreviews = [
-    destinations[(currentIndex + 1) % destinations.length],
-    destinations[(currentIndex + 2) % destinations.length],
-    destinations[(currentIndex + 3) % destinations.length],
-  ];
 
   return (
     <>
