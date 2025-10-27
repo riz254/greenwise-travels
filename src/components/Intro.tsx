@@ -74,9 +74,8 @@ export default function CascadingImageStack() {
     //     true essence of Africa.
     //   </p>
     // </div>
-
-    <section className="min-h-fit relative bg-green-50 !p-8 md:!p-10">
-      <div className="!mx-auto flex flex-col md:flex-row items-center gap-12 max-w-7xl">
+    <section className="relative bg-green-50 !pt-20 !px-6 md:!px-10 lg:!px-20">
+      <div className="!mx-auto flex flex-col-reverse md:flex-row items-center gap-12 max-w-7xl">
         {/* Right: Text Content */}
         <div className="w-full !p-8 md:w-1/2 space-y-10">
           <div>

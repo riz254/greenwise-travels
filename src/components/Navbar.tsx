@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+// import { useEffect, useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Image from "next/image";
@@ -8,14 +8,14 @@ import Image from "next/image";
 export default function Navbar() {
   // const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20); // toggle blur after 20px scroll
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrolled(window.scrollY > 20); // toggle blur after 20px scroll
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <>
