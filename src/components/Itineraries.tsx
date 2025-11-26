@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { MapPin, Clock, Mountain } from "lucide-react";
 import { itineraries } from "./itinerariesList";
+import Link from "next/link";
 
 export default function ItinerarySection() {
   const [selectedCountry, setSelectedCountry] = useState("All");
@@ -103,9 +104,14 @@ export default function ItinerarySection() {
                     <p className="text-gray-600 text-lg leading-relaxed">
                       {item.description}
                     </p>
-                    <button className="!mt-4 self-start bg-gradient-to-r from-green-500 to-green-700 text-white font-semibold !px-5 !py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all">
-                      View Details
-                    </button>
+                    {item.link && (
+                      <Link
+                        href={item.link}
+                        className="!mt-4 inline-block bg-gradient-to-r from-green-500 to-green-700 text-white font-semibold !px-5 !py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all"
+                      >
+                        View Details
+                      </Link>
+                    )}
                   </div>
                 </div>
               </motion.div>

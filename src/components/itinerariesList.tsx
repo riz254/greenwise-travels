@@ -8,6 +8,7 @@ export const itineraries = [
     description:
       "Relax by the ocean, enjoy water sports, and indulge in coastal cuisines.",
     country: "Kenya",
+    link: "/itineraries/KenyaZan",
   },
   {
     title: "Samburu-Nakuru-Mara",
@@ -18,6 +19,7 @@ export const itineraries = [
     description:
       "From Samburu’s wilderness to the Mara’s great plains — a true Kenyan adventure.",
     country: "Kenya",
+    link: "/itineraries/KenyaSamburuNakMara",
   },
   {
     title: "Amboseli",
@@ -29,6 +31,7 @@ export const itineraries = [
     description:
       "Discover Amboseli’s vast plains beneath the gaze of Mount Kilimanjaro.",
     country: "Kenya",
+    link: "/itineraries/KenyaMaraMigration",
   },
   {
     title: "Migration Safari",
@@ -38,6 +41,7 @@ export const itineraries = [
     difficulty: "Medium",
     description: "Experience Nature’s grandest migration",
     country: "Kenya",
+    link: "/itineraries/KenyaMaraMigration",
   },
   ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -52,6 +56,7 @@ export const itineraries = [
     description:
       "From safaris to turquoise beaches and water adventures along the Indian Ocean.",
     country: "Tanzania",
+    link: "/itineraries/TanZanzibar",
   },
   {
     title: "Migration Safari",
@@ -63,6 +68,7 @@ export const itineraries = [
     description:
       "Witness the breathtaking Great Migration, one of nature’s most extraordinary spectacles ",
     country: "Tanzania",
+    link: "/itineraries/KenyaMaraMigration",
   },
   {
     title: "Ngorongoro Crater Safari",
@@ -74,6 +80,7 @@ export const itineraries = [
     description:
       "A UNESCO World Heritage Site teeming with wildlife all within a breathtaking volcanic landscape.",
     country: "Tanzania",
+    link: "/itineraries/TanzaniaKilimanjaro",
   },
   {
     title: "Mount Kilimanjaro Adventure",
@@ -85,6 +92,7 @@ export const itineraries = [
     description:
       "Conquer Africa’s highest peak on a guided Kilimanjaro trek a once-in-a-lifetime journey.",
     country: "Tanzania",
+    link: "/itineraries/TanzaniaKilimanjaro",
   },
 
   //-----------------------------------RWANDA------------------------
@@ -97,6 +105,7 @@ export const itineraries = [
     description:
       "Explore Rwanda’s only savannah park, home to lions, rhinos, and scenic lake views inside Akagera National Park.",
     country: "Rwanda",
+    link: "/itineraries/RwandaAkagera",
   },
   {
     title: "Rwanda - Masai Mara - Zanzibar",
@@ -107,6 +116,7 @@ export const itineraries = [
     description:
       "From the rolling hills of Rwanda to the mighty Mara plains and Zanzibar’s turquoise shores — an African journey of a lifetime.",
     country: "Rwanda",
+    link: "/itineraries/RwandaMaraZanzibar",
   },
   {
     title: "Best of Rwanda",
@@ -118,6 +128,7 @@ export const itineraries = [
     description:
       "Discover the heart of Rwanda — from the Volcanoes National Park to serene crater lakes and Kigali’s vibrant culture.",
     country: "Rwanda",
+    link: "/itineraries/RwandaBest",
   },
 
   //--------------------------------------Ethiopia--------------------
@@ -132,6 +143,8 @@ export const itineraries = [
     difficulty: "Hard",
 
     country: "Ethiopia",
+        link: "/itineraries/EthiopiaBaleMNP",
+
   },
   {
     title: "Ethiopian History Tour",
@@ -143,6 +156,8 @@ export const itineraries = [
     location: "Lallibela",
 
     country: "Ethiopia",
+        link: "/itineraries/EthiopiaHistoryTrip",
+
   },
   {
     title: "3 Days in Ethiopia ",
@@ -153,7 +168,9 @@ export const itineraries = [
     difficulty: "Easy",
     location: "Ethiopia",
 
-    country: "Ethiopia",
+    country: "Ethiopia",  
+      link: "/itineraries/Ethiopian3daySafari",
+
   },
 
   {
@@ -164,6 +181,8 @@ export const itineraries = [
     difficulty: "Medium",
     description: "Experience Nature’s grandest migration",
     country: "Ethiopia",
+        link: "/itineraries/KenyaMaraMigration",
+
   },
 
   //-----------------------------SOUTHERN--------------------------------------------------------
@@ -176,6 +195,8 @@ export const itineraries = [
     description:
       "Experience the beauty of Victoria Falls and the thrill of Kruger safaris.",
     country: "Southern Africa",
+        link: "/itineraries/SouthernVicToKruger",
+
   },
   {
     title: "Botswana",
@@ -186,6 +207,8 @@ export const itineraries = [
     description:
       "Explore Botswana’s untamed wilderness and iconic delta scenery.",
     country: "Southern Africa",
+        link: "/itineraries/SouthernBotswana",
+
   },
   {
     title: "Namibia",
@@ -196,9 +219,11 @@ export const itineraries = [
     description:
       "Witness Namibia’s dramatic dunes and surreal desert landscapes.",
     country: "Southern Africa",
+        link: "/itineraries/SouthernNamibia",
+
   },
 
-  //////////////////////////-----------------INDIAN------------------------------////////////////////////////////////
+  //////////////////////////-----------------OUT------------------------------////////////////////////////////////
   {
     title: "Seychelles Luxury Cruise",
     image: "/images/images/seychellesSun.jpeg",
@@ -208,6 +233,10 @@ export const itineraries = [
     description:
       "Relax by the ocean, enjoy water sports, and indulge in coastal cuisines.",
     country: "Indian Ocean Islands",
+        link: "/itineraries/RwandaBest",
+            link: "/itineraries/IslandsSeychellesLuxuryCruise",
+
+
   },
   {
     title: "Madagascar Tour",
@@ -218,6 +247,8 @@ export const itineraries = [
     description:
       "From Samburu’s wilderness to the Mara’s great plains — a true Kenyan adventure.",
     country: "Indian Ocean Islands",
+                link: "/itineraries/IslandsMadagascarBaobab",
+
   },
   {
     title: "Sri Lanka-Maldives-Seychelles",
@@ -228,6 +259,8 @@ export const itineraries = [
     description:
       "Discover Amboseli’s vast plains beneath the gaze of Mount Kilimanjaro.",
     country: "Indian Ocean Islands",
+                link: "/itineraries/IslandsSrilankaMaldivesSeychelles",
+
   },
   {
     title: "Kenya - Zanzibar",
@@ -238,6 +271,8 @@ export const itineraries = [
     description:
       "Relax by the ocean, enjoy water sports, and indulge in coastal cuisines.",
     country: "Indian Ocean Islands",
+                link: "/itineraries/KenyaZan",
+
   },
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -252,6 +287,8 @@ export const itineraries = [
     description:
       "Soar across Uganda’s skies on this unforge`ttable flying safari. Explore breathtaking parks, wildlife, and scenic landscapes.",
     country: "Uganda",
+                link: "/itineraries/UgandaFlyingSafari",
+
   },
   {
     title: "Gorilla Trek Safari",
@@ -264,6 +301,8 @@ export const itineraries = [
     description:
       "Embark on an extraordinary adventure trekking through Uganda’s lush rainforests in search of majestic mountain gorillas.",
     country: "Uganda",
+                link: "/itineraries/UgandaGorillaTrekItinerary",
+
   },
   {
     title: "Uganda Wildlife Safari",
@@ -275,6 +314,8 @@ export const itineraries = [
     description:
       "Experience Uganda’s diverse wildlife and landscapes on this extended journey through its premier national parks.",
     country: "Uganda",
+                link: "/itineraries/UgandaWildlifeSafari",
+
   },
   {
     title: "Rwenzori Mountains Trek",
@@ -287,5 +328,7 @@ export const itineraries = [
     description:
       "Challenge yourself with an exhilarating trek through the mystical Rwenzori Mountains .",
     country: "Uganda",
+                link: "/itineraries/UgandaRuwenzori",
+
   },
 ];

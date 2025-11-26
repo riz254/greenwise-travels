@@ -74,13 +74,35 @@ export default function CascadingImageStack() {
     //     true essence of Africa.
     //   </p>
     // </div>
-    <section className="relative bg-green-50 !pt-20 !px-6 md:!px-10 lg:!px-20">
-      <div className="!mx-auto flex flex-col-reverse md:flex-row items-center gap-12 max-w-7xl">
+
+    <>
+
+     <div className="!mx-auto max-w-4/6 !pb-20 text-center">
+        <h2 className="!text-4xl md:text-4xl font-bold text-green-950 !mb-6">
+ We welcome you to walk in our footsteps for the greatest African
+              safari and adventure experience.            </h2>
+                 <p className="max-w-4/5!mx-auto text-black !mb-6">
+
+We craft tailor-made sustainable journeys across Africa's top destinations. From wildlife to culture, we have something for every passion. With trusted partners worldwide, we ensure your comfort and peace of mind, even in the remotest corners. Our expert team customizes each safari program to meet your unique expectations.
+
+Let us create an unforgettable experience just for you – one that sets your journey apart. Explore Africa's wonders with us!
+
+ 
+
+            </p>
+</div>
+
+
+    <section className="relative bg-green-50 !mt-32 max-w-full !px-6 md:!px-10 lg:!px-20">
+
+
+
+      <div className="!mx-auto flex flex-col-reverse md:flex-row items-center !p-0 gap-12 max-w-8xl">
         {/* Right: Text Content */}
-        <div className="w-full !p-8 md:w-1/2 space-y-10">
-          <div>
-            <h2
-              className="text-left font-semibold text-green-700 text-xl md:text-2xl mb-2"
+        <div className="w-full !p-8 md:w-1/2 -top-[100px] relative  ">
+<div className=" relative ">
+              <h2
+              className="text-left  font-semibold text-green-700 text-xl md:text-2xl mb-2"
               style={{ margin: "10px" }}
             >
               Discover Africa, with Africans!
@@ -89,9 +111,9 @@ export default function CascadingImageStack() {
               className="mt-2 text-left text-lg md:text-2xl font-medium leading-snug text-gray-800"
               style={{ margin: "10px" }}
             >
-              The best way to discover Africa is with Africans. We are natives
-              of this land and we have spent our entire life here, discovering
-              Africa’s best-kept secrets.
+              We are natives of this land and we have spent our entire life here, discovering Africa’s best-kept secrets.
+
+
             </p>
           </div>
 
@@ -100,13 +122,14 @@ export default function CascadingImageStack() {
               className="text-left font-extrabold text-green-800 text-xl md:text-2xl"
               style={{ margin: "10px" }}
             >
-              We take the initiative,
+              We take the initiative,so you can travel stress-free
+
             </h2>
             <h2
               className="text-left font-extrabold text-green-800 text-xl md:text-2xl"
               style={{ margin: "10px" }}
             >
-              so you can travel stress-free
+              {/* so you can travel stress-free */}
             </h2>
             <p
               className="mt-2 text-left text-lg md:text-2xl font-medium leading-snug text-gray-800"
@@ -117,7 +140,7 @@ export default function CascadingImageStack() {
             </p>
           </div>
 
-          <div>
+          {/* <div>
             <h2
               className="text-left text-xl md:text-2xl font-semibold text-lime-700"
               style={{ margin: "10px" }}
@@ -125,10 +148,10 @@ export default function CascadingImageStack() {
               We welcome you to walk in our footsteps for the greatest African
               safari and adventure experience.
             </h2>
-          </div>
+          </div> */}
         </div>
         {/* Left: Stacked Images */}
-        <div className="relative w-full md:w-1/2 h-[400px] flex justify-center md:justify-start">
+        <div className="relative w-3/4 md:w-1/2 h-[400px] flex justify-center md:justify-start">
           {/* First Image */}
           <div className="absolute top-[-25%] left-1/2 -translate-x-1/2 w-[70%] h-[70%]">
             <Image
@@ -161,5 +184,6 @@ export default function CascadingImageStack() {
         </div>
       </div>
     </section>
+    </>
   );
 }
