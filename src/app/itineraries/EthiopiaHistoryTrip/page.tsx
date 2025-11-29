@@ -20,6 +20,8 @@ import { MapPin, Clock, Mountain } from "lucide-react";
 export const itinerary = [
   {
     day: "Day 1 - Addis Ababa",
+          mainImage: "/images/images/Addis-Ababa.jpg",
+
     image: "/images/Addis-Ababa.jpg",
     description: `
 You will be transferred to your hotel when you arrive in Addis Ababa. Start your journey to the National Museum, which houses the well-known fossil Lucy and Ethiopia&apos;s extensive history. Proceed to the Ethnological Museum located in the former palace of Haile Selassie. Visit the Holy Trinity Cathedral and head to Entoto for panoramic views of the city.
@@ -442,7 +444,6 @@ export default function ItinerariesPage() {
                         {safari.title}
                       </h1>
                       <p className="text-gray-600 text-lg leading-relaxed">
-                        {safari.description}
                       </p>
                       <button className="!mt-4 self-start bg-gradient-to-r from-green-500 to-green-700 text-white font-semibold !px-5 !py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all">
                         View Details
