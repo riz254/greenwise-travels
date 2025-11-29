@@ -208,7 +208,7 @@ export default function ItinerariesPage() {
                   className=" text-green-700 font-medium hover:bg-green-50 !p-3"
                 >
                   <AccordionTrigger className="block !px-4 !py-5 text-green-700 w-full font-semibold text-xl hover:bg-green-200">
-                    {day.day}: {day.title}
+                      {day.day}
                   </AccordionTrigger>
                   <AccordionContent>
                     {day.mainImage && (
