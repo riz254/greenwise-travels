@@ -131,7 +131,7 @@ export default function ItinerariesPage() {
               and aquatic bird in saneti plateau. The shain mounatin is the
               source of many rivers and web river is one that create wonderfully
               carved caverns for a distance of one and a half kilometers. The
-              fantastic limestone caves of Sof Omar make a day's outing from
+              fantastic limestone caves of Sof Omar make a day&apos;s outing from
               Dinsho, Robe or Goba.
             </p>
           </section>

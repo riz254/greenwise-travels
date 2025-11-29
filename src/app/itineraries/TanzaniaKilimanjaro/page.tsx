@@ -215,9 +215,9 @@ export default function ItinerariesPage() {
               Best of Tanzania and Zanzibar{" "}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
-              The Machame route, also known as the "Whisky Route", is one of the
+              The Machame route, also known as the &quot;Whisky Route&quot;, is one of the
               best to climb Kilimanjaro as it is optimal for acclimatization,
-              allowing the climbers to "walk high and sleep low", and as a
+              allowing the climbers to &quot;walk high and sleep low&quot;, and as a
               result enjoy one of the highest summit success rates of all the
               routes to climb Mt Kilimanjaro. This 7-day itinerary to climb
               Kilimanjaro offers a great acclimatization program. You will have
