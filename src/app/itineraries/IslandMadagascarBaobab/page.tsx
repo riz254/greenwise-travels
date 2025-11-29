@@ -121,15 +121,15 @@ export default function ItinerariesPage() {
               3-Day Baobab Alley and Tsingy Trip{" "}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
-              This fly-in safari takes you to Madagascar's iconic Baobab Alley
+              This fly-in safari takes you to Madagascar&apos;s iconic Baobab Alley
               and Tsingy de Bemaraha National Park. Explore the picturesque
               avenue of ancient baobabs, some over 800 years old, and enjoy a
-              breathtaking aerial view of Tsingy's dramatic limestone pinnacles.
+              breathtaking aerial view of Tsingy&apos;s dramatic limestone pinnacles.
               <br />
               On the ground, walk through this unique ecosystem, encountering
               lemurs, exotic birds like the Madagascar Fish Eagle, and
               fascinating reptiles—all non-poisonous. This three-day adventure
-              offers a rare and intimate experience of Madagascar's natural
+              offers a rare and intimate experience of Madagascar&apos;s natural
               wonders and can be extended to include other highlights of the
               island. Our Madagascar experts can help craft your perfect trip!
             </p>
@@ -325,7 +325,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -335,7 +335,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -345,7 +345,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

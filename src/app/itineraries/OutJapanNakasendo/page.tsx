@@ -176,14 +176,14 @@ export default function ItinerariesPage() {
         <main className="flex-1 !px-4 md:!px-10 !mt-20 overflow-x-hidden">
           <section id="overview">
             <h2 className="text-3xl md:text-4xl font-bold text-green-800 !mb-4">
-              5 Days hiking Japan's Nakasendo Trail{" "}
+              5 Days hiking Japan&apos;s Nakasendo Trail{" "}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
               Step back in time and immerse yourself in nature on this five-day
               hiking trip along the historic Nakasendo Trail. Feudal lords and
               samurai once walked this mountain path connecting Kyoto and Tokyo,
               stopping to rest in historic jukus, or Edo-era post towns, each
-              night. You'll follow in their footsteps as you trek through
+              night. You&apos;ll follow in their footsteps as you trek through
               picturesque valleys, explore idyllic villages, sleep in
               traditional inns, and relax in the thermal waters of hot springs
               along the hike. s
@@ -283,10 +283,7 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d822508.3289774107!2d137.57160317019103!3d36.36264007399671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x601dc2157bb15529%3A0x1031e8c5b5e0f5ad!2sTsumagoi%2C%20Gunma%2C%20Japan!3m2!1d36.5168949!2d138.53022339999998!4m5!1s0x5ff6230b4ab524d3%3A0x2146b216832e389e!2sNojiri%2C%20Shinano%2C%20Nagano%2C%20Japan!3m2!1d36.8231179!2d138.2228409!4m5!1s0x601ce14159b71cef%3A0x40ba0a1f123bde76!2sNarai%2C%20Shiojiri%2C%20Nagano%2C%20Japan!3m2!1d35.9095563!2d137.8328517!4m5!1s0x601d1400e84368c7%3A0xcb8d6d363210cddd!2sMatsumoto%2C%20Nagano%2C%20Japan!3m2!1d36.238043399999995!2d137.9719897!4m5!1s0x601dd58dd24d6b91%3A0x6c2ba1f088719815!2sUsui%20Pass%20Observation%20Platform%2C%20T%C5%8Dgemachi%2C%20Karuizawa%2C%20Nagano%2C%20Japan!3m2!1d36.3672721!2d138.6564275!5e0!3m2!1sen!2ske!4v1734109409394!5m2!1sen!2ske"
-                width="600"
-                height="450"
-                style="border:0;"
-                loading="lazy"
+               
                 width="800"
                 height="450"
                 style={{ border: 0 }}
@@ -386,7 +383,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -396,7 +393,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -406,7 +403,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

@@ -331,11 +331,7 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d1021358.3510110386!2d30.414879782284952!3d-0.47526629043801655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x177d86cd37ba81af%3A0x9daba139d6433d1f!2sEntebbe%20International%20Airport%2C%20Kampala%20Road%2C%20Entebbe%2C%20Uganda!3m2!1d0.045107999999999995!2d32.4426736!4m5!1s0x19de9d58dac3d859%3A0x972f044d905ac1fa!2sBwindi%20Impenetrable%20Forest%2C%20Uganda!3m2!1d-1.0521494999999998!2d29.620100599999997!4m5!1s0x177d86cd37ba81af%3A0x9daba139d6433d1f!2sEntebbe%20International%20Airport%2C%20Kampala%20Road%2C%20Entebbe%2C%20Uganda!3m2!1d0.045107999999999995!2d32.4426736!5e0!3m2!1sen!2ske!4v1732601791088!5m2!1sen!2ske"
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
+                allowfullscreen
                 width="800"
                 height="450"
                 style={{ border: 0 }}
@@ -425,7 +421,7 @@ export default function ItinerariesPage() {
             <h4 className="text-2xl font-bold text-green-800 mb-6">
               RELATED SAFARIS
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   title: "Uganda Wildlife Safari",
@@ -435,7 +431,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -445,7 +441,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -455,7 +451,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

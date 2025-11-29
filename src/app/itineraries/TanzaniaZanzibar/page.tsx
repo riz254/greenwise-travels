@@ -416,7 +416,7 @@ export default function ItinerariesPage() {
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
               Embark on an extraordinary 14-day adventure through the Best of
-              Tanzania & Zanzibar. Begin in Tanzania's renowned national parks,
+              Tanzania & Zanzibar. Begin in Tanzania&apos;s renowned national parks,
               from the wildlife-rich Tarangire and Ngorongoro Crater to the vast
               Serengeti plains. Experience the awe of the Great Migration,
               witnessing wildebeest and zebras in their quest for fresh
@@ -609,7 +609,7 @@ export default function ItinerariesPage() {
             <h4 className="text-2xl font-bold text-green-800 mb-6">
               RELATED SAFARIS
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   title: "Uganda Wildlife Safari",
@@ -619,7 +619,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -629,7 +629,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -639,7 +639,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

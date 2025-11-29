@@ -156,7 +156,7 @@ export default function ItinerariesPage() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40">
           <h2 className="text-[40pt] font-bold">Akagera Safari Adventure </h2>
           <p className="text-lg">
-            Explore Rwanda's Hidden Gems: Gorillas, Volcanoes, and Breathtaking
+            Explore Rwanda&apos;s Hidden Gems: Gorillas, Volcanoes, and Breathtaking
             Scenery.
           </p>
         </div>
@@ -218,11 +218,11 @@ export default function ItinerariesPage() {
               Experience the breathtaking landscapes and vibrant wildlife of
               Akagera National Park on this immersive 3-day safari. From guided
               game drives to serene sunset boat trips, each day offers unique
-              opportunities to witness the beauty of Rwanda's flora and fauna.
-              You'll stay in comfortable lodges that blend seamlessly with the
+              opportunities to witness the beauty of Rwanda&apos;s flora and fauna.
+              You&apos;ll stay in comfortable lodges that blend seamlessly with the
               natural environment, ensuring a perfect balance of adventure and
               relaxation. Join us for a memorable journey through one of
-              Africa's most stunning national parks.
+              Africa&apos;s most stunning national parks.
             </p>
           </section>
 
@@ -406,7 +406,7 @@ export default function ItinerariesPage() {
             <h4 className="text-2xl font-bold text-green-800 mb-6">
               RELATED SAFARIS
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   title: "Uganda Wildlife Safari",
@@ -416,7 +416,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -426,7 +426,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -436,7 +436,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

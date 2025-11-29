@@ -83,9 +83,9 @@ export default function CascadingImageStack() {
               safari and adventure experience.            </h2>
                  <p className="max-w-4/5!mx-auto text-black !mb-6">
 
-We craft tailor-made sustainable journeys across Africa's top destinations. From wildlife to culture, we have something for every passion. With trusted partners worldwide, we ensure your comfort and peace of mind, even in the remotest corners. Our expert team customizes each safari program to meet your unique expectations.
+We craft tailor-made sustainable journeys across Africa&apos;s top destinations. From wildlife to culture, we have something for every passion. With trusted partners worldwide, we ensure your comfort and peace of mind, even in the remotest corners. Our expert team customizes each safari program to meet your unique expectations.
 
-Let us create an unforgettable experience just for you – one that sets your journey apart. Explore Africa's wonders with us!
+Let us create an unforgettable experience just for you – one that sets your journey apart. Explore Africa&apos;s wonders with us!
 
  
 

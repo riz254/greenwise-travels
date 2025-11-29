@@ -22,7 +22,7 @@ export const itinerary = [
     day: "Day 1 - Addis Ababa",
     image: "/images/Addis-Ababa.jpg",
     description: `
-You will be transferred to your hotel when you arrive in Addis Ababa. Start your journey to the National Museum, which houses the well-known fossil Lucy and Ethiopia's extensive history. Proceed to the Ethnological Museum located in the former palace of Haile Selassie. Visit the Holy Trinity Cathedral and head to Entoto for panoramic views of the city.
+You will be transferred to your hotel when you arrive in Addis Ababa. Start your journey to the National Museum, which houses the well-known fossil Lucy and Ethiopia&apos;s extensive history. Proceed to the Ethnological Museum located in the former palace of Haile Selassie. Visit the Holy Trinity Cathedral and head to Entoto for panoramic views of the city.
 `,
   },
 
@@ -39,7 +39,7 @@ Meals: LDBB
     day: "Day 3 - Bahir Dar → Gondar",
     image: null,
     description: `
-Drive from Bahir Dar to Gondar. After lunch visit Emperor Fasilides' castles, Debre Berhan Selassie Church with its famous murals, and the Bath of Fasilides.
+Drive from Bahir Dar to Gondar. After lunch visit Emperor Fasilides&apos; castles, Debre Berhan Selassie Church with its famous murals, and the Bath of Fasilides.
 Meals: LDBB
 `,
   },
@@ -185,7 +185,7 @@ export default function ItinerariesPage() {
               9-Day Ethiopian History and Cultural Tour{" "}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
-              Experience Ethiopia's rich history during this nine-day trip.
+              Experience Ethiopia&apos;s rich history during this nine-day trip.
               Discover the magnificent Simien Mountains, the royal castles of
               Gondar, the rock-hewn churches of Lalibela, and the historic
               sights of Addis Ababa. Explore the monasteries of Lake Tana and
@@ -288,9 +288,7 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d8060154.807470264!2d32.41192667078219!3d9.454464659784723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!3m2!1d9.0191936!2d38.7524635!4m5!1s0x1669c1d46d16f89d%3A0x770284df7312622d!2sSimien%20Mountains%20National%20Park%2C%20Ethiopia!3m2!1d13.2027138!2d37.887647699999995!4m5!1s0x17a5a9826e0174c5%3A0x50d4119536afd74e!2sJinka%2C%20Ethiopia!3m2!1d5.7861984!2d36.5655964!5e0!3m2!1sen!2ske!4v1734098459574!5m2!1sen!2ske"
-                width="600"
-                height="450"
-                style="border:0;"
+  
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -298,8 +296,6 @@ export default function ItinerariesPage() {
                 height="450"
                 style={{ border: 0 }}
                 // allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-lg shadow-lg !mt-20 "
               ></iframe>
             </div>
@@ -393,7 +389,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -403,7 +399,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -413,7 +409,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

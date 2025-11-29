@@ -328,8 +328,8 @@ export default function ItinerariesPage() {
               Rwanda Gorillas, Masai Mara & Zanzibar{" "}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
-              Experience Rwanda's mountain gorillas, Kenya's iconic Masai Mara,
-              and Zanzibar's stunning beaches in one unforgettable journey
+              Experience Rwanda&apos;s mountain gorillas, Kenya&apos;s iconic Masai Mara,
+              and Zanzibar&apos;s stunning beaches in one unforgettable journey
               blending wildlife, culture, and relaxation. Your trip starts with
               your gorilla trek up into the Virunga Volcanoes, where you will
               spend your one magical hour with the last of the mountain
@@ -522,7 +522,7 @@ export default function ItinerariesPage() {
             <h4 className="text-2xl font-bold text-green-800 mb-6">
               RELATED SAFARIS
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   title: "Uganda Wildlife Safari",
@@ -532,7 +532,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -542,7 +542,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -552,7 +552,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

@@ -149,15 +149,15 @@ export default function ItinerariesPage() {
               9 Days Botswana Essentials{" "}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
-              Prepare to immerse yourself in the heart of Botswana's wild beauty
+              Prepare to immerse yourself in the heart of Botswana&apos;s wild beauty
               on this 9-day essentials adventure. Your journey begins in the
-              vast, golden expanse of the Kalahari Desert, where you'll track
+              vast, golden expanse of the Kalahari Desert, where you&apos;ll track
               the iconic rhinos of this arid landscape. Then, glide through the
               tranquil waters of the Okavango Delta in a traditional mokoro
               canoe, surrounded by lush wetlands teeming with elephants, hippos,
               and vibrant birdlife.
               <br />
-              Venture to the floodplains of the Kwando River, where you'll set
+              Venture to the floodplains of the Kwando River, where you&apos;ll set
               up camp under starry African skies and listen to the nocturnal
               symphony of the bush. End your adventure in Chobe National Park,
               famed for its remarkable elephant herds and dramatic game drives
@@ -349,7 +349,7 @@ export default function ItinerariesPage() {
             <h4 className="text-2xl font-bold text-green-800 mb-6">
               RELATED SAFARIS
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   title: "Uganda Wildlife Safari",
@@ -359,7 +359,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -369,7 +369,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -379,7 +379,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

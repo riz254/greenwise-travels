@@ -249,7 +249,7 @@ export default function ItinerariesPage() {
               rhinos, elephants and buffalo) and more on this journey through
               South Africa and Zimbabwe. Plus, you’ll enjoy time in a
               traditional village in the Limpopo province and visit South
-              Africa's modern capital – all the while uncovering Africa's
+              Africa&apos;s modern capital – all the while uncovering Africa&apos;s
               incredible and diverse natural beauty.
             </p>
           </section>
@@ -446,7 +446,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -456,7 +456,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -466,7 +466,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

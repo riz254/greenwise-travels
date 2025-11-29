@@ -309,10 +309,7 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d1401434.1161820316!2d7.07349318398416!3d46.682527081048455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x478ffa2a79547379%3A0xaef02ad1409952af!2sLucerne%2C%20Switzerland!3m2!1d47.050168199999995!2d8.3093072!4m5!1s0x478f35a2292ee5cd%3A0x400ff8840196f70!2sZermatt%2C%20Switzerland!3m2!1d46.0207133!2d7.749117!4m5!1s0x47842df76a4211f1%3A0xef8c04212ea1f8e0!2sLugano%2C%20Switzerland!3m2!1d46.0036778!2d8.951051999999999!4m5!1s0x47900b9749bea219%3A0xe66e8df1e71fdc03!2sZ%C3%BCrich%2C%20Switzerland!3m2!1d47.3768866!2d8.541694!5e0!3m2!1sen!2ske!4v1734110527884!5m2!1sen!2ske"
-                width="600"
-                height="450"
-                style="border:0;"
-                loading="lazy"
+               
                 width="800"
                 height="450"
                 style={{ border: 0 }}
@@ -412,7 +409,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Uganda",
                   difficulty: "Medium",
-                  link: "UgandaWildlifeSafari.html",
+                  link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
                   title: "Migration Safari",
@@ -422,7 +419,7 @@ export default function ItinerariesPage() {
                   price: "$520.00",
                   location: "Mara",
                   difficulty: "Easy",
-                  link: "Migration-Safari-Itinerary.html",
+                  link: "/itineraries/KenyaMaraMigration.html",
                 },
                 {
                   title: "Kenya-Zanzibar",
@@ -432,7 +429,7 @@ export default function ItinerariesPage() {
                   duration: "12 Days",
                   dates: "January 15 - January 27",
                   price: "$520.00",
-                  link: "kenyaHoneymoonItinerary.html",
+                  link: "/itineraries/KenyaZan",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>
