@@ -334,7 +334,7 @@ export default function ItinerariesPage() {
                         {safari.title}
                       </h1>
                       <p className="text-gray-600 text-lg leading-relaxed">
-                        {safari.description}
+                        {/* {safari.description} */}
                       </p>
                       <button className="!mt-4 self-start bg-gradient-to-r from-green-500 to-green-700 text-white font-semibold !px-5 !py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all">
                         View Details
