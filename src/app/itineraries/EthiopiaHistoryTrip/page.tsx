@@ -241,7 +241,7 @@ export default function ItinerariesPage() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d8060154.807470264!2d32.41192667078219!3d9.454464659784723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!3m2!1d9.0191936!2d38.7524635!4m5!1s0x1669c1d46d16f89d%3A0x770284df7312622d!2sSimien%20Mountains%20National%20Park%2C%20Ethiopia!3m2!1d13.2027138!2d37.887647699999995!4m5!1s0x17a5a9826e0174c5%3A0x50d4119536afd74e!2sJinka%2C%20Ethiopia!3m2!1d5.7861984!2d36.5655964!5e0!3m2!1sen!2ske!4v1734098459574!5m2!1sen!2ske"
   
-                allowfullscreen
+                // allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 width="800"
