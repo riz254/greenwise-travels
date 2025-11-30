@@ -143,8 +143,7 @@ export const itineraries = [
     difficulty: "Hard",
 
     country: "Ethiopia",
-        link: "/itineraries/EthiopiaBaleMNP",
-
+    link: "/itineraries/EthiopiaBaleMNP",
   },
   {
     title: "Ethiopian History Tour",
@@ -156,8 +155,7 @@ export const itineraries = [
     location: "Lallibela",
 
     country: "Ethiopia",
-        link: "/itineraries/EthiopiaHistoryTrip",
-
+    link: "/itineraries/EthiopiaHistoryTrip",
   },
   {
     title: "3 Days in Ethiopia ",
@@ -168,9 +166,8 @@ export const itineraries = [
     difficulty: "Easy",
     location: "Ethiopia",
 
-    country: "Ethiopia",  
-      link: "/itineraries/Ethiopian3daySafari",
-
+    country: "Ethiopia",
+    link: "/itineraries/Ethiopian3daySafari",
   },
 
   {
@@ -181,8 +178,7 @@ export const itineraries = [
     difficulty: "Medium",
     description: "Experience Nature’s grandest migration",
     country: "Ethiopia",
-        link: "/itineraries/KenyaMaraMigration",
-
+    link: "/itineraries/KenyaMaraMigration",
   },
 
   //-----------------------------SOUTHERN--------------------------------------------------------
@@ -195,8 +191,7 @@ export const itineraries = [
     description:
       "Experience the beauty of Victoria Falls and the thrill of Kruger safaris.",
     country: "Southern Africa",
-        link: "/itineraries/SouthernVicToKruger",
-
+    link: "/itineraries/SouthernVicToKruger",
   },
   {
     title: "Botswana",
@@ -207,8 +202,7 @@ export const itineraries = [
     description:
       "Explore Botswana’s untamed wilderness and iconic delta scenery.",
     country: "Southern Africa",
-        link: "/itineraries/SouthernBotswana",
-
+    link: "/itineraries/SouthernBotswana",
   },
   {
     title: "Namibia",
@@ -219,8 +213,7 @@ export const itineraries = [
     description:
       "Witness Namibia’s dramatic dunes and surreal desert landscapes.",
     country: "Southern Africa",
-        link: "/itineraries/SouthernNamibia",
-
+    link: "/itineraries/SouthernNamibia",
   },
 
   //////////////////////////-----------------OUT------------------------------////////////////////////////////////
@@ -233,10 +226,7 @@ export const itineraries = [
     description:
       "Relax by the ocean, enjoy water sports, and indulge in coastal cuisines.",
     country: "Indian Ocean Islands",
-        link: "/itineraries/RwandaBest",
-            link: "/itineraries/IslandsSeychellesLuxuryCruise",
-
-
+    link: "/itineraries/IslandsSeychellesLuxuryCruise",
   },
   {
     title: "Madagascar Tour",
@@ -247,8 +237,7 @@ export const itineraries = [
     description:
       "From Samburu’s wilderness to the Mara’s great plains — a true Kenyan adventure.",
     country: "Indian Ocean Islands",
-                link: "/itineraries/IslandsMadagascarBaobab",
-
+    link: "/itineraries/IslandsMadagascarBaobab",
   },
   {
     title: "Sri Lanka-Maldives-Seychelles",
@@ -259,8 +248,7 @@ export const itineraries = [
     description:
       "Discover Amboseli’s vast plains beneath the gaze of Mount Kilimanjaro.",
     country: "Indian Ocean Islands",
-                link: "/itineraries/IslandsSrilankaMaldivesSeychelles",
-
+    link: "/itineraries/IslandsSrilankaMaldivesSeychelles",
   },
   {
     title: "Kenya - Zanzibar",
@@ -271,8 +259,7 @@ export const itineraries = [
     description:
       "Relax by the ocean, enjoy water sports, and indulge in coastal cuisines.",
     country: "Indian Ocean Islands",
-                link: "/itineraries/KenyaZan",
-
+    link: "/itineraries/KenyaZan",
   },
 
   //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -287,8 +274,7 @@ export const itineraries = [
     description:
       "Soar across Uganda’s skies on this unforge`ttable flying safari. Explore breathtaking parks, wildlife, and scenic landscapes.",
     country: "Uganda",
-                link: "/itineraries/UgandaFlyingSafari",
-
+    link: "/itineraries/UgandaFlyingSafari",
   },
   {
     title: "Gorilla Trek Safari",
@@ -301,8 +287,7 @@ export const itineraries = [
     description:
       "Embark on an extraordinary adventure trekking through Uganda’s lush rainforests in search of majestic mountain gorillas.",
     country: "Uganda",
-                link: "/itineraries/UgandaGorillaTrekItinerary",
-
+    link: "/itineraries/UgandaGorillaTrekItinerary",
   },
   {
     title: "Uganda Wildlife Safari",
@@ -314,8 +299,7 @@ export const itineraries = [
     description:
       "Experience Uganda’s diverse wildlife and landscapes on this extended journey through its premier national parks.",
     country: "Uganda",
-                link: "/itineraries/UgandaWildlifeSafari",
-
+    link: "/itineraries/UgandaWildlifeSafari",
   },
   {
     title: "Rwenzori Mountains Trek",
@@ -328,7 +312,6 @@ export const itineraries = [
     description:
       "Challenge yourself with an exhilarating trek through the mystical Rwenzori Mountains .",
     country: "Uganda",
-                link: "/itineraries/UgandaRuwenzori",
-
+    link: "/itineraries/UgandaRuwenzori",
   },
 ];
