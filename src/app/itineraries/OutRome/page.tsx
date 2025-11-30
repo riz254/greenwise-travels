@@ -34,6 +34,7 @@ const itinerary = [
     `,
     meals: "—",
     hotels: [],
+    mainImage: "/images/images/Rome.jpg",
   },
 
   {

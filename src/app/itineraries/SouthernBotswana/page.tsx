@@ -22,6 +22,8 @@ const itinerary = [
     day: "Day 1 - Johannesburg",
     description:
       "Touch down in Jo’burg. You’ve got a free day before you join up with your crew at a 6 pm welcome meeting tonight. We recommend visiting the eye-opening Apartheid Museum to start your journey with some crucial history before meeting up with your group. After your important meeting this evening, why not head out for an optional group dinner and get to know your newfound travel crew? Your leader can point you in the right direction with bar and restaurant recommendations.",
+
+      mainImage: "/images/images/OkavangoBotswana.jpg",
   },
   {
     day: "Day 2 : Khama Rhino Sanctuary",

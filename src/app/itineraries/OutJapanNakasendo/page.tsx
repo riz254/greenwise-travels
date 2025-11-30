@@ -33,6 +33,7 @@ const itinerary = [
       yukata gown supplied by your hosts.
     `,
     meals: "BLD",
+    mainImage: "/images/images/nakasendotrail1-1660023798186.jpg",
   },
 
   {

@@ -25,6 +25,7 @@ const itinerary = [
       "Head out to explore the city at your own pace. Start with old town by crossing over the famous Chapel Bridge and walk on the cobbled stone streets.",
       "As you wind your way through these narrow roads, it will lead you to the famous Lion Monument. From here head back walking along the lake. If you have already started pining for chocolate, you will find many local chocolatiers along this walk so make sure to pop into them.",
     ],
+    mainImage: "/images/images/Swiss-lion-monument-lucerne.jpg",
   },
 
   {
