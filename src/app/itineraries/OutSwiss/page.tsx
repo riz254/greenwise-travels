@@ -19,7 +19,9 @@ import { MapPin, Clock, Mountain } from "lucide-react";
 
 const itinerary = [
   {
-    day: "Day 1: Lucerne",
+    day: "Day 1:",
+        title: "Lucerne",
+
     description: [
       "Arrive in Zurich and hop on to a train for Lucerne, which takes roughly 1.15 hours. Your day will depend on your arrival time into Lucerne.",
       "Head out to explore the city at your own pace. Start with old town by crossing over the famous Chapel Bridge and walk on the cobbled stone streets.",
