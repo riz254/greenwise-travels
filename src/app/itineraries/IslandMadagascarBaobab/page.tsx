@@ -33,6 +33,7 @@ const itinerary = [
     title: "Big Tsingy",
     description: `Today is dedicated to the thrilling and unforgettable exploration of the Big Tsingy. The walk will take you through a labyrinth of limestone pinnacles, deep canyons and narrow fissures in which you'll discover unexpected flora and fauna. Along the way you'll have the chance to spot some of Madagascar's lemur species, as well as many tropical birds.`,
     meals: "BLD",
+    hotels: [],
   },
   {
     day: "Day 3",
