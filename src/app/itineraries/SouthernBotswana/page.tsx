@@ -20,13 +20,16 @@ import { MapPin, Clock, Mountain } from "lucide-react";
 const itinerary = [
   {
     day: "Day 1 - Johannesburg",
+
     description:
       "Touch down in Jo’burg. You’ve got a free day before you join up with your crew at a 6 pm welcome meeting tonight. We recommend visiting the eye-opening Apartheid Museum to start your journey with some crucial history before meeting up with your group. After your important meeting this evening, why not head out for an optional group dinner and get to know your newfound travel crew? Your leader can point you in the right direction with bar and restaurant recommendations.",
 
       mainImage: "/images/images/OkavangoBotswana.jpg",
   },
   {
-    day: "Day 2 : Khama Rhino Sanctuary",
+    day: "Day 2 :",
+        title: " Khama Rhino Sanctuary",
+
     description:
       "See ya South Africa – cross the border into Botswana and travel toward the Khama Rhino Sanctuary. It sits on the Kalahari Desert, and is an old hunting area transformed into a conservation project. It now protects what’s left of Botswana's black and white rhino populations, but there are plenty of other beasties hanging around too – zebras, giraffes, leopards, ostriches and wildebeest, all of which chill out around many natural waterholes. Not only do you get to check out awesome animals here, but you’ll also be benefitting local communities and helping protect the white rhino. When the sun begins to set, hop in a jeep to see the rhinos at their most active. About 35 rhinos roam around this 400 ha community-based reserve. Don't forget your binoculars, or you'll be getting them confused with big rocks.",
     meals: "BLD",
