@@ -21,6 +21,7 @@ const itinerary = [
   {
     day: "Day 1",
     title: "Arrival in Baobab Alley",
+    mainImage: "images/images/madagascar.jpg",
     description: `In the early morning, fly to Morondava. Upon arrival, short 4x4 drive to the iconic baobab alley, Madagascar's first natural monument with trees that are over 800 years old. Enjoy time to photograph this place and soak up the incredible scenery, this majestic species of baobab is the tallest one in the world (up to 98 feet).
       Return to the airport and head to Amborodia flying over the majestic Tsingy de Bemaraha National Park giving you a birds eye perspective of where you will be walking tomorrow and a chance to appreciate the scale of the jagged limestone pinnacles.
       On landing, you will be transferred to your hotel, Le Soleil des Tsingy where you will spend 2 nights.`,
