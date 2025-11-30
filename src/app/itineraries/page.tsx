@@ -21,200 +21,257 @@ const itinerary = [
   {
     day: "DAY 1",
     title: "Arrival in Nairobi",
-    description: `Upon your arrival at Jomo Kenyatta International Airport, you'll be greeted by our hotel staff after clearing customs and immigration. You'll then be transferred to your hotel, where we'll brief you on your upcoming safari adventure. Overnight stay in Nairobi.`,
+    description: `On arrival at Jomo Kenyatta International Airport, Nairobi, a private Meet and Greet will welcome you to Kenya’s energetic and bustling capital city. Once at your hotel, spend the remainder of the day relaxing and preparing for the excitement ahead!`,
     meals: "BL",
-    mainImage: "images/images/Nairobi.png",
+    mainImage: "/images/images/Nairobi.png",
     hotels: [
       {
         name: "Sarova Stanley",
         description:
-          "A historic hotel in the heart of Nairobi, offering elegant accommodations and exceptional service.",
+          "A historic hotel in the heart of Nairobi, offering elegant accommodations and exceptional service. Ideal for business travelers and tourists seeking comfort and convenience.",
         stars: 5,
-        image: "images/images/sarovaStanley.jpg",
+        image: "/images/images/sarovaStanley.jpg",
       },
       {
         name: "Nairobi Serena Hotel",
         description:
-          "A luxury hotel known for its stunning gardens and contemporary design, offering a serene escape from the bustling city.",
+          "A luxury hotel known for its stunning gardens and contemporary design, offering a serene escape from the bustling city. Perfect for leisure travelers and those attending events.",
         stars: 5,
-        image: "images/images/NairobiSerena.jpg",
+        image: "/images/images/NairobiSerena.jpg",
       },
       {
         name: "Weston Hotel",
         description:
-          "Modern hotel featuring spacious rooms and state-of-the-art facilities, ideal for both business and leisure travelers.",
+          "A modern hotel featuring spacious rooms and state-of-the-art facilities, ideal for both business and leisure travelers looking for comfort and luxury.",
         stars: 3,
-        image: "images/images/westonHotel.jpg",
+        image: "/images/images/westonHotel.jpg",
       },
       {
         name: "The Boma Nairobi",
         description:
-          "Upscale hotel offering a blend of modern luxury and traditional hospitality, complete with a spa and fine dining options.",
+          "An upscale hotel offering a blend of modern luxury and traditional hospitality, complete with a spa and fine dining options, perfect for a relaxing getaway.",
         stars: 4,
-        image: "images/images/bomaNairobi.png",
+        image: "/images/images/bomaNairobi.png",
       },
       {
         name: "Kempinski Hotel",
         description:
-          "A prestigious hotel renowned for its lavish accommodations and world-class amenities.",
+          "A prestigious hotel renowned for its lavish accommodations and world-class amenities, offering a luxurious experience in the heart of Nairobi.",
         stars: 5,
-        image: "images/images/kempiski.png",
+        image: "/images/images/kempiski.png",
       },
     ],
   },
   {
     day: "DAY 2",
     title: "Samburu Game Reserve",
-    description: `After breakfast, drive to Samburu Game Reserve, famous for its rugged landscape. Arrive for lunch, followed by a siesta and an afternoon game drive. The Ewaso Nyiro River draws wildlife like elephants and unique species such as gerenuks, beisa oryx, and Grevy’s zebra. Bird lovers will enjoy sightings of the Palm Nut Vulture and Vinaceous Dove. Overnight at Sarova Shaba Game Lodge.`,
+    description: `After breakfast, drive to Samburu Game Reserve, famous for its rugged landscape. Arrive for lunch, followed by a siesta and an afternoon game drive.
+The Ewaso Nyiro River draws wildlife like elephants, along with unique species such as gerenuks, beisa oryx, and Grevy’s zebra. Bird lovers will enjoy sightings of the Palm Nut Vulture and Vinaceous Dove. As the sun sets, watch for leopards. Overnight at Sarova Shaba Game Lodge.`,
     meals: "LDBB",
-    mainImage: "",
+    mainImage: "/images/images/Samburu1.jpg",
     hotels: [
       {
         name: "Sarova Shaba Game Lodge",
         description:
-          "Luxury lodge on the banks of the Ewaso Nyiro River with excellent game viewing.",
+          "Set on the banks of the Ewaso Nyiro River, this luxury lodge offers a serene atmosphere, comfortable rooms, and excellent game viewing.",
         stars: 5,
-        image: "images/images/Sarova-Shaba.jpg",
+        image: "/images/images/Sarova-Shaba.jpg",
       },
       {
         name: "Elephant Bedroom Camp",
         description:
-          "Luxury tented camp for an intimate safari experience with personalized service.",
+          "A luxury tented camp designed to provide an intimate safari experience with personalized service and excellent wildlife viewing.",
         stars: 4,
-        image: "images/images/Elephant-bedroom.png",
+        image: "/images/images/Elephant-bedroom.png",
       },
       {
         name: "Saruni Samburu",
         description:
-          "Eco-friendly camp with comfortable tents and authentic safari experience with guides.",
+          "An eco-friendly camp offering comfortable tents and an authentic safari experience with knowledgeable guides and stunning views.",
         stars: 3,
-        image: "images/images/Saruni-Basecamp-Saruni-Samburu-guides(1).jpg",
+        image: "/images/images/Saruni-Basecamp-Saruni-Samburu-guides (1).jpg",
       },
       {
         name: "Sasaab Lodge",
         description:
-          "Perched on a river valley, blending Swahili and Moroccan design for heat comfort.",
+          "Perched on the edge of a river valley, the architecture of Sasaab blends Swahili and Moroccan design principals in which the African heat is of primary consideration.",
         stars: 4,
         image:
-          "images/images/Sasaab-Luxury-Camp-Explore-common-area-600x465.jpg",
+          "/images/images/Sasaab-Luxury-Camp-Explore-common-area-600x465.jpg",
       },
       {
         name: "Samburu Intrepids Camp",
         description:
-          "Luxury tented camp near Samburu National Reserve, known for its exceptional service and immersive wildlife experiences.",
+          "A luxury tented camp located near Samburu National Reserve, known for its exceptional service and immersive wildlife experiences.",
         stars: 5,
-        image: "images/images/samburu-intrepids-gallerylounge.png",
+        image: "/images/images/samburu-intrepids-gallerylounge.png",
       },
     ],
   },
+
   {
     day: "DAY 3",
     title: "Full Day in Samburu Game Reserve",
-    description: `Spend the day exploring both Samburu and Buffalo Springs reserves with morning and afternoon game drives. Watch for leopards at dusk and enjoy the stunning sunset over the doum palms along the river. Optional Activity: Visit a Samburu Manyatta to experience the local culture.`,
+    description: `Spend the day exploring both Samburu and Buffalo Springs reserves with morning and afternoon game drives. Keep an eye out for leopards, especially at dusk, and enjoy the stunning sunset over the doum palms along the river.
+
+Optional Activity: Visit a Samburu Manyatta to experience the local culture and learn how they thrive in this challenging environment.`,
     meals: "LDBB",
-    mainImage: "",
     images: [
-      "images/images/Samburu1.jpg",
-      "images/images/elephants-in-samburu-national-reserve.jpg",
-      "images/images/dining-by-the-waterhole-in-samburu-sopa-lodge.jpg",
-      "images/images/Lionness-and-the-cubs-lying-on-the-grass-in-samburu.jpg",
+      "/images/images/Samburu1.jpg",
+      "/images/images/elephants-in-samburu-national-reserve.jpg",
+      "/images/images/dining-by-the-waterhole-in-samburu-sopa-lodge.jpg",
+      "/images/images/Lionness-and-the-cubs-lying-on-the-grass-in-samburu.jpg",
     ],
+    hotels: null,
   },
+
   {
     day: "DAY 4 & 5",
     title: "Lake Nakuru National Park",
-    description: `After breakfast, depart for Lake Nakuru National Park, stopping at Thompson’s Falls for a scenic view. Explore the park’s diverse birdlife and wildlife including Rothschild giraffes, black and white rhinos, and leopards. Afternoon at leisure and overnight at Sarova Lionhill Game Lodge.`,
+    description: `After breakfast, depart for Lake Nakuru National Park, with a stop at Thompson’s Falls for a scenic view. Arrive at your lodge in time for lunch.
+
+Lake Nakuru, located in the heart of the Rift Valley, is famous for its diverse birdlife and offers sanctuary to endangered species such as Rothschild giraffes, black and white rhinos, and leopards. Explore key sights like Baboon Cliff, Lion Hill, and the Mau escarpment.
+
+The park boasts the largest Euphorbia forest in Africa, stunning observation points, and diverse landscapes of marshes, grasslands, cliffs, and woodlands. The afternoon is at your leisure. Enjoy dinner and an overnight stay at Sarova Lionhill Game Lodge.`,
     meals: "LDBB",
-    mainImage: "images/lake-nakuru-flamingoes.jpg",
+    mainImage: "/images/images/lake-nakuru-flamingoes.jpg",
     hotels: [
       {
         name: "Sarova Lionhill Game Lodge",
         description:
-          "A luxurious lodge overlooking Lake Nakuru, featuring elegant accommodations and top-notch amenities.",
+          "A luxurious lodge overlooking Lake Nakuru, featuring elegant accommodations and top-notch amenities, perfect for a high-end safari experience.",
         stars: 5,
-        image: "images/images/Sarova_Lion_Hill_Game_Lodge_-_Ziwa_Suite_11.jpg",
+        image: "/images/images/Sarova_Lion_Hill_Game_Lodge_-_Ziwa_Suite_11.jpg",
       },
       {
         name: "Lake Nakuru Lodge",
         description:
-          "Nestled within the park, this comfortable lodge offers stunning views and a serene environment.",
+          "Nestled within the park, this comfortable lodge offers stunning views and a serene environment, ideal for nature lovers and safari enthusiasts.",
         stars: 4,
-        image: "images/images/lake-nakuru-lodge.jpg",
+        image: "/images/images/lake-nakuru-lodge.jpg",
       },
       {
         name: "Sarova Woodlands Hotel",
         description:
           "A cozy hotel located just outside the park, offering comfortable accommodations and easy access to local attractions.",
         stars: 5,
-        image: "images/images/Sarova-woodlands.jpg",
+        image: "/images/images/Sarova-woodlands.jpg",
       },
       {
         name: "Midland Hotel",
         description:
           "A beautiful hotel with breathtaking views of the surrounding landscapes, offering modern amenities and personalized service.",
         stars: 4,
-        image: "images/images/the-midland-hotel-exterior-01.jpg",
+        image: "/images/images/the-midland-hotel-exterior-01.jpg",
       },
     ],
   },
+
   {
     day: "DAY 6",
     title: "Masai Mara National Reserve",
-    description: `Start the day with an early breakfast before heading to the Masai Mara National Reserve, renowned for its breathtaking scenery and abundant wildlife. Enjoy lunch, leisure time, and an afternoon game drive through the vast plains and grasslands.`,
+    description: `Start the day with an early breakfast before heading to the Masai Mara National Reserve, renowned for its breathtaking scenery and abundant wildlife. Upon arrival, enjoy a warm welcome and a delicious lunch before some leisure time at the camp.
+
+In the afternoon, embark on a thrilling game drive through the vast plains and grasslands, home to iconic wildlife such as lions, elephants, rhinos, cheetahs, and giraffes, along with a wide variety of bird species.
+
+Return to camp for dinner and an overnight stay at Sarova Mara Tented Camp.`,
     meals: "LDBB",
-    mainImage: "",
+    images: [
+      "/images/images/Mara - sam 2.jpg",
+      "/images/images/lionBackground.jpg",
+      "/images/images/MaraMigration.jpg",
+      "/images/images/Esirai-Gallery-6.jpg",
+      "/images/images/Hot-Air-Balloon-Safari.jpg",
+    ],
     hotels: [
       {
         name: "Sarova Mara Game Camp",
         description:
-          "Luxurious tented camp nestled in the heart of the Mara, offering stunning views, gourmet dining, and immersive wildlife experience.",
+          "A luxurious tented camp nestled in the heart of the Mara, offering stunning views, gourmet dining, and an immersive wildlife experience.",
         stars: 5,
-        image: "images/images/sarovaMara.jpg",
+        image: "/images/images/sarovaMara.jpg",
       },
       {
         name: "Mara Serena Safari Lodge",
         description:
-          "Stunning lodge overlooking the plains, with comfortable accommodations, swimming pool, and exceptional service.",
-        stars: 5,
-        image: "images/images/MaraSerenaSafariLonge.jpg",
+          "A stunning lodge overlooking the plains, featuring comfortable accommodations, a swimming pool, and exceptional service amidst breathtaking landscapes.",
+        stars: 4,
+        image: "/images/images/MaraSerenaSafariLonge.jpg",
       },
       {
         name: "Mara Intrepids Camp",
         description:
-          "Luxurious camp offering tented accommodations along the Talek River, known for excellent service and wildlife activities.",
+          "A luxurious camp offering tented accommodations along the Talek River, known for its excellent service, gourmet cuisine, and wildlife activities.",
         stars: 5,
-        image: "images/images/family-tent-mara-intrepids.jpg",
+        image: "/images/images/family-tent-mara-intrepids.jpg",
       },
       {
         name: "Mara Sopa Lodge",
         description:
-          "Charming lodge set in the Mara, featuring comfortable accommodations and easy access to wildlife viewing.",
+          "A charming lodge set in the Mara, featuring comfortable accommodations, beautiful gardens, and easy access to wildlife viewing opportunities.",
         stars: 4,
-        image: "images/images/MaraSopa.jpg",
+        image: "/images/images/MaraSopa.jpg",
       },
     ],
   },
+
   {
     day: "DAY 7",
     title: "Full Day in the Masai Mara National Reserve",
-    description: `After breakfast, enjoy a full day of adventure in the Masai Mara, keeping an eye out for the Big Five: lion, elephant, buffalo, leopard, and rhino. Optional Activities: Balloon Safari over the Mara plains, and visit to a Maasai Manyatta.`,
+    description: `After breakfast, enjoy a full day of adventure in the Masai Mara, keeping an eye out for the Big Five: lion, elephant, buffalo, leopard, and rhino. You may even witness a thrilling predator chase or a kill. Return to the camp for dinner and overnight stay.
+
+Optional Activities:
+
+Balloon Safari: Embark on a magical early morning balloon ride over the Mara plains, followed by a champagne breakfast in the bush. The serene flight offers a unique perspective of the wildlife below. The day concludes with a game drive back to camp.
+
+Visit to a Masai Manyatta: Explore a traditional Maasai village and learn about the fascinating culture, customs, and lifestyle of this iconic community.`,
     meals: "LDBB",
-    mainImage: "",
     images: [
-      "images/images/Mara - sam 2.jpg",
-      "images/images/lionBackground.jpg",
-      "images/images/MaraMigration.jpg",
-      "images/images/Esirai-Gallery-6.jpg",
-      "images/images/Hot-Air-Balloon-Safari.jpg",
+      "/images/images/Mara - sam 2.jpg",
+      "/images/images/lionBackground.jpg",
+      "/images/images/MaraMigration.jpg",
+      "/images/images/Esirai-Gallery-6.jpg",
+      "/images/images/Hot-Air-Balloon-Safari.jpg",
+    ],
+    hotels: [
+      {
+        name: "Sarova Mara Game Camp",
+        description:
+          "A luxurious tented camp nestled in the heart of the Mara, offering stunning views, gourmet dining, and an immersive wildlife experience.",
+        stars: 5,
+        image: "/images/images/sarovaMara.jpg",
+      },
+      {
+        name: "Mara Serena Safari Lodge",
+        description:
+          "A stunning lodge overlooking the plains, featuring comfortable accommodations, a swimming pool, and exceptional service amidst breathtaking landscapes.",
+        stars: 4,
+        image: "/images/images/MaraSerenaSafariLonge.jpg",
+      },
+      {
+        name: "Mara Intrepids Camp",
+        description:
+          "A luxurious camp offering tented accommodations along the Talek River, known for its excellent service, gourmet cuisine, and wildlife activities.",
+        stars: 5,
+        image: "/images/images/family-tent-mara-intrepids.jpg",
+      },
+      {
+        name: "Mara Sopa Lodge",
+        description:
+          "A charming lodge set in the Mara, featuring comfortable accommodations, beautiful gardens, and easy access to wildlife viewing opportunities.",
+        stars: 4,
+        image: "/images/images/MaraSopa.jpg",
+      },
     ],
   },
+
   {
     day: "DAY 8",
-    title: "Nairobi",
-    description: `After breakfast, check-out and bid farewell to the lodge team. Depart for Nairobi, possibly enjoy lunch at Carnivore restaurant, and then transfer to Jomo Kenyatta International Airport for your onward flight.`,
+    title: "Nairobi / Tour End",
+    description: `After breakfast, check-out and bid farewell to the lodge team. Depart for Nairobi, taking with you photographs to remember your unforgettable safari experience. If time allows, enjoy lunch at the Carnivore restaurant. Your guide will then transfer you to Jomo Kenyatta International Airport for your onward flight.`,
     meals: "BL",
     mainImage: "",
-    hotels: [],
+    hotels: null,
   },
 ];
 
@@ -228,7 +285,7 @@ export default function ItinerariesPage() {
       {/* Showcase Section */}
       <section className="h-[85vh] flex items-center justify-center text-center text-white overflow-hidden w-full relative">
         <Image
-          src="/images/images/lake-nakuru-flamingoes.jpg"
+          src="/images/lake-nakuru-flamingoes.jpg"
           alt="Kenya"
           fill
           className="absolute inset-0 object-cover"
@@ -238,8 +295,8 @@ export default function ItinerariesPage() {
             Samburu - Nakuru - Mara Itinerary
           </h2>
           <p className="text-lg">
-            Explore Rwanda&apos;s Hidden Gems: Gorillas, Volcanoes, and
-            Breathtaking Scenery.
+            Uncover cultural gems, savor culinary delights, and embark on
+            adventures tailored to create unforgettable travel experiences.
           </p>
         </div>
       </section>
@@ -294,14 +351,16 @@ export default function ItinerariesPage() {
         <main className="flex-1 !px-4 md:!px-10 !mt-20 overflow-x-hidden">
           <section id="overview">
             <h2 className="text-3xl md:text-4xl font-bold text-green-800 !mb-4">
-              8 DAYS 7 NIGHTS: SAMBURU, NAKURU and MASAAI MARA SAFARI
+              8 DAYS 7 NIGHTS: SAMBURU, NAKURU and MASAAI MARA SAFARI{" "}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
               This itinerary offers a rich blend of diverse landscapes and
               incredible wildlife encounters, from the arid beauty of Samburu,
               home to rare species, to the stunning flamingo-filled shores of
               Lake Nakuru, and finally, the world-renowned Maasai Mara, where
-              the Big Five and the Great Migration come to life.
+              the Big Five and the Great Migration come to life. Experience
+              Kenya’s natural wonders, vibrant cultures, and breathtaking
+              scenery in one comprehensive journey.
             </p>
           </section>
 
@@ -324,7 +383,7 @@ export default function ItinerariesPage() {
                     {day.mainImage && (
                       <div className="!my-4 flex justify-center">
                         <Image
-                          src={`/${day.mainImage}`}
+                          src={day.mainImage}
                           alt={day.day}
                           width={600}
                           height={400}
@@ -365,7 +424,7 @@ export default function ItinerariesPage() {
                               <SwiperSlide key={hotel.name}>
                                 <div className="bg-white rounded-lg shadow-lg h-100 !p-4 hover:shadow-xl transition">
                                   <Image
-                                    src={`/${hotel.image}`}
+                                    src={`${hotel.image}`}
                                     alt={hotel.name}
                                     width={300}
                                     height={200}
@@ -396,10 +455,10 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d1021374.0597745903!2d35.68245620208149!3d-0.3534115860659441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x182f129102505cef%3A0xefc58e7ef0660bf2!2sJomo%20Kenyatta%20International%20Airport(JKIA)%20(NBO)%2C%20Embakasi%2C%20Nairobi!3m2!1d-1.3225242!2d36.9245295!4m5!1s0x182ced340e0926ff%3A0xf11b680298c8c545!2sMasai%20Mara%20National%20Reserve%2C%20Kenya!3m2!1d-1.2482106!2d35.011966799999996!4m5!1s0x18299ad44c2b87a1%3A0x8ad29aeb6bc48e31!2sLake%20Nakuru%20National%20Park%2C%20Nakuru!3m2!1d-0.40353039999999996!2d36.0961663!4m5!1s0x17888d933c6f7369%3A0xa2e2dc34ae133bde!2sSamburu%20National%20Reserve!3m2!1d0.6110770999999999!2d37.5375057!4m5!1s0x182f129102505cef%3A0xefc58e7ef0660bf2!2sJomo%20Kenyatta%20International%20Airport(JKIA)%20(NBO)%2C%20Embakasi%2C%20Nairobi!3m2!1d-1.3225242!2d36.9245295!5e0!3m2!1sen!2ske!4v1732606603285!5m2!1sen!2ske"
+                allowFullScreen
                 width="800"
                 height="450"
                 style={{ border: 0 }}
-                // allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-lg shadow-lg !mt-20 "
@@ -485,37 +544,42 @@ export default function ItinerariesPage() {
             <h4 className="text-2xl font-bold text-green-800 mb-6">
               RELATED SAFARIS
             </h4>
-             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   title: "Uganda Wildlife Safari",
                   image: "/images/images/queen-elizabeth-uganda-1024x681.jpg",
-                  duration: "13 Days",
-                  dates: "Sept 15 - Sept 28",
-                  price: "$520.00",
                   location: "Uganda",
+                  duration: "13 Days",
                   difficulty: "Medium",
+                  description:
+                    "Experience Uganda’s diverse wildlife and landscapes on this extended journey through its premier national parks.",
+                  country: "Uganda",
                   link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
-                  title: "Migration Safari",
-                  image: "/images/images/MaraMigration.jpg",
-                  duration: "13 Days",
-                  dates: "October 1 - October 14",
-                  price: "$520.00",
-                  location: "Mara",
+                  title: "Tanzania - Zanzibar Tour",
+                  image:
+                    "/images/images/sports-nautiques-tanzanie-planche-a-voile.jpg",
+                  location: "Zanzibar",
+                  duration: "14 Days",
+                  dates: "August 15 - August 30",
                   difficulty: "Easy",
-                  link: "/itineraries/KenyaMaraMigration.html",
+                  description:
+                    "From safaris to turquoise beaches and water adventures along the Indian Ocean.",
+                  country: "Tanzania",
+                  link: "/itineraries/TanZanzibar",
                 },
                 {
-                  title: "Kenya-Zanzibar",
-                  location: "Zanzibar",
-                  difficulty: "Easy",
-                  image: "/images/images/zanzibar.jpg",
-                  duration: "12 Days",
-                  dates: "January 15 - January 27",
-                  price: "$520.00",
-                  link: "/itineraries/KenyaZan",
+                  title: "Namibia",
+                  image: "/images/images/namibia-sossuvlei.jpg",
+                  location: "Sossusvlei",
+                  duration: "6 Days",
+                  difficulty: "Medium",
+                  description:
+                    "Witness Namibia’s dramatic dunes and surreal desert landscapes.",
+                  country: "Southern Africa",
+                  link: "/itineraries/SouthernNamibia",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>
