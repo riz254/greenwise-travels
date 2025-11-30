@@ -285,7 +285,7 @@ export default function ItinerariesPage() {
       {/* Showcase Section */}
       <section className="h-[85vh] flex items-center justify-center text-center text-white overflow-hidden w-full relative">
         <Image
-          src="/images/images/lake-nakuru-flamingoes.jpg"
+          src="/images/lake-nakuru-flamingoes.jpg"
           alt="Kenya"
           fill
           className="absolute inset-0 object-cover"
@@ -455,7 +455,6 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d1021374.0597745903!2d35.68245620208149!3d-0.3534115860659441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x182f129102505cef%3A0xefc58e7ef0660bf2!2sJomo%20Kenyatta%20International%20Airport(JKIA)%20(NBO)%2C%20Embakasi%2C%20Nairobi!3m2!1d-1.3225242!2d36.9245295!4m5!1s0x182ced340e0926ff%3A0xf11b680298c8c545!2sMasai%20Mara%20National%20Reserve%2C%20Kenya!3m2!1d-1.2482106!2d35.011966799999996!4m5!1s0x18299ad44c2b87a1%3A0x8ad29aeb6bc48e31!2sLake%20Nakuru%20National%20Park%2C%20Nakuru!3m2!1d-0.40353039999999996!2d36.0961663!4m5!1s0x17888d933c6f7369%3A0xa2e2dc34ae133bde!2sSamburu%20National%20Reserve!3m2!1d0.6110770999999999!2d37.5375057!4m5!1s0x182f129102505cef%3A0xefc58e7ef0660bf2!2sJomo%20Kenyatta%20International%20Airport(JKIA)%20(NBO)%2C%20Embakasi%2C%20Nairobi!3m2!1d-1.3225242!2d36.9245295!5e0!3m2!1sen!2ske!4v1732606603285!5m2!1sen!2ske"
-             
                 allowFullScreen
                 width="800"
                 height="450"
@@ -545,37 +544,42 @@ export default function ItinerariesPage() {
             <h4 className="text-2xl font-bold text-green-800 mb-6">
               RELATED SAFARIS
             </h4>
-             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   title: "Uganda Wildlife Safari",
                   image: "/images/images/queen-elizabeth-uganda-1024x681.jpg",
-                  duration: "13 Days",
-                  dates: "Sept 15 - Sept 28",
-                  price: "$520.00",
                   location: "Uganda",
+                  duration: "13 Days",
                   difficulty: "Medium",
+                  description:
+                    "Experience Uganda’s diverse wildlife and landscapes on this extended journey through its premier national parks.",
+                  country: "Uganda",
                   link: "/itineraries/UgandaWildlifeSafari",
                 },
                 {
-                  title: "Migration Safari",
-                  image: "/images/images/MaraMigration.jpg",
-                  duration: "13 Days",
-                  dates: "October 1 - October 14",
-                  price: "$520.00",
-                  location: "Mara",
+                  title: "Tanzania - Zanzibar Tour",
+                  image:
+                    "/images/images/sports-nautiques-tanzanie-planche-a-voile.jpg",
+                  location: "Zanzibar",
+                  duration: "14 Days",
+                  dates: "August 15 - August 30",
                   difficulty: "Easy",
-                  link: "/itineraries/KenyaMaraMigration.html",
+                  description:
+                    "From safaris to turquoise beaches and water adventures along the Indian Ocean.",
+                  country: "Tanzania",
+                  link: "/itineraries/TanZanzibar",
                 },
                 {
-                  title: "Kenya-Zanzibar",
-                  location: "Zanzibar",
-                  difficulty: "Easy",
-                  image: "/images/images/zanzibar.jpg",
-                  duration: "12 Days",
-                  dates: "January 15 - January 27",
-                  price: "$520.00",
-                  link: "/itineraries/KenyaZan",
+                  title: "Namibia",
+                  image: "/images/images/namibia-sossuvlei.jpg",
+                  location: "Sossusvlei",
+                  duration: "6 Days",
+                  difficulty: "Medium",
+                  description:
+                    "Witness Namibia’s dramatic dunes and surreal desert landscapes.",
+                  country: "Southern Africa",
+                  link: "/itineraries/SouthernNamibia",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

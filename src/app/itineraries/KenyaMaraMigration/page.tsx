@@ -263,11 +263,11 @@ export default function ItinerariesPage() {
               along the way.Experience unforgettable game drives across the
               Masai Mara and Serengeti, where you’ll witness the awe-inspiring
               Great Migration as massive herds of wildebeest and zebra move in
-              search of greener pastures. Beyond wildlife, explore East Africa&apos;s
-              rich cultural heritage with visits to local communities and
-              historic sites like Olduvai Gorge. This safari promises lasting
-              memories and an immersive adventure in one of the world’s most
-              spectacular destinations.
+              search of greener pastures. Beyond wildlife, explore East
+              Africa&apos;s rich cultural heritage with visits to local
+              communities and historic sites like Olduvai Gorge. This safari
+              promises lasting memories and an immersive adventure in one of the
+              world’s most spectacular destinations.
             </p>
           </section>
 
@@ -362,7 +362,6 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d2041194.3333008229!2d34.50677661592069!3d-2.2626325732829073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x182f129102505cef%3A0xefc58e7ef0660bf2!2sJomo%20Kenyatta%20International%20Airport(JKIA)%20(NBO)%2C%20Embakasi%2C%20Nairobi!3m2!1d-1.3225242!2d36.9245295!4m5!1s0x182ced340e0926ff%3A0xf11b680298c8c545!2sMasai%20Mara%20National%20Reserve%2C%20Kenya!3m2!1d-1.2482106!2d35.011966799999996!4m5!1s0x1832cdd680dac6d1%3A0x2ea157f39deb3945!2sSerengeti%20National%20Park%2C%20Tanzania!3m2!1d-2.3333333!2d34.8333333!4m5!1s0x18340d59ac10ebb9%3A0xf5336dab1671264c!2sNgorongoro%20Crater%2C%20Tanzania!3m2!1d-3.1617522!2d35.5876697!4m5!1s0x18371c88f2387383%3A0xbc1907f7ec497152!2sArusha%2C%20Tanzania!3m2!1d-3.3869254!2d36.6829927!4m5!1s0x1837711890eb8377%3A0x985958a09027ead3!2sKilimanjaro%20International%20Airport%2C%20Kilimanjaro%20Airport%20Road%2C%20Tanzania!3m2!1d-3.4245248!2d37.065080099999996!5e0!3m2!1sen!2ske!4v1732607235373!5m2!1sen!2ske"
-               
                 allowfullscreen=""
                 loading="lazy"
                 width="800"
@@ -453,37 +452,42 @@ export default function ItinerariesPage() {
             <h4 className="text-2xl font-bold text-green-800 mb-6">
               RELATED SAFARIS
             </h4>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  title: "Uganda Wildlife Safari",
-                  image: "/images/images/queen-elizabeth-uganda-1024x681.jpg",
-                  duration: "13 Days",
-                  dates: "Sept 15 - Sept 28",
-                  price: "$520.00",
-                  location: "Uganda",
-                  difficulty: "Medium",
-                  link: "/itineraries/UgandaWildlifeSafari",
-                },
-                {
-                  title: "Migration Safari",
-                  image: "/images/images/MaraMigration.jpg",
-                  duration: "13 Days",
-                  dates: "October 1 - October 14",
-                  price: "$520.00",
-                  location: "Mara",
+                  title: "Samburu-Nakuru-Mara",
+                  image: "/images/lake-nakuru-flamingoes.jpg",
+                  location: "Lake Nakuru",
+                  duration: "8 Days",
                   difficulty: "Easy",
-                  link: "/itineraries/KenyaMaraMigration.html",
+                  description:
+                    "From Samburu’s wilderness to the Mara’s great plains — a true Kenyan adventure.",
+                  country: "Kenya",
+                  link: "/itineraries/KenyaSamburuNakMara",
                 },
                 {
-                  title: "Kenya-Zanzibar",
+                  title: "Tanzania - Zanzibar Tour",
+                  image:
+                    "/images/images/sports-nautiques-tanzanie-planche-a-voile.jpg",
                   location: "Zanzibar",
+                  duration: "14 Days",
+                  dates: "August 15 - August 30",
                   difficulty: "Easy",
-                  image: "/images/images/zanzibar.jpg",
-                  duration: "12 Days",
-                  dates: "January 15 - January 27",
-                  price: "$520.00",
-                  link: "/itineraries/KenyaZan",
+                  description:
+                    "From safaris to turquoise beaches and water adventures along the Indian Ocean.",
+                  country: "Tanzania",
+                  link: "/itineraries/TanZanzibar",
+                },
+                {
+                  title: "Namibia",
+                  image: "/images/images/namibia-sossuvlei.jpg",
+                  location: "Sossusvlei",
+                  duration: "6 Days",
+                  difficulty: "Medium",
+                  description:
+                    "Witness Namibia’s dramatic dunes and surreal desert landscapes.",
+                  country: "Southern Africa",
+                  link: "/itineraries/SouthernNamibia",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>

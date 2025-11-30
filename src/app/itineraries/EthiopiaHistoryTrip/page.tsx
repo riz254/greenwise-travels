@@ -10,17 +10,17 @@ import {
 } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { MapPin, Clock, Mountain } from "lucide-react";
 
 export const itinerary = [
   {
     day: "Day 1 - Addis Ababa",
-          mainImage: "/images/images/Addis-Ababa.jpg",
+    mainImage: "/images/images/Addis-Ababa.jpg",
 
     image: "/images/Addis-Ababa.jpg",
     description: `
@@ -210,7 +210,7 @@ export default function ItinerariesPage() {
                   className=" text-green-700 font-medium hover:bg-green-50 !p-3"
                 >
                   <AccordionTrigger className="block !px-4 !py-5 text-green-700 w-full font-semibold text-xl hover:bg-green-200">
-                      {day.day}
+                    {day.day}
                   </AccordionTrigger>
                   <AccordionContent>
                     {day.mainImage && (
@@ -226,8 +226,6 @@ export default function ItinerariesPage() {
                       </div>
                     )}
                     <p className="text-gray-700 !mb-4">{day.description}</p>
-
-                 
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -240,8 +238,7 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d8060154.807470264!2d32.41192667078219!3d9.454464659784723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!3m2!1d9.0191936!2d38.7524635!4m5!1s0x1669c1d46d16f89d%3A0x770284df7312622d!2sSimien%20Mountains%20National%20Park%2C%20Ethiopia!3m2!1d13.2027138!2d37.887647699999995!4m5!1s0x17a5a9826e0174c5%3A0x50d4119536afd74e!2sJinka%2C%20Ethiopia!3m2!1d5.7861984!2d36.5655964!5e0!3m2!1sen!2ske!4v1734098459574!5m2!1sen!2ske"
-  
-              width="800"
+                width="800"
                 height="450"
                 style={{ border: 0 }}
                 // allowFullScreen
@@ -333,34 +330,39 @@ export default function ItinerariesPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  title: "Uganda Wildlife Safari",
-                  image: "/images/images/queen-elizabeth-uganda-1024x681.jpg",
-                  duration: "13 Days",
-                  dates: "Sept 15 - Sept 28",
-                  price: "$520.00",
-                  location: "Uganda",
-                  difficulty: "Medium",
-                  link: "/itineraries/UgandaWildlifeSafari",
-                },
-                {
-                  title: "Migration Safari",
-                  image: "/images/images/MaraMigration.jpg",
-                  duration: "13 Days",
-                  dates: "October 1 - October 14",
-                  price: "$520.00",
-                  location: "Mara",
+                  title: "Samburu-Nakuru-Mara",
+                  image: "/images/lake-nakuru-flamingoes.jpg",
+                  location: "Lake Nakuru",
+                  duration: "8 Days",
                   difficulty: "Easy",
-                  link: "/itineraries/KenyaMaraMigration.html",
+                  description:
+                    "From Samburu’s wilderness to the Mara’s great plains — a true Kenyan adventure.",
+                  country: "Kenya",
+                  link: "/itineraries/KenyaSamburuNakMara",
                 },
                 {
-                  title: "Kenya-Zanzibar",
+                  title: "Tanzania - Zanzibar Tour",
+                  image:
+                    "/images/images/sports-nautiques-tanzanie-planche-a-voile.jpg",
                   location: "Zanzibar",
+                  duration: "14 Days",
+                  dates: "August 15 - August 30",
                   difficulty: "Easy",
-                  image: "/images/images/zanzibar.jpg",
-                  duration: "12 Days",
-                  dates: "January 15 - January 27",
-                  price: "$520.00",
-                  link: "/itineraries/KenyaZan",
+                  description:
+                    "From safaris to turquoise beaches and water adventures along the Indian Ocean.",
+                  country: "Tanzania",
+                  link: "/itineraries/TanZanzibar",
+                },
+                {
+                  title: "Namibia",
+                  image: "/images/images/namibia-sossuvlei.jpg",
+                  location: "Sossusvlei",
+                  duration: "6 Days",
+                  difficulty: "Medium",
+                  description:
+                    "Witness Namibia’s dramatic dunes and surreal desert landscapes.",
+                  country: "Southern Africa",
+                  link: "/itineraries/SouthernNamibia",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>
@@ -392,8 +394,7 @@ export default function ItinerariesPage() {
                       <h1 className="text-xl font-semibold text-gray-950 !mb-2">
                         {safari.title}
                       </h1>
-                      <p className="text-gray-600 text-lg leading-relaxed">
-                      </p>
+                      <p className="text-gray-600 text-lg leading-relaxed"></p>
                       <button className="!mt-4 self-start bg-gradient-to-r from-green-500 to-green-700 text-white font-semibold !px-5 !py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all">
                         View Details
                       </button>

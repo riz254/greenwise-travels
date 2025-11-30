@@ -10,17 +10,17 @@ import {
 } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { MapPin, Clock, Mountain } from "lucide-react";
 
 const itinerary = [
   {
     day: "Day 1 : Drive from Addis Ababa – Bale Mountains",
-      mainImage: "/images/images/Addis-Ababa.jpg",
+    mainImage: "/images/images/Addis-Ababa.jpg",
 
     description:
       "You will drive from Addis to the Bale Mountains National Park. You will arrive at the park headquarters in the afternoon and experience a game drive activity in time for a leisurely afternoon hike, possibly spotting two endemic mammals that frequent the area: Menelik’s bushbuck and the Mountain Nyala. Birds in this area include the blue-winged Goose, the spot-breasted Lapwing, the Abyssinian long claw, the wattled Ibis, the black-headed Siskin, the Rouget’s rail, and numerous other species.",
@@ -133,8 +133,8 @@ export default function ItinerariesPage() {
               and aquatic bird in saneti plateau. The shain mounatin is the
               source of many rivers and web river is one that create wonderfully
               carved caverns for a distance of one and a half kilometers. The
-              fantastic limestone caves of Sof Omar make a day&apos;s outing from
-              Dinsho, Robe or Goba.
+              fantastic limestone caves of Sof Omar make a day&apos;s outing
+              from Dinsho, Robe or Goba.
             </p>
           </section>
 
@@ -167,9 +167,6 @@ export default function ItinerariesPage() {
                       </div>
                     )}
                     <p className="text-gray-700 !mb-4">{day.description}</p>
-
-                    
-
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -271,37 +268,42 @@ export default function ItinerariesPage() {
             <h4 className="text-2xl font-bold text-green-800 mb-6">
               RELATED SAFARIS
             </h4>
-   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  title: "Uganda Wildlife Safari",
-                  image: "/images/images/queen-elizabeth-uganda-1024x681.jpg",
-                  duration: "13 Days",
-                  dates: "Sept 15 - Sept 28",
-                  price: "$520.00",
-                  location: "Uganda",
-                  difficulty: "Medium",
-                  link: "/itineraries/UgandaWildlifeSafari",
-                },
-                {
-                  title: "Migration Safari",
-                  image: "/images/images/MaraMigration.jpg",
-                  duration: "13 Days",
-                  dates: "October 1 - October 14",
-                  price: "$520.00",
-                  location: "Mara",
+                  title: "Samburu-Nakuru-Mara",
+                  image: "/images/lake-nakuru-flamingoes.jpg",
+                  location: "Lake Nakuru",
+                  duration: "8 Days",
                   difficulty: "Easy",
-                  link: "/itineraries/KenyaMaraMigration.html",
+                  description:
+                    "From Samburu’s wilderness to the Mara’s great plains — a true Kenyan adventure.",
+                  country: "Kenya",
+                  link: "/itineraries/KenyaSamburuNakMara",
                 },
                 {
-                  title: "Kenya-Zanzibar",
+                  title: "Tanzania - Zanzibar Tour",
+                  image:
+                    "/images/images/sports-nautiques-tanzanie-planche-a-voile.jpg",
                   location: "Zanzibar",
+                  duration: "14 Days",
+                  dates: "August 15 - August 30",
                   difficulty: "Easy",
-                  image: "/images/images/zanzibar.jpg",
-                  duration: "12 Days",
-                  dates: "January 15 - January 27",
-                  price: "$520.00",
-                  link: "/itineraries/KenyaZan",
+                  description:
+                    "From safaris to turquoise beaches and water adventures along the Indian Ocean.",
+                  country: "Tanzania",
+                  link: "/itineraries/TanZanzibar",
+                },
+                {
+                  title: "Namibia",
+                  image: "/images/images/namibia-sossuvlei.jpg",
+                  location: "Sossusvlei",
+                  duration: "6 Days",
+                  difficulty: "Medium",
+                  description:
+                    "Witness Namibia’s dramatic dunes and surreal desert landscapes.",
+                  country: "Southern Africa",
+                  link: "/itineraries/SouthernNamibia",
                 },
               ].map((safari, index) => (
                 <a key={index} href={safari.link}>
@@ -334,7 +336,7 @@ export default function ItinerariesPage() {
                         {safari.title}
                       </h1>
                       <p className="text-gray-600 text-lg leading-relaxed">
-                        {/* {safari.description} */}
+                        {safari.description}
                       </p>
                       <button className="!mt-4 self-start bg-gradient-to-r from-green-500 to-green-700 text-white font-semibold !px-5 !py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all">
                         View Details
