@@ -241,6 +241,7 @@ On Day 5, rise early and descend into the crater for a thrilling game drive. Exp
       {
         name: "Kisura Tented Lodge",
         stars: 4,
+          image: "images/images/kisura-tented-lodge.jpg" ,
         description:
           "Comfortable tents with scenic views, offering authentic safari experiences and warm hospitality in the Serengeti.",
       },
@@ -317,6 +318,8 @@ On Day 5, rise early and descend into the crater for a thrilling game drive. Exp
       {
         name: "Sandies Beach Hotel",
         stars: 4,
+          image: "images/images/sandies-beach-hotel.jpg" ,
+
         description:
           "A tranquil beachfront resort offering tropical ambiance, fresh seafood, and breathtaking sunset views over the Indian Ocean.",
       },
