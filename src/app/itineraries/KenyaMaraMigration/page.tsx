@@ -362,7 +362,7 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d2041194.3333008229!2d34.50677661592069!3d-2.2626325732829073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x182f129102505cef%3A0xefc58e7ef0660bf2!2sJomo%20Kenyatta%20International%20Airport(JKIA)%20(NBO)%2C%20Embakasi%2C%20Nairobi!3m2!1d-1.3225242!2d36.9245295!4m5!1s0x182ced340e0926ff%3A0xf11b680298c8c545!2sMasai%20Mara%20National%20Reserve%2C%20Kenya!3m2!1d-1.2482106!2d35.011966799999996!4m5!1s0x1832cdd680dac6d1%3A0x2ea157f39deb3945!2sSerengeti%20National%20Park%2C%20Tanzania!3m2!1d-2.3333333!2d34.8333333!4m5!1s0x18340d59ac10ebb9%3A0xf5336dab1671264c!2sNgorongoro%20Crater%2C%20Tanzania!3m2!1d-3.1617522!2d35.5876697!4m5!1s0x18371c88f2387383%3A0xbc1907f7ec497152!2sArusha%2C%20Tanzania!3m2!1d-3.3869254!2d36.6829927!4m5!1s0x1837711890eb8377%3A0x985958a09027ead3!2sKilimanjaro%20International%20Airport%2C%20Kilimanjaro%20Airport%20Road%2C%20Tanzania!3m2!1d-3.4245248!2d37.065080099999996!5e0!3m2!1sen!2ske!4v1732607235373!5m2!1sen!2ske"
-                allowfullscreen=""
+                allowfullscreen
                 loading="lazy"
                 width="800"
                 height="450"
