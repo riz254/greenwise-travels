@@ -28,7 +28,6 @@ export const itinerary = [
       streets and the UNESCO World Heritage Sites of Dambulla, Polonnaruva and
       Sigiriya. Embarkation will begin around 4pm, with departure at 6pm.`,
     meals: null,
-    mainImage: null,
   },
   {
     day: "Day 2",
@@ -65,6 +64,8 @@ export const itinerary = [
       After 2 days in Rasdhoo, we visit the UNESCO Biosphere Reserve of Baa Atoll,
       perfect for snorkelling, diving, or relaxing on white sand beaches.`,
     meals: "BLD",
+    mainImage: "/images/images/maldives.jpg",
+
   },
   {
     day: "Days 7-10",
