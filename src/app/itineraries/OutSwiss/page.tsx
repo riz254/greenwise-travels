@@ -246,57 +246,7 @@ export default function ItinerariesPage() {
                     )}
                     <p className="text-gray-700 !mb-4">{day.description}</p>
 
-                    {day.hotels && day.hotels.length > 0 && (
-                      <>
-                        <h3 className="text-green-700 text-lg font-semibold !mb-4 text-center">
-                          WHERE TO STAY
-                        </h3>
-
-                        {/* ✅ Swiper for Hotels */}
-                        <div className="w-full max-w-6xl !mx-auto">
-                          <Swiper
-                            modules={[Navigation, Pagination, Autoplay]}
-                            spaceBetween={20}
-                            slidesPerView={3}
-                            slidesPerGroup={1}
-                            // navigation
-                            pagination={{ clickable: true }}
-                            autoplay={{
-                              delay: 3000,
-                              disableOnInteraction: false,
-                            }}
-                            loop={true}
-                            breakpoints={{
-                              0: { slidesPerView: 1 },
-                              768: { slidesPerView: 2 },
-                              1024: { slidesPerView: 3 },
-                            }}
-                            className="gallery-swiper w-full"
-                          >
-                            {day.hotels.map((hotel) => (
-                              <SwiperSlide key={hotel.name}>
-                                <div className="bg-white rounded-lg shadow-lg h-100 !p-4 hover:shadow-xl transition">
-                                  <Image
-                                    src={hotel.image}
-                                    // src={`/${hotel.image}`}
-                                    alt={hotel.name}
-                                    width={300}
-                                    height={200}
-                                    className="rounded-md !mb-3 object-cover w-full h-48"
-                                  />
-                                  <h4 className="font-semibold text-xl text-green-800">
-                                    {hotel.name}
-                                  </h4>
-                                  <p className="text-gray-600 !text-base !mt-2">
-                                    {hotel.description}
-                                  </p>
-                                </div>
-                              </SwiperSlide>
-                            ))}
-                          </Swiper>
-                        </div>
-                      </>
-                    )}
+             
                   </AccordionContent>
                 </AccordionItem>
               ))}
