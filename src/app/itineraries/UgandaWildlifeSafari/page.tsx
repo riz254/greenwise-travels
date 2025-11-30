@@ -523,7 +523,6 @@ export default function ItinerariesPage() {
             <div className=" justify-center ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d1021362.2435444444!2d30.45650643102713!3d-0.44816984244843827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x177dbc0f9d74b39b%3A0x4538903dd96b6fec!2sKampala%2C%20Uganda!3m2!1d0.3151692!2d32.5816313!4m5!1s0x19d9ae45074017e7%3A0xb1481b270022a338!2sLake%20Mburo%20National%20Park%2C%20Mbarara%2C%20Uganda!3m2!1d-0.5949804!2d30.9822074!4m5!1s0x19de9d58dac3d859%3A0x972f044d905ac1fa!2sBwindi%20Impenetrable%20Forest%2C%20Uganda!3m2!1d-1.0521494999999998!2d29.620100599999997!4m5!1s0x19df489b3ec38175%3A0x3cfe5a989d13d498!2sQueen%20Elizabeth%20National%20Park%2C%20Uganda!3m2!1d-0.2819105!2d29.9638986!4m5!1s0x177dbb4918f784b5%3A0xa1607f018ffee44d!2s9J47%2B7RV%20Murchison%20Falls%20National%20Park%20Safari%2C%20Kampala%2C%20Uganda!3m2!1d0.3557299!2d32.614531299999996!4m5!1s0x177d86cd37ba81af%3A0x9daba139d6433d1f!2sEntebbe%20International%20Airport%2C%20Kampala%20Road%2C%20Entebbe%2C%20Uganda!3m2!1d0.045107999999999995!2d32.4426736!5e0!3m2!1sen!2ske!4v1732600598921!5m2!1sen!2ske"
-                allowfullscreen
                 width="800"
                 height="450"
                 style={{ border: 0 }}
