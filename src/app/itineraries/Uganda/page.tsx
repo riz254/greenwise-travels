@@ -19,108 +19,250 @@ import { MapPin, Clock, Mountain } from "lucide-react";
 
 const itinerary = [
   {
-    day: "Day 1",
-    title: "Victoria, Mahé",
-    description: [
-      "Your cruise starts in Victoria, the beautiful capital of the Seychelles located on Mahé, the largest island in the archipelago. You may wish to arrive a few days early to enjoy some of the island’s 70 beaches, each one as stunning as the next.",
-      "Embarkation will begin in the afternoon.",
-    ],
+    day: "DAY 1",
+    title: "Arrival in Entebbe",
+    description: `Upon your arrival in Entebbe, your guide will welcome you and transfer you to your hotel for the night. Depending on your arrival time, you may have the opportunity to explore nearby sights in Kampala. Enjoy scenic views of Lake Victoria from your hotel. You can opt for dinner at the hotel or let us recommend some great local spots for dining and drinks around town.`,
     meals: null,
-    mainImage: null,
+    mainImage: "/images/images/entebbe2.jpg",
     hotels: [
-      "images/images/Savoy Resort & Spa",
-      "Le Meridien Fisherman’s Cove",
-      "Constance Ephelia Seychelles",
-      "Mahe Island Resort",
-      "Coral Strand Smart Choice Hotel",
+      {
+        name: "Protea Hotel by Marriott Entebbe",
+        description:
+          "A modern lakeside hotel with stunning views, offering comfortable rooms and easy access to Entebbe’s attractions.",
+        stars: 4,
+        image: "/images/images/ProteaHotel.jpg",
+      },
+      {
+        name: "Lake Victoria Serena Golf Resort & Spa",
+        description:
+          "A luxury resort overlooking Lake Victoria, featuring a golf course, spa, and fine dining options for a relaxing stay.",
+        stars: 5,
+        image:
+          "/images/images/aeriel-view-of-lake-victoria-serena-golf-resort-and-spa_standard.jpg",
+      },
+      {
+        name: "The Boma Hotel Entebbe",
+        description:
+          "A colonial-style guesthouse with lush gardens and personalized service, offering a cozy and intimate stay.",
+        stars: 3,
+        image: "/images/images/boma-entebbe.jpg",
+      },
+      {
+        name: "2 Friends Beach Hotel Entebbe",
+        description:
+          "A boutique hotel located on the shores of Lake Victoria, known for its charming atmosphere and lakeside views.",
+        stars: 3,
+        image: "/images/images/2friendsEntebbe.jpg",
+      },
+      {
+        name: "Papyrus Guesthouse Entebbe",
+        description:
+          "A charming guesthouse offering a serene and friendly atmosphere, ideal for relaxation before or after your travels.",
+        stars: 3,
+        image: "/images/images/papyrus_entebbe.png",
+      },
     ],
   },
   {
-    day: "Day 2",
-    title: "Sainte Anne Marine National Park",
-    description: [
-      "Discover the verdant islands and turquoise lagoons of Sainte-Anne, Ronde, Moyenne, Longue, and Cerf.",
-      "Relax on the dream-like white sandy beaches or swim/snorkel to spot tropical fish, manta rays, dolphins, and sea turtles.",
-    ],
-    meals: "BLD",
-    mainImage: null,
-    hotels: [],
-  },
-  {
-    day: "Day 3",
-    title: "Rémire Island",
-    description: [
-      "Renowned for its unique biodiversity, especially underwater. Snorkel among colorful coral reefs or enjoy birdwatching along the island’s lush vegetation.",
-    ],
-    meals: "BLD",
-    mainImage: null,
-    hotels: [],
-  },
-  {
-    day: "Day 4",
-    title: "Curieuse Island",
-    description: [
-      "Famous for hundreds of Aldabra giant tortoises and distinctive red earth. Dive or snorkel in the outstanding underwater life and meet the fascinating reptiles on the island.",
-    ],
+    day: "DAY 2",
+    title: "Entebbe to Queen Elizabeth National Park",
+    description: `Start your day with a hearty breakfast in Entebbe before taking a flight to Queen Elizabeth National Park. Nestled at the foot of the Rwenzori Mountain range and flanked by Lake Edward and Lake George, this beautiful park boasts abundant wildlife, including elephants, lions, hippos, and numerous bird species. Enjoy your first game drive and scenic views upon arrival.`,
     meals: "LDBB",
-    mainImage: null,
-    hotels: [],
-  },
-  {
-    day: "Day 5",
-    title: "Aride Island",
-    description: [
-      "Explore this beautiful nature reserve, home to endemic plants, exceptional wildlife, and birdlife. Spot sea turtles, Wright’s skinks, and noddies, terns, and Seychelles magpie-robins.",
-    ],
-    meals: "BLD",
-    mainImage: null,
-    hotels: [],
-  },
-  {
-    day: "Day 6",
-    title: "Grande Soeur Island",
-    description: [
-      "Spend the day snorkeling in translucent waters or relaxing on the beach while observing sea turtles on this remarkable island.",
-    ],
-    meals: "BLD",
-    mainImage: null,
-    hotels: [],
-  },
-  {
-    day: "Day 7",
-    title: "Praslin Island",
-    description: [
-      "Trek inland to the Vallée de Mai Nature Reserve, a UNESCO World Heritage Site with endemic palm trees and the famous coco fesse. Time for diving and snorkeling in the surrounding turquoise waters.",
-    ],
-    meals: "BLD",
-    mainImage: null,
+    mainImage: "/images/images/queen-elizabeth-uganda-1024x681.jpg",
     hotels: [
-      "Constance Lemuria",
-      "Le Domaine de La Reserve",
-      "Coco de Mer Hotel",
-      "Praslin Island Resort",
-      "Villa Rosi",
+      {
+        name: "Mweya Safari Lodge",
+        description:
+          "Located on the Kazinga Channel, this lodge offers luxurious accommodation with stunning views, perfect for unwinding after a day of exploration.",
+        stars: 3,
+        image: "/images/images/uganda_mweya_safari.jpg",
+      },
+      {
+        name: "Jacana Safari Lodge",
+        description:
+          "A peaceful lodge overlooking Lake Nyamusingire, providing a tranquil retreat amidst nature with comfortable rooms and great service.",
+        stars: 3,
+        image: "/images/images/jacana-safari-lodge.jpg",
+      },
+      {
+        name: "Enganzi Lodge",
+        description:
+          "This lodge provides sweeping views of the park and cozy accommodations, offering a close connection to nature with all the comforts.",
+        stars: 4,
+        image: "/images/images/Engazzi.png",
+      },
+      {
+        name: "Buffalo Safari Lodge",
+        description:
+          "An eco-friendly lodge with excellent views of Lake George, providing an intimate safari experience with a touch of luxury.",
+        stars: 3,
+        image: "/images/images/buffalo_safari_lodge.jpg",
+      },
+      {
+        name: "Kyambura Gorge Lodge",
+        description:
+          "A stylish lodge set on the edge of Kyambura Gorge, known for its luxurious ambiance and breathtaking landscapes.",
+        stars: 4,
+        image: "/images/images/kyambura_gorge_lodge.jpg",
+      },
     ],
   },
   {
-    day: "Day 8",
-    title: "La Digue Island",
-    description: [
-      "Visit the magnificent Anse Source d’Argent beach. Swim or snorkel, see giant tortoises, and enjoy iconic granite rocks with pink highlights and coconut-fringed beaches.",
-    ],
-    meals: "BLD",
-    mainImage: null,
-    hotels: [],
+    day: "DAY 3",
+    title: "Full Day Safari in Queen Elizabeth National Park",
+    description: `Spend the day on morning and afternoon game drives across the park. Take a boat safari on the Kazinga Channel to spot hippos, crocodiles, buffalo, and numerous bird species. Optional: Experience a sunrise hot air balloon ride over the park for spectacular views of the wildlife and landscapes.`,
+    meals: "LDBB",
+    mainImage: "/images/images/queen-elizabeth-uganda-1024x681.jpg",
+    hotels: null,
   },
   {
-    day: "Day 9",
-    title: "Victoria, Mahé",
-    description: [
-      "Arrival back in Victoria signals the end of the voyage. After breakfast, disembarkation begins. For advice on extending your stay, ask one of the destination experts.",
+    day: "DAY 4",
+    title: "Ishasha",
+    description: `Drive to the southern sector of Queen Elizabeth National Park, Ishasha, famous for its tree-climbing lions. On the way, visit the Kyambura Gorge to see chimpanzees, red-tailed monkeys, colobus monkeys, baboons, and vervet monkeys. Arrive at your lodge in time to relax or enjoy an evening game drive.`,
+    meals: "LDBB",
+    mainImage: "/images/images/Ishasha-Wilderness-Camp.jpg",
+    hotels: [
+      {
+        name: "Ishasha Wilderness Camp",
+        description:
+          "Set along the Ntungwe River, this camp offers a unique blend of comfort and authenticity, perfect for spotting the famous tree-climbing lions of Ishasha.",
+        stars: 4,
+        image: "/images/images/Ishasha-Wilderness-Camp.jpg",
+      },
+      {
+        name: "Savannah Resort Hotel",
+        description:
+          "A cozy lodge with beautiful views of the savannah and modern amenities, perfect for a relaxing stay in the heart of Ishasha.",
+        stars: 3,
+        image: "/images/images/Savannah-Resort-Hotel.jpg",
+      },
+      {
+        name: "Enjojo Lodge",
+        description:
+          "This eco-friendly lodge set amidst lush forest offers rustic-style chalets and a tranquil escape into nature.",
+        stars: 4,
+        image: "/images/images/Enjojo-Lodge.png",
+      },
+      {
+        name: "Kasenyi Safari Camp",
+        description:
+          "Located close to the park’s game trails, this camp provides luxury tents, delicious cuisine, and an immersive experience in nature.",
+        stars: 5,
+        image: "/images/images/Kasenyi-Safari-Camp.jpg",
+      },
     ],
-    meals: null,
-    mainImage: null,
-    hotels: [],
+  },
+  {
+    day: "DAY 5",
+    title: "Ishasha to Bwindi Impenetrable Forest",
+    description: `Today, travel into the Virunga Mountains to reach Bwindi Impenetrable Forest. Home to mountain gorillas, chimpanzees, and over 110 mammal species and 360 birds. Arrive at your lodge and prepare for the next day’s gorilla trek.`,
+    meals: "LDBB",
+    mainImage: "/images/images/Bwindi-impenetrable1.png",
+    hotels: [
+      {
+        name: "Buhoma Lodge",
+        description:
+          "Nestled within Bwindi Impenetrable Forest, Buhoma Lodge offers an authentic wilderness experience with luxury accommodations, delicious cuisine, and stunning forest views.",
+        stars: 5,
+        image: "/images/images/Buhoma-longe.jpg",
+      },
+      {
+        name: "Mahogany Springs Lodge",
+        description:
+          "Located on the edge of Bwindi, this lodge offers luxurious suites with breathtaking views, fine dining, and a perfect base for gorilla trekking adventures.",
+        stars: 4,
+        image: "/images/images/mahoganySprings.jpg",
+      },
+      {
+        name: "Sanctuary Gorilla Forest Camp",
+        description:
+          "An exclusive camp set within the forest, offering close encounters with gorillas, personalized service, and a tranquil setting perfect for nature lovers.",
+        stars: 4,
+        image: "/images/images/sanctuaryGorillaForest.jpg",
+      },
+      {
+        name: "Clouds Mountain Gorilla Lodge",
+        description:
+          "Perched high in the mountains, this lodge provides luxurious villas, stunning views, and a tranquil retreat near Bwindi's gorilla tracking trails.",
+        stars: 5,
+        image: "/images/images/cloudsMountainGorillaLodge.jpg",
+      },
+      {
+        name: "Ichumbi Gorilla Lodge",
+        description:
+          "A cozy lodge near Bwindi offering comfortable accommodations, warm hospitality, and easy access to gorilla trekking adventures.",
+        stars: 4,
+        image: "/images/images/ichumbiGorillaLodge.jpg",
+      },
+    ],
+  },
+  {
+    day: "DAY 6",
+    title: "Gorilla Trekking in Bwindi",
+    description: `Wake early for your gorilla trek. You will be assigned to a habituated gorilla group. Treks can take from under an hour to up to 8 hours depending on group location. After the trek, return to your lodge to relax. Optional: Balloon safari over the plains or a visit to a local community village.`,
+    meals: "LDBB",
+    mainImage: "/images/images/gorilla-trek-africa.jpg",
+    hotels: null,
+  },
+  {
+    day: "DAY 7",
+    title: "Bwindi to Murchison Falls",
+    description: `Breakfast at the lodge, then fly from Kihihi to Murchison Falls with a stop in Entebbe. Arrive for lunch, relax at your lodge, and enjoy an afternoon game drive.`,
+    meals: "BL",
+    mainImage: "/images/images/murchisonFalls.jpg",
+    hotels: [
+      {
+        name: "Paraa Safari Lodge",
+        description:
+          "An iconic lodge overlooking the Nile River, offering luxurious rooms and an infinity pool with panoramic views.",
+        stars: 4,
+        image: "/images/images/paaraLounge.jpg",
+      },
+      {
+        name: "Baker’s Lodge",
+        description:
+          "An intimate lodge on the southern bank of the Nile, known for its cozy atmosphere and riverside views.",
+        stars: 4,
+        image: "/images/images/Bakers-Lodge-guest-area.jpg",
+      },
+      {
+        name: "Chobe Safari Lodge",
+        description:
+          "A luxury lodge with stunning views of the Nile, offering a unique blend of relaxation and adventure.",
+        stars: 4,
+        image: "/images/images/Chobe-Safari-Lodge.jpg",
+      },
+      {
+        name: "Murchison River Lodge",
+        description:
+          "An eco-friendly lodge with thatched cottages and serene views of the river — perfect for nature lovers.",
+        stars: 3,
+        image: "/images/images/murchisonRiverLodge.jpg",
+      },
+      {
+        name: "Nile Safari Lodge",
+        description:
+          "A serene lodge along the river, featuring luxurious cottages and a natural pool.",
+        stars: 4,
+        image: "/images/images/Nile Safari Lodge.jpg",
+      },
+    ],
+  },
+  {
+    day: "DAY 8",
+    title: "Murchison Falls Safari",
+    description: `Start with a morning game drive followed by an afternoon boat safari. Explore the falls by boat or hike to the top with your guide. The park is rich in big game and diverse landscapes.`,
+    meals: "BL",
+    mainImage: "/images/images/murchisonFalls.jpg",
+    hotels: null,
+  },
+  {
+    day: "DAY 9",
+    title: "Fly Home",
+    description: `After a morning safari or relaxing at the lodge, fly back to Entebbe for your international flight home.`,
+    meals: "BL",
+    mainImage: "/images/images/entebbe2.jpg",
+    hotels: null,
   },
 ];
 
@@ -134,13 +276,13 @@ export default function ItinerariesPage() {
       {/* Showcase Section */}
       <section className="h-[85vh] flex items-center justify-center text-center text-white overflow-hidden w-full relative">
         <Image
-          src="/images/images/seychellesSun.jpeg"
+          src="/images/images/UgandaFlying.png"
           alt="Kenya"
           fill
           className="absolute inset-0 object-cover"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40">
-          <h2 className="text-[40pt] font-bold">Seychelles Luxury Cruise </h2>
+          <h2 className="text-[40pt] font-bold">UGANDA FLYING SAFARI </h2>
           <p className="text-lg">
             Uncover cultural gems, savor culinary delights, and embark on
             adventures tailored to create unforgettable travel experiences.
@@ -198,18 +340,21 @@ export default function ItinerariesPage() {
         <main className="flex-1 !px-4 md:!px-10 !mt-20 overflow-x-hidden">
           <section id="overview">
             <h2 className="text-3xl md:text-4xl font-bold text-green-800 !mb-4">
-              9-Day Seychelles Luxury Cruise{" "}
+              9 DAYS UGANDA-FLYING SAFARI{" "}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
-              A magnificent luxury cruise to discover the must-see jewels of the
-              Seychelles’ Inner Islands. You are invited to experience paradise
-              as you set sail for a truly enjoyable adventure to one of the
-              world’s most stunning archipelagos. In the company of a team of
-              destination experts you will visit up to 8 emblematic islands that
-              showcase the Seychelles incomparable landscapes. You can visit
-              UNESCO sites, some of the world’s most famous beaches and
-              magnificent islands. Search for iconic wildlife, snorkel in coral
-              reefs and soak up the sights of this idyllic natural wonderland.
+              This itinerary captures Uganda’s top three national parks,
+              allowing you to explore the country’s highlights without enduring
+              lengthy drives. Begin with a night in Entebbe before flying to
+              Queen Elizabeth National Park, where you’ll enjoy thrilling game
+              drives and boat safaris.
+              <br />
+              After two nights, drive to Ishasha to witness the renowned
+              tree-climbing lions, then continue to Bwindi National Park for an
+              unforgettable two-night stay with the mountain gorillas. Finally,
+              fly to Murchison Falls National Park for a one-of-a-kind safari
+              adventure, then return to Entebbe for your international
+              departure.
             </p>
           </section>
 
@@ -232,7 +377,8 @@ export default function ItinerariesPage() {
                     {day.mainImage && (
                       <div className="!my-4 flex justify-center">
                         <Image
-                          src={`/${day.mainImage}`}
+                          // src={`/${day.mainImage}`}
+                          src={day.mainImage}
                           alt={day.day}
                           width={600}
                           height={400}
@@ -273,7 +419,8 @@ export default function ItinerariesPage() {
                               <SwiperSlide key={hotel.name}>
                                 <div className="bg-white rounded-lg shadow-lg h-100 !p-4 hover:shadow-xl transition">
                                   <Image
-                                    src={`/${hotel.image}`}
+                                    src={hotel.image}
+                                    // src={`/${hotel.image}`}
                                     alt={hotel.name}
                                     width={300}
                                     height={200}
@@ -303,7 +450,7 @@ export default function ItinerariesPage() {
             <h4 className="text-3xl font-bold text-green-800 !mb-20 ">MAP</h4>
             <div className=" justify-center ">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d255201.22495876986!2d30.2550748822696!3d-1.9452187571529909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x19dca796f9417ad5%3A0x45ebba72296bfee2!2sKigali%20International%20Airport%2C%20KN%205%20Rd%2C%20Kigali%2C%20Rwanda!3m2!1d-1.9633118999999999!2d30.135017899999998!4m5!1s0x19dba13db47d84db%3A0x8b0b7f91ca4a56b6!2sAkagera%20National%20Park%2C%20Akagera%20Road%2C%20Akagera%2C%20Rwanda!3m2!1d-1.8795625!2d30.7040625!5e0!3m2!1sen!2ske!4v1734096892174!5m2!1sen!2ske"
+                src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d1486774.256894923!2d30.810052038474648!3d-0.3004973477868607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x177d86cd37ba81af%3A0x9daba139d6433d1f!2sEntebbe%20International%20Airport%2C%20Kampala%20Road%2C%20Entebbe%2C%20Uganda!3m2!1d0.045107999999999995!2d32.4426736!4m5!1s0x177dbb4918f784b5%3A0xa1607f018ffee44d!2s9J47%2B7RV%20Murchison%20Falls%20National%20Park%20Safari%2C%20Kampala%2C%20Uganda!3m2!1d0.3557299!2d32.614531299999996!4m5!1s0x19de9d58dac3d859%3A0x972f044d905ac1fa!2sBwindi%20Impenetrable%20Forest%2C%20Uganda!3m2!1d-1.0521494999999998!2d29.620100599999997!4m5!1s0x19de973e58e8550f%3A0xf137854988e27066!2sIshasha%2C%20Uganda!3m2!1d-0.8999999999999999!2d29.716666699999998!4m5!1s0x19df489b3ec38175%3A0x3cfe5a989d13d498!2sQueen%20Elizabeth%20National%20Park%2C%20Uganda!3m2!1d-0.2819105!2d29.9638986!4m5!1s0x177d86cd37ba81af%3A0x9daba139d6433d1f!2sEntebbe%20International%20Airport%2C%20Kampala%20Road%2C%20Entebbe%2C%20Uganda!3m2!1d0.045107999999999995!2d32.4426736!5e0!3m2!1sen!2ske!4v1732601039616!5m2!1sen!2ske"
                 width="800"
                 height="450"
                 style={{ border: 0 }}
