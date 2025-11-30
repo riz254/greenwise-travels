@@ -17,10 +17,10 @@ export default function Home() {
       <Intro />
       <Destinations />
       <GreenwiseDifference />
+      <Itineraries />
       <Services />
       <Process />
       <Counter />
-      <Itineraries />
       <Footer />
     </>
   );
