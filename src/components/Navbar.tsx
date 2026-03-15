@@ -36,7 +36,7 @@ export default function Navbar() {
   ];
 
   const aboutLinks = [
-    { label: "Our Story", href: "/who-we-are" },
+    // { label: "Our Story", href: "/about/who-we-are" },
     { label: "Our Team", href: "/about/team" },
     { label: "Our Services", href: "/about/services" },
     { label: "Our Values", href: "/about/values" },
@@ -403,7 +403,7 @@ export default function Navbar() {
               <li className="has-children">
                 <Link href="/about">About Us</Link>
                 <ul className="dropdown">
-                  <li><Link href="/who-we-are">Our Story</Link></li>
+                  {/* <li><Link href="/who-we-are">Our Story</Link></li> */}
                   <li><Link href="/about/team">Our Team</Link></li>
                   <li><Link href="/about/services">Our Services</Link></li>
                   <li><Link href="/about/values">Our Values</Link></li>

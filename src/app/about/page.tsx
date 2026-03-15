@@ -340,7 +340,7 @@ export default function AboutUs() {
             {/* Sidebar Links */}
             <ul className="list-none !p-4 bg-[#0dff000f] rounded">
               {[
-                { name: "Our Story", link: "who-we-are" },
+                // { name: "Our Story", link: "who-we-are" },
                 { name: "Our Services", link: "services" },
                 { name: "Meet the team", link: "team" },
                 { name: "Our Process", link: "process" },
