@@ -69,7 +69,7 @@ export default function Destinations() {
             <Link
               href={d.link}
               key={i}
-              className="group block overflow-hidden rounded shadow-lg"
+              className="group block overflow-hidden rounded shadow-md shadow-emerald-200"
             >
               <motion.div
                 whileHover={{ scale: 1.03 }}
@@ -82,8 +82,8 @@ export default function Destinations() {
                   fill
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                <h3 className="absolute bottom-6 left-6 !text-3xl font-bold text-white shadow-lg ">
+                <div className="absolute inset-0  bg-gradient-to-b from-transparent to-black/100 opacity-85 group-hover:opacity-80 transition-opacity duration-500" />
+                <h3 className="absolute bottom-6 left-6 !text-4xl font-bold text-white ">
                   {d.name}
                 </h3>
               </motion.div>

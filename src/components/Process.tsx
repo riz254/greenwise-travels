@@ -7,23 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 export default function Process() {
-  // const steps = [
-  //   {
-  //     icon: <FaSearch className="text-green-600 text-3xl" />,
-  //     title: "Plan",
-  //     desc: "Tell us your dream trip and preferences.",
-  //   },
-  //   {
-  //     icon: <FaPlane className="text-green-600 text-3xl" />,
-  //     title: "Travel",
-  //     desc: "We handle bookings and logistics.",
-  //   },
-  //   {
-  //     icon: <FaSmile className="text-green-600 text-3xl" />,
-  //     title: "Enjoy",
-  //     desc: "Experience Africa stress-free.",
-  //   },
-  // ];
   const cards = [
     {
       title: "STEP 1",
@@ -57,123 +40,91 @@ export default function Process() {
     },
   ];
   return (
-    // <section className="py-16 bg-gray-50">
-    //   <div className="owl-carousel owl-3-slider">
-    //     <div className="feature-process" style={{ backgroundColor: "#bcac96" }}>
-    //       <h2 className="mb-3">STEP 1</h2>
-    //       <h4 className=" mb-2 ">DISCOVER</h4>
-
-    //       <p>
-    //         Whether referred by others or drawn in by our advertisements,
-    //         explore all that we offer.
-    //       </p>
-    //     </div>
-    //     <div className="feature-process" style={{ backgroundColor: "#bcac96" }}>
-    //       <h2 className="mb-3">STEP 2</h2>
-    //       <h4 className=" mb-2">ENGAGE</h4>
-    //       <p>Contact us via the form, the "Design Your Trip" page, or phone.</p>
-    //     </div>
-    //     <div className="feature-process" style={{ backgroundColor: "#bcac96" }}>
-    //       <h2 className="mb-3">STEP 3</h2>
-    //       <h4 className=" mb-2">CURATE</h4>
-    //       <p>
-    //         Craft initial itineraries for luxury tour packages tailored to your
-    //         preferences
-    //       </p>
-    //     </div>
-
-    //     <div className="feature-process" style={{ backgroundColor: "#bcac96" }}>
-    //       <h2 className="mb-3">STEP 4</h2>
-    //       <h4 className=" mb-2">CONFIRM</h4>
-    //       <p>
-    //         Finalize the itinerary and payment details. Receive additional
-    //         information before your arrival.
-    //       </p>
-    //     </div>
-
-    //     <div className="feature-process" style={{ backgroundColor: "#bcac96" }}>
-    //       <h2 className="mb-3">STEP 5</h2>
-    //       <h4 className=" mb-2">EXPERIENCE</h4>
-    //       <p>
-    //         Arrive and enjoy your adventure with everything arranged for you.
-    //       </p>
-    //     </div>
-    //   </div>
-    // </section>
-
     <section
-      className="max-w-full !mx-auto !p-20 "
-      // style={{
-      //   // padding: "80px",
-      //   backgroundImage:
-      //     "url('https://www.transparenttextures.com/patterns/noisy-net.png')",
-
-      //   backgroundBlendMode: "multiply",
-      // }}
+      className="max-w-full !mx-auto !px-4 sm:!px-6 lg:!p-20 !py-12 sm:!py-16 lg:!py-20"
     >
-      <div className=" text-center">
+      <div className="text-center">
         <a href="/about/process">
           <h2
-            className="section-title text-center mt-5 !mb-4"
+            className="section-title text-center !mt-4 sm:!mt-5 !mb-6 sm:!mb-8 lg:!mb-10 text-3xl sm:text-4xl lg:text-5xl"
             style={{ color: "rgb(0, 0, 0)" }}
           >
             Plan Your Trip
           </h2>
         </a>
       </div>
+
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={30}
-        slidesPerView={3} // 3 cards visible
-        slidesPerGroup={1} // swipe 1 at a time
+        spaceBetween={20}
+        slidesPerView={1}
+        slidesPerGroup={1}
         navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop={true} // infinite looping
+        loop={true}
         breakpoints={{
           0: {
-            slidesPerView: 1, // 📱 mobile
+            slidesPerView: 1,
+            spaceBetween: 16,
           },
-          768: {
-            slidesPerView: 2, // 📲 tablets
+          640: {  // sm:
+            slidesPerView: 1.5,  // partial peek for better mobile feel
+            spaceBetween: 24,
           },
-          1024: {
-            slidesPerView: 3, // 💻 desktop
+          768: {  // md:
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {  // lg:
+            slidesPerView: 3,
+            spaceBetween: 30,
           },
         }}
-        className="gallery-swiper"
+        className="gallery-swiper !px-2 sm:!px-4 lg:!px-0"
       >
         {cards.map((card, idx) => (
           <SwiperSlide key={idx}>
-            <div className="feature-process bg-[#bcac96] shadow-md rounded-xl p-6 h-60 flex flex-col justify-center text-center">
-              <p className=" font-paragraph font-bold  text-xl text-[#264653]">
+            <div className="bg-[#70604a] shadow-md rounded-xl p-5 sm:p-6 lg:p-8 min-h-[220px] sm:min-h-[240px] lg:h-60 flex flex-col justify-center text-center">
+              <p className="font-paragraph font-bold text-lg sm:text-xl lg:text-2xl text-gray-100">
                 {card.title}
               </p>
-              <h4 className="text-xl font-bold text-[#3a5a40] mt-2">
+              <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-lime-950 !mt-2 sm:!mt-3">
                 {card.text}
               </h4>
-              <p className="mt-3 text-gray-700">{card.subText}</p>
+              <p className="!px-3 sm:!px-5 !mt-3 sm:!mt-4 text-sm sm:text-base lg:text-lg text-shadow-gray-300 text-gray-300 leading-relaxed">
+                {card.subText}
+              </p>
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>{" "}
-      {/* Inline styles just for this section */}
+      </Swiper>
+
+      {/* Inline styles - kept yours + minor responsive tweaks */}
       <style jsx global>{`
         .gallery-swiper .swiper-button-prev,
         .gallery-swiper .swiper-button-next {
           display: none !important;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 100px) {
           .gallery-swiper .swiper-button-prev,
           .gallery-swiper .swiper-button-next {
             display: block !important;
             color: white;
-            --swiper-navigation-size: 1.5rem;
+            --swiper-navigation-size: 2rem;  /* bigger on mobile for touch */
             text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
           }
         }
         .gallery-swiper .swiper-pagination-bullet {
           background: rgba(255, 255, 255, 0.8);
+          width: 10px;
+          height: 10px;
+        }
+        @media (min-width: 1024px) {
+          .gallery-swiper .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+          }
         }
         .gallery-swiper .swiper-pagination-bullet-active {
           background: #10b981; /* emerald */
@@ -182,21 +133,3 @@ export default function Process() {
     </section>
   );
 }
-
-//  <div className="container mx-auto px-6 text-center">
-//       <h2 className="text-3xl font-bold text-green-700">
-//         Plan Your Trip in 3 Steps
-//       </h2>
-//       <div className="mt-12 grid gap-8 md:grid-cols-3">
-//         {steps.map((s, i) => (
-//           <div
-//             key={i}
-//             className="rounded-lg bg-white p-6 shadow hover:shadow-lg transition"
-//           >
-//             <div className="mb-4 flex justify-center">{s.icon}</div>
-//             <h3 className="font-semibold text-lg">{s.title}</h3>
-//             <p className="mt-2 text-gray-600">{s.desc}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>

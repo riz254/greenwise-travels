@@ -76,9 +76,9 @@ export default function CascadingImageStack() {
     // </div>
 
     <>
-      <div className="!mx-auto max-w-4/6 !pb-20 text-center">
-        <h2 className="!text-4xl md:text-4xl font-bold text-green-950 !mb-6">
-          We welcome you to walk in our footsteps for the greatest African
+<div className="!mx-auto !my-5 max-w-[99%] sm:!max-w-4xl lg:!max-w-5xl !pb-10 sm:!pb-16 lg:!pb-20 text-center !px-4 sm:!px-6 lg:!px-8">
+<h2 className="!text-2xl sm:!text-3xl lg:!text-5xl leading-tight sm:leading-snug font-bold text-green-950 !mb-6">
+            We welcome you to walk in our footsteps for the greatest African
           safari and adventure experience.{" "}
         </h2>
         <p className="scale-105 !mx-auto text-black !mb-6">
@@ -104,7 +104,7 @@ export default function CascadingImageStack() {
                 Discover Africa, with Africans!
               </h2>
               <p
-                className="mt-2 text-left text-lg md:text-2xl font-medium !leading-10 text-gray-800 !mb-5"
+                className="mt-2 text-left text-lg md:text-2xl font-medium  text-gray-800 !mb-5"
                 style={{ margin: " 10px" }}
               >
                  We are proud natives of this land, storytellers, explorers, and passionate guardians of Africa’s hidden gems. 
@@ -128,7 +128,7 @@ export default function CascadingImageStack() {
                 {/* so you can travel stress-free */}
               </h2>
               <p
-                className="mt-2 text-left text-lg md:text-2xl font-medium !leading-10 text-gray-800 !mb-5"
+                className="mt-2 text-left text-lg md:text-2xl font-medium  text-gray-800 !mb-5"
                 style={{ margin: "10px" }}
               >
                  From hand-picked destinations to seamless logistics, our expert team crafts personalized, private, 

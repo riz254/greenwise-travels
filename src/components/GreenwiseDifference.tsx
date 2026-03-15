@@ -43,6 +43,7 @@ const features = [
 export default function GreenwiseDifference() {
   return (
     <>
+    
       <div
         className=""
         style={{
@@ -53,8 +54,9 @@ export default function GreenwiseDifference() {
           backgroundSize: "cover",
         }}
       >
+        
         <section
-          className="bg-gradient-to-bl bg-green-100  h-full !p-20 rounded-tr-full"
+          className="bg-gradient-to-bl bg-green-100  h-full !p-2 rounded-tr-full"
           style={{
             backgroundImage:
               "url('https://www.transparenttextures.com/patterns/wall-4-light.png')",
@@ -62,31 +64,34 @@ export default function GreenwiseDifference() {
             backgroundBlendMode: "multiply",
           }}
         >
+          
           {" "}
-          <div className=" !mx-auto !px-6 text-center  ">
+          <div className=" !mx-auto !px-0 text-center  ">
+
             <h2
-              className="text-5xl font-semibold text-center text-lime-950 !mt-4 "
-              style={{ marginBottom: "50px" }}
+              className=" font-semibold text-center text-lime-950 !mt-10 text-3xl sm:text-4xl lg:text-5xl leading-tight sm:leading-snug "
             >
               The Greenwise Difference
             </h2>
             <div
-              className="!mt-12 grid !p-20 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+              className="!mt-1 grid lg:!p-20  sm:grid-cols-2 lg:grid-cols-3"
               // style={{ padding: "80px" }}
             >
               {features.map((f, i) => (
                 <div
                   key={i}
-                  className="rounded-lg  p-8  h-full hover:shadow-lg hover:shadow-lime-950 hover:scale-110 transition items-center text-center"
-                  style={{ padding: "50px" }}
+                  className="rounded-lg  !p-14  h-full hover:shadow-lg hover:shadow-lime-950  hover:bg-black/10
+ transform hover:scale-105 transition items-center text-center"
                 >
                   {f.icon}
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                    {f.title}
-                  </h3>
-                  <p className="text-gray-600 space-x-2 font-medium">
-                    {f.desc}
+                  <h3 className="text-xl sm:!text-2xl font-bold text-lime-900 !mb-2">
+        {f.title}
+      </h3>
+
+      <p className="text-gray-800 font-medium">
+           {f.desc}
                   </p>
+                  
                 </div>
               ))}
             </div>

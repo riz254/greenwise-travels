@@ -19,8 +19,10 @@ export default function Home() {
       <GreenwiseDifference />
       <Itineraries />
       <Services />
+
       <Process />
       <Counter />
+
       <Footer />
     </>
   );

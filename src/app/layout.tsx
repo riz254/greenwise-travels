@@ -17,7 +17,7 @@ import "swiper/css/pagination";
 //   variable: "--font-albert-sans",
 //   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // full range
 // });
-import { Roboto, Playfair_Display } from "next/font/google";
+import { Roboto, Playfair_Display, Cormorant_Garamond, Outfit } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -29,6 +29,19 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "600"],
   variable: "--font-playfair",
+});
+
+// Added these two
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-cormorant",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-outfit",
 });
 
 export const metadata: Metadata = {

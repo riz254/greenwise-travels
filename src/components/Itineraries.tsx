@@ -35,7 +35,7 @@ export default function ItinerarySection() {
   return (
     <section className="relative !py-20 bg-gradient-to-b from-green-50 to-green-100/30 overflow-hidden">
       <div className="container !mx-auto !px-4">
-        <h2 className="text-center text-5xl font-extrabold text-lime-950 !mb-10">
+        <h2 className="text-center font-extrabold text-lime-950 !mb-10 text-3xl sm:text-4xl lg:text-5xl leading-tight sm:leading-snug">
           Featured Itineraries
         </h2>
 

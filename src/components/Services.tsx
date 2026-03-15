@@ -16,7 +16,6 @@ export default function Services() {
     backgroundSize: "cover",
     backgroundAttachment: "fixed",
     backgroundRepeat: "no-repeat",
-    padding: "80px",
   };
 
   const services = [
@@ -70,7 +69,7 @@ export default function Services() {
       <div className="relative !mx-auto !px-6 text-center">
         {/* Title */}
         <Link href="/services">
-          <h2 className="text-5xl font-bold !mb-10 !p-10 text-green-200">
+          <h2 className="text-5xl font-semibold text-center text-white !my-12 ">
             OUR SERVICES
           </h2>
         </Link>
